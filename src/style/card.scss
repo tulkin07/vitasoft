@@ -1,0 +1,31 @@
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px #0b1139;
+  transition: all 0.5s ease-in-out;
+  background-color: #2a263d;
+  &:hover {
+    box-shadow: 1px 1px 3px #0b1139;
+  }
+
+  &__title {
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__text {
+    color: rgb(157, 157, 157);
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-top: 25px;
+  }
+}

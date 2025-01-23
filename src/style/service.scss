@@ -1,0 +1,12 @@
+.service__row {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.service__col {
+  width: 50%;
+  padding: 15px;
+  @media screen and (max-width:567px) {
+    width: 100%;
+  }
+}

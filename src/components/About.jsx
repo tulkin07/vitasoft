@@ -1,42 +1,50 @@
 import React from 'react'
-import about from "../assets/img/about.png"
+import check from '../assets/svg/check.svg'
+
 export default function About() {
-  return (
-    <div className='abou mt-100'>
-      <div className='container'>
-        <div className='about__row'>
-          <div className='about__col'>
-            <h3 className='title'>
-              KIRISH
-            </h3>
-            <h4 className='sub-title mt-10'>VITASOFT</h4>
-          </div>
-          <div className='about__col'>
-            <div className='text'>
-              Bugungi raqamli davrda biznesingizning muvaffaqiyati texnologiyalardan qanday foydalanishingizga bog‘liq. VitaSoft IT xizmatlari orqali sizga o‘z
-              biznesingizni yangi bosqichga olib chiqishga yordam beradi!
+    return (
+        <div className='about mt-100 section' id='about'>
+            <div className='container'>
+                <div className='about__row'>
+                    <div className='about__col' data-aos="fade-up">
+                        <h1 className='title'>
+                            Biz haqimizda
+                        </h1>
+                        <p className='text-light mt-30'>
+                            Vita Soft — bu texnologiyalar olamida innovatsiyalarni olib keluvchi kompaniya.
+                            Biz mijozlarimiz uchun zamonaviy IT yechimlar va yuqori sifatli xizmatlarni taqdim
+                            etishga intilamiz. Har bir loyihamizda ishonchlilik,
+                            samaradorlik va ijodkorlik tamoyillariga amal qilamiz.
+                        </p>
+                        <p className='text-light mt-10'>
+                            Bizning asosiy maqsadimiz — mijozlarimizga muvaffaqiyatga erishishda texnologik
+                            yordam berish. Har bir loyiha biz uchun alohida qadriyatga ega bo‘lib, mijozlarimizning
+                            ehtiyojlarini chuqur tushunishga va ularga moslashuvchan yechimlar taklif qilishga intilamiz.
+                        </p>
+                    </div>
+                    <div className='about__col' data-aos="fade-up">
+                        <h5 className='sub-title'>Nega Vita Soft?</h5>
+                        <ul className='about__list mt-30'>
+                            <li className='about__list__item'>
+                                <img src={check} alt="" width={30} /> <br />
+                                <p>Bizning mutaxassislarimiz turli sohalarda yillar davomida tajriba to‘plagan.</p>
+                            </li>
+                            <li className='about__list__item'>
+                                <img src={check} alt="" width={30} /> <br />
+                                <p>Loyihalarimizni eng yuqori sifat standartlariga muvofiq amalga oshiramiz.</p>
+                            </li>
+                            <li className='about__list__item'>
+                                <img src={check} alt="" width={30} /> <br />
+                                <p>Biz doimo zamonaviy texnologiyalar bilan ishlaymiz va mijozlarimizga innovatsion yechimlarni taqdim etamiz.</p>
+                            </li>
+                            <li className='about__list__item'>
+                                <img src={check} alt="" width={30} /> <br />
+                                <p>Biz har doim mijozlarimizni tinglaymiz va ularning orzu-havaslariga ko‘ra loyihalar yaratamiz.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div className='about__row mt-50'>
-          <div className='about__col'>
-            <div className='about__img__container'>
-              <img className='w-100' src={about} alt="" />
-            </div>
-          </div>
-          <div className='about__col'>
-          <h3 className='title'>
-          Biz haqimizda
-            </h3>
-            <h4 className='sub-title mt-10'>VITASOFT</h4>
-          <div className='text mt-30'>
-              Bugungi raqamli davrda biznesingizning muvaffaqiyati texnologiyalardan qanday foydalanishingizga bog‘liq. VitaSoft IT xizmatlari orqali sizga o‘z
-              biznesingizni yangi bosqichga olib chiqishga yordam beradi!
-            </div>
-            <button className='mt-30 btn-info'>Biz bilan bog’laning</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
+    )
 }

@@ -1,0 +1,25 @@
+
+.about__row{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.about__col{
+    width: 50%;
+    padding: 20px;
+}
+.about__list__item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    p{
+        color: #BAB1E3;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
