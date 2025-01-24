@@ -3,13 +3,15 @@ import check from '../assets/svg/check.svg'
 
 export default function About() {
     return (
-        <div className='about mt-100 section' id='about'>
+        <div className='about mt-100 ' id='about'>
+            <div className='about-overline'></div>
             <div className='container'>
                 <div className='about__row'>
                     <div className='about__col' data-aos="fade-up">
                         <h1 className='title'>
                             Biz haqimizda
                         </h1>
+                        
                         <p className='text-light mt-30'>
                             Vita Soft — bu texnologiyalar olamida innovatsiyalarni olib keluvchi kompaniya.
                             Biz mijozlarimiz uchun zamonaviy IT yechimlar va yuqori sifatli xizmatlarni taqdim

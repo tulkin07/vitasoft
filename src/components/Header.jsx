@@ -15,7 +15,7 @@ export default function Header() {
                             ilovalar, texnik qo‘llab-quvvatlash va boshqa IT
                             xizmatlari bo‘yicha yetakchi tajribaga egamiz.
                         </p> */}
-                        <button className='header__btn mt-50' data-aos="fade-up">Biz bilan bog‘laning</button>
+                        <button className='btn-info mt-50' data-aos="fade-up">Biz bilan bog‘laning</button>
                     </div>
                     <div className='header__col'>
                         <div className='header__img__container'>

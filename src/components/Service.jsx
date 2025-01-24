@@ -4,7 +4,7 @@ import { services } from '../utils/service'
 
 export default function Service() {
   return (
-    <div className='service section' id='services'>
+    <div className='service ' id='services'>
       <div className='container'>
         <h1 className='title text-center mt-100' data-aos="fade-up">Bizning xizmatlarimiz        </h1>
         <div className='service__row mt-50'>
