@@ -1,5 +1,4 @@
 import React from 'react'
-import girl from "../assets/img/girl.png"
 export default function Header() {
     return (
         <div className='header'>
@@ -15,13 +14,13 @@ export default function Header() {
                             ilovalar, texnik qo‘llab-quvvatlash va boshqa IT
                             xizmatlari bo‘yicha yetakchi tajribaga egamiz.
                         </p> */}
-                        <button className='btn-info mt-50' data-aos="fade-up">Biz bilan bog‘laning</button>
+                        <a href='#contact' className='btn-info mt-50 ' data-aos="fade-up" >Biz bilan bog‘laning</a>
                     </div>
-                    <div className='header__col'>
+                    {/* <div className='header__col'>
                         <div className='header__img__container'>
-                            {/* <img src={girl} alt="" /> */}
+                            <img src={girl} alt="" />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

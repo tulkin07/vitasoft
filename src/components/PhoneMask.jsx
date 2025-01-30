@@ -1,9 +1,8 @@
 import { Form } from 'antd'
-import React, { useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 import MaskedInput from 'react-text-mask'
 
-export default function PhoneMask() {
-    const [phoneNumber, setPhoneNumber] = useState("");
+export default function PhoneMask({phoneNumber,setPhoneNumber}) {
 
     const handleChange = (e) => {
       setPhoneNumber(e.target.value);
@@ -13,14 +12,14 @@ export default function PhoneMask() {
       if (!value || phoneRegex.test(value)) {
         return Promise.resolve();
       }
-      return Promise.reject(new Error("Please enter a valid phone number!"));
+      return Promise.reject(new Error("Telefon raqamingizni to'gri kiriting!"));
     };
     return (
         <Form.Item
-        label={<span style={{ color: "#ffffff" }}>Enter your company name!</span>}
+        label={<span style={{ color: "#ffffff" }}>Telefon raqamingiz        </span>}
         name="phoneNumber"
         rules={[
-          { required: true, message: "Please enter your phone number!" },
+          { required: true, message: "Telefon raqamingizni kiriting iltimos" },
           { validator: validatePhoneNumber },
         ]}
       >
@@ -29,11 +28,10 @@ export default function PhoneMask() {
             style={{
               background: "rgb(141 130 186)",
               border: "1px solid #d9d9d9",
-              padding: "4px 11px",
+              padding: "6px 11px",
               fontSize: "16px",
               lineHeight: "25px",
-              borderRadius: "2px 0 0 2px",
-              fontWeight:"700",
+              fontWeight:"500",
               borderRadius:"6px 0 0 6px"
             }}
           >
