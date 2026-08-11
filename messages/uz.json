@@ -1,0 +1,1817 @@
+{
+  "meta": {
+    "siteTitle": "VITA SOFT — Raqamli mahsulotlar va IT yechimlar",
+    "siteDescription": "VITA SOFT — bizneslar uchun zamonaviy web-saytlar, CRM, ERP, mobil ilovalar va raqamli mahsulotlar yaratadigan IT kompaniya.",
+    "siteTitleTemplate": "%s | VITA SOFT",
+    "pages": {
+      "about": {
+        "title": "Biz haqimizda",
+        "description": "VITA SOFT — raqamli mahsulotlar yaratadigan professional IT jamoa. Bizning missiya, qadriyatlar va tajribamiz haqida."
+      },
+      "services": {
+        "title": "Xizmatlar",
+        "description": "VITA SOFT xizmatlari — web dasturlash, CRM/ERP, e-commerce, mobil ilovalar, UI/UX dizayn, avtomatlashtirish va texnik qo‘llab-quvvatlash."
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "VITA SOFT portfolio — bizneslar uchun yaratilgan CRM, web-platformalar, mobil ilovalar va avtomatlashtirish loyihalari."
+      },
+      "pricing": {
+        "title": "Narxlar",
+        "description": "VITA SOFT narxlar — web-saytlar, korporativ platformalar va maxsus IT yechimlar uchun mos paketlar."
+      },
+      "contact": {
+        "title": "Bog‘lanish",
+        "description": "VITA SOFT bilan bog‘laning — loyihangiz haqida gaplashamiz. 24 soat ichida javob beramiz."
+      },
+      "notFound": {
+        "title": "Sahifa topilmadi",
+        "description": "Qidirayotgan sahifangiz mavjud emas yoki ko‘chirilgan."
+      }
+    }
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "services": "Xizmatlar",
+    "portfolio": "Portfolio",
+    "pricing": "Narxlar",
+    "contact": "Bog‘lanish",
+    "connect": "Bog‘lanish",
+    "ariaMainNav": "Asosiy navigatsiya",
+    "ariaMobileNav": "Mobil navigatsiya",
+    "ariaOpenMenu": "Menyuni ochish",
+    "ariaCloseMenu": "Menyuni yopish",
+    "ariaLanguage": "Tilni tanlash",
+    "ariaTheme": "Mavzuni tanlash"
+  },
+  "footer": {
+    "tagline": "Bizneslar uchun zamonaviy raqamli mahsulotlar yaratamiz.",
+    "pages": "Sahifalar",
+    "services": "Xizmatlar",
+    "contact": "Aloqa",
+    "copyright": "© 2026 VITA SOFT. Barcha huquqlar himoyalangan.",
+    "madeBy": "Made with precision by VITA SOFT.",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "dribbble": "Dribbble",
+    "newsletter": {
+      "title": "Yangiliklar",
+      "description": "Yangiliklar va loyiha maslahatlari.",
+      "placeholder": "Email manzilingiz",
+      "button": "Obuna"
+    }
+  },
+  "serviceLinks": [
+    {
+      "slug": "web-development",
+      "label": "Web dasturlash"
+    },
+    {
+      "slug": "crm-erp",
+      "label": "CRM / ERP"
+    },
+    {
+      "slug": "e-commerce",
+      "label": "E-commerce"
+    },
+    {
+      "slug": "mobile-apps",
+      "label": "Mobil ilovalar"
+    },
+    {
+      "slug": "ui-ux-design",
+      "label": "UI/UX dizayn"
+    },
+    {
+      "slug": "telegram-mini-apps",
+      "label": "Telegram Mini Apps"
+    }
+  ],
+  "buttons": {
+    "startProject": "Loyihani boshlash",
+    "viewPortfolio": "Portfolio ko‘rish",
+    "viewAll": "Barcha xizmatlar",
+    "learnMore": "Ko‘proq",
+    "getConsultation": "Maslahat olish",
+    "sendRequest": "So‘rov yuborish",
+    "submitting": "Yuborilmoqda...",
+    "newRequest": "Yangi so‘rov yuborish",
+    "startPartnership": "Hamkorlikni boshlash",
+    "similarProject": "O‘xshash loyiha kerakmi?",
+    "otherProjects": "Boshqa loyihalar",
+    "backToPortfolio": "Portfolio ga qaytish",
+    "backHome": "Bosh sahifaga qaytish",
+    "choose": "Tanlash",
+    "start": "Boshlash",
+    "popular": "Eng mashhur"
+  },
+  "theme": {
+    "light": "Yorug‘ rejim",
+    "dark": "Qorong‘u rejim",
+    "system": "Tizim rejimi"
+  },
+  "cursor": {
+    "view": "VIEW",
+    "explore": "EXPLORE"
+  },
+  "heroVisual": {
+    "projects": "Projects",
+    "uptime": "Uptime",
+    "support": "Support",
+    "mobileApp": "MOBILE APP"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Raqamli mahsulotlar · IT yechimlar · Texnologiya",
+      "title1": "Raqamli yechimlarni",
+      "title2": "",
+      "title2Gold": "taklif qilamiz",
+      "title2Rest": "",
+      "title3": "",
+      "description": "VITA SOFT — bizneslar uchun zamonaviy web-platformalar, avtomatlashtirilgan tizimlar va raqamli mahsulotlar yaratadigan texnologik kompaniya.",
+      "ctaPrimary": "Loyihani boshlash",
+      "ctaSecondary": "Portfolio ko‘rish"
+    },
+    "trust": {
+      "label": "01 / Trust",
+      "title": "Nega",
+      "titleAccent": "VITA SOFT?",
+      "description": "Biz shunchaki sayt yaratmaymiz — biznesingiz uchun raqamli mahsulotlar va texnologik yechimlar ishlab chiqamiz."
+    },
+    "services": {
+      "label": "02 / Services",
+      "title": "Biz nimalar qilamiz?",
+      "action": "Barcha xizmatlar"
+    },
+    "process": {
+      "label": "03 / Process",
+      "title": "Loyiha qanday yaratiladi?",
+      "description": "Har bir loyiha shaffof va tizimli jarayon orqali yaratiladi — tahlildan ishga tushirishgacha."
+    },
+    "portfolio": {
+      "label": "04 / Portfolio",
+      "title": "Biz yaratgan loyihalar",
+      "action": "Barcha loyihalar"
+    },
+    "technologies": {
+      "label": "05 / Technologies",
+      "title": "Biz foydalanadigan texnologiyalar",
+      "categories": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "database": "Database",
+        "devops": "DevOps"
+      }
+    },
+    "testimonials": {
+      "label": "06 / Testimonials",
+      "title": "Mijozlarimiz nima deydi?",
+      "starsAria": "{count} yulduz"
+    },
+    "faq": {
+      "label": "07 / FAQ",
+      "title": "Ko‘p so‘raladigan savollar",
+      "description": "Javob topa olmadingizmi?",
+      "contactLink": "Biz bilan bog‘laning"
+    },
+    "cta": {
+      "label": "08 / Contact",
+      "title": "Sizda g‘oya bor.",
+      "titleAccent": "Bizda esa uni amalga oshirish tajribasi bor.",
+      "description": "Loyihangiz haqida gaplashish uchun biz bilan bog‘laning.",
+      "ctaPrimary": "Loyiha haqida gaplashamiz",
+      "ctaSecondary": "Telegram orqali yozish",
+      "phoneLabel": "Telefon",
+      "formLabel": "Aloqa formasi",
+      "formHint": "So‘rov yuborish"
+    }
+  },
+  "company": {
+    "stats": [
+      {
+        "label": "Loyihalar"
+      },
+      {
+        "label": "Mijozlar"
+      },
+      {
+        "label": "Yillik tajriba"
+      },
+      {
+        "label": "Texnologiyalar"
+      },
+      {
+        "label": "Qo‘llab-quvvatlash"
+      }
+    ],
+    "heroStats": [
+      {
+        "label": "loyiha"
+      },
+      {
+        "label": "mijoz"
+      },
+      {
+        "label": "qo‘llab-quvvatlash"
+      }
+    ],
+    "values": [
+      {
+        "title": "Sifat",
+        "description": "Har bir kod qatori, har bir piksel — eng yuqori standartlarda. Sifatni hech qachon compromis qilmaymiz."
+      },
+      {
+        "title": "Halollik",
+        "description": "Ochiq aloqa, haqiqiy muddatlar va adolatli narxlar. Mijozlar bilan uzoq muddatli ishonchli hamkorlik."
+      },
+      {
+        "title": "Innovatsiya",
+        "description": "Eng so‘nggi texnologiyalar va yondashuvlar. Doim o‘rganamiz, doim rivojlanamiz."
+      },
+      {
+        "title": "Mas'uliyat",
+        "description": "Va'da bergan muddatda va sifatda yetkazamiz. Har bir loyiha uchun to‘liq mas'uliyat olamiz."
+      },
+      {
+        "title": "Tezkorlik",
+        "description": "Agile metodologiya va tajribali jamoa — tez natija, tez iteratsiya, tez yaxshilash."
+      },
+      {
+        "title": "Hamkorlik",
+        "description": "Mijoz — hamkor. Birgalikda g‘oya yaratamiz, birgalikda mahsulot quramiz, birgalikda muvaffaqiyatga erishamiz."
+      }
+    ],
+    "timeline": [
+      {
+        "year": "2020",
+        "title": "Asos solindi",
+        "description": "VITA SOFT Toshkentda kichik jamoa sifatida faoliyat boshladi."
+      },
+      {
+        "year": "2021",
+        "title": "Birinchi yirik loyihalar",
+        "description": "CRM va korporativ saytlar yo‘nalishida 10+ loyiha muvaffaqiyatli yakunlandi."
+      },
+      {
+        "year": "2022",
+        "title": "Jamoa kengaydi",
+        "description": "Dasturchilar, dizaynerlar va project managerlar jamoaga qo‘shildi."
+      },
+      {
+        "year": "2023",
+        "title": "Mahsulot yo‘nalishi",
+        "description": "VITA CRM va VITA Academy kabi o‘z mahsulotlarimiz ishlab chiqildi."
+      },
+      {
+        "year": "2024",
+        "title": "50+ loyiha",
+        "description": "50 dan ortiq loyiha, 30+ doimiy mijoz — O‘zbekiston IT bozorida tanilgan hamkor."
+      },
+      {
+        "year": "2025",
+        "title": "Yangi bosqich",
+        "description": "Telegram Mini Apps, mobil ilovalar va enterprise yechimlar yo‘nalishida kengayish."
+      }
+    ],
+    "team": [
+      {
+        "name": "Sardor Alimov",
+        "role": "Bosh direktor & Founder",
+        "description": "10+ yillik IT tajribasi. Mahsulot strategiyasi va biznes rivojlanish.",
+        "initials": "SA"
+      },
+      {
+        "name": "Nilufar Qodirova",
+        "role": "Lead UI/UX Designer",
+        "description": "Foydalanuvchi markazli dizayn va design system mutaxassisi.",
+        "initials": "NQ"
+      },
+      {
+        "name": "Bobur Mirzayev",
+        "role": "Lead Developer",
+        "description": "Full-stack development, arxitektura va texnik rahbarlik.",
+        "initials": "BM"
+      },
+      {
+        "name": "Kamola Ergasheva",
+        "role": "Project Manager",
+        "description": "Loyiha boshqaruvi, mijozlar bilan aloqa va jarayon nazorati.",
+        "initials": "KE"
+      }
+    ],
+    "whyChooseUs": [
+      "Biznes muammolarini chuqur tahlil qilamiz",
+      "Shablon emas — maxsus yechimlar yaratamiz",
+      "Zamonaviy va ishonchli texnologiyalar ishlatamiz",
+      "Shaffof jarayon va muntazam hisobotlar",
+      "Ishga tushirgandan keyin ham qo‘llab-quvvatlaymiz",
+      "O‘zbekiston bozoriga mos yechimlar"
+    ],
+    "contactInfo": {
+      "address": "Toshkent, O‘zbekiston"
+    }
+  },
+  "services": {
+    "home": [
+      {
+        "number": "01",
+        "slug": "web-development",
+        "title": "Web dasturlash",
+        "description": "Korporativ saytlar, landing page va murakkab web-platformalar — biznesingiz uchun zamonaviy raqamli yuz.",
+        "technologies": [
+          "Next.js",
+          "React",
+          "TypeScript"
+        ]
+      },
+      {
+        "number": "02",
+        "slug": "crm-erp",
+        "title": "CRM / ERP tizimlar",
+        "description": "Mijozlar, buyurtmalar va biznes jarayonlarini boshqarish uchun markazlashtirilgan tizimlar.",
+        "technologies": [
+          "Node.js",
+          "PostgreSQL",
+          "React"
+        ]
+      },
+      {
+        "number": "03",
+        "slug": "e-commerce",
+        "title": "E-commerce",
+        "description": "Onlayn do‘konlar, to‘lov integratsiyasi va mahsulot boshqaruvi bilan to‘liq savdo platformalari.",
+        "technologies": [
+          "Next.js",
+          "Stripe",
+          "Redis"
+        ]
+      },
+      {
+        "number": "04",
+        "slug": "ui-ux-design",
+        "title": "UI/UX dizayn",
+        "description": "Foydalanuvchi tajribasiga asoslangan interfeyslar — estetik va funksional mukammal uyg‘unlik.",
+        "technologies": [
+          "Figma",
+          "Prototyping",
+          "Design System"
+        ]
+      },
+      {
+        "number": "05",
+        "slug": "mobile-apps",
+        "title": "Mobil ilovalar",
+        "description": "iOS va Android uchun tez, xavfsiz va zamonaviy mobil ilovalar — native va cross-platform.",
+        "technologies": [
+          "React Native",
+          "Flutter",
+          "Expo"
+        ]
+      },
+      {
+        "number": "06",
+        "slug": "telegram-mini-apps",
+        "title": "Telegram Mini Apps",
+        "description": "Telegram ichida ishlaydigan mini ilovalar — buyurtma, to‘lov va mijozlar bilan aloqa.",
+        "technologies": [
+          "Telegram API",
+          "React",
+          "Node.js"
+        ]
+      },
+      {
+        "number": "07",
+        "slug": "automation",
+        "title": "Avtomatlashtirish",
+        "description": "Takroriy jarayonlarni avtomatlashtirish — vaqt tejash va xatolarni kamaytirish.",
+        "technologies": [
+          "n8n",
+          "Webhooks",
+          "API"
+        ]
+      },
+      {
+        "number": "08",
+        "slug": "support",
+        "title": "Texnik qo‘llab-quvvatlash",
+        "description": "24/7 texnik yordam, yangilanishlar, xavfsizlik va performance monitoring.",
+        "technologies": [
+          "DevOps",
+          "Monitoring",
+          "CI/CD"
+        ]
+      }
+    ],
+    "all": [
+      {
+        "id": "web-development",
+        "number": "01",
+        "slug": "web-development",
+        "title": "Web dasturlash",
+        "shortDescription": "Korporativ saytlar, landing page va web-platformalar",
+        "description": "Web dasturlash — biznesingizning raqamli ko‘rinishini yaratishning asosi. VITA SOFT zamonaviy texnologiyalar yordamida tez, xavfsiz va SEO-optimallashtirilgan web-saytlar va platformalar ishlab chiqadi.",
+        "whoNeedsIt": "Korporativ identifikatsiya kerak bo‘lgan kompaniyalar, yangi mahsulotni bozorga chiqarayotgan startaplar, onlayn mavjudlikni kengaytirmoqchi bo‘lgan bizneslar.",
+        "whatWeBuild": [
+          "Korporativ web-saytlar",
+          "Landing page va marketing sahifalari",
+          "Admin panel va boshqaruv tizimlari",
+          "Murakkab web-ilovalar (SaaS)",
+          "Multi-language platformalar"
+        ],
+        "features": [
+          "Responsive dizayn — barcha qurilmalarda mukammal ko‘rinish",
+          "SEO-optimallashtirilgan struktura",
+          "Tez yuklanish va yuqori performance",
+          "Xavfsizlik standartlari (HTTPS, XSS himoya)",
+          "CMS integratsiyasi",
+          "Analytics va tracking"
+        ],
+        "benefits": [
+          "Professional raqamli ko‘rinish",
+          "Mijozlar ishonchini oshirish",
+          "Marketing samaradorligini oshirish",
+          "Avtomatlashtirilgan biznes jarayonlari"
+        ],
+        "period": "2–8 hafta",
+        "technologies": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Node.js",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "id": "crm-erp",
+        "number": "02",
+        "slug": "crm-erp",
+        "title": "CRM / ERP tizimlar",
+        "shortDescription": "Biznes jarayonlarini markazlashtiruvchi tizimlar",
+        "description": "CRM va ERP tizimlar biznesingizning barcha jarayonlarini yagona platformada birlashtiradi. Mijozlar, buyurtmalar, xodimlar va moliyaviy ma'lumotlarni markazlashtirilgan boshqaruv.",
+        "whoNeedsIt": "Mijozlar bazasini tizimli boshqarish kerak bo‘lgan kompaniyalar, savdo va xizmat ko‘rsatish sohasidagi bizneslar, ko‘p filialli tashkilotlar.",
+        "whatWeBuild": [
+          "Mijozlar boshqaruvi (CRM)",
+          "Buyurtmalar va invoicelar tizimi",
+          "Xodimlar va vazifalar boshqaruvi",
+          "Hisobot va analytics dashboard",
+          "ERP modullari (ombor, moliya, HR)"
+        ],
+        "features": [
+          "Rol-based access control",
+          "Real-time bildirishnomalar",
+          "Hisobot va eksport",
+          "API integratsiyasi",
+          "Mobil versiya",
+          "Avtomatik zbackup"
+        ],
+        "benefits": [
+          "Jarayonlarni 40–60% tezlashtirish",
+          "Ma'lumotlar markazlashtiriladi",
+          "Xatolarni kamaytirish",
+          "Qaror qabul qilish uchun real vaqt ma'lumotlari"
+        ],
+        "period": "6–16 hafta",
+        "technologies": [
+          "Node.js",
+          "NestJS",
+          "PostgreSQL",
+          "Redis",
+          "React",
+          "Docker"
+        ]
+      },
+      {
+        "id": "e-commerce",
+        "number": "03",
+        "slug": "e-commerce",
+        "title": "E-commerce",
+        "shortDescription": "Onlayn do‘kon va savdo platformalari",
+        "description": "To‘liq funksional onlayn do‘konlar — mahsulot katalogi, savat, to‘lov, yetkazib berish va admin panel bilan. O‘zbekiston va xalqaro bozorlar uchun moslashtirilgan.",
+        "whoNeedsIt": "Onlayn savdo boshlamoqchi bo‘lgan brendlar, mavjud do‘konni raqamlashtirmoqchi bo‘lgan bizneslar, marketplace yaratmoqchi bo‘lgan kompaniyalar.",
+        "whatWeBuild": [
+          "B2C va B2B onlayn do‘konlar",
+          "Marketplace platformalar",
+          "Mahsulot va inventar boshqaruvi",
+          "To‘lov tizimlari integratsiyasi",
+          "Buyurtma tracking tizimi"
+        ],
+        "features": [
+          "Mahsulot filtrlash va qidiruv",
+          "Ko‘p to‘lov usullari (Click, Payme, Uzcard)",
+          "Buyurtma holati tracking",
+          "Chegirma va promo kodlar",
+          "SEO-optimallashtirilgan mahsulot sahifalari",
+          "Analytics va savdo hisobotlari"
+        ],
+        "benefits": [
+          "24/7 onlayn savdo imkoniyati",
+          "Geografik cheklovlarsiz mijozlar",
+          "Avtomatlashtirilgan buyurtma jarayoni",
+          "Savdo ma'lumotlarini tahlil qilish"
+        ],
+        "period": "4–12 hafta",
+        "technologies": [
+          "Next.js",
+          "Node.js",
+          "PostgreSQL",
+          "Redis",
+          "Stripe",
+          "Click API"
+        ]
+      },
+      {
+        "id": "mobile-apps",
+        "number": "04",
+        "slug": "mobile-apps",
+        "title": "Mobil ilovalar",
+        "shortDescription": "iOS va Android ilovalar",
+        "description": "Zamonaviy mobil ilovalar — foydalanuvchi tajribasi, tezlik va xavfsizlik ustuvor. Native va cross-platform yechimlar.",
+        "whoNeedsIt": "Mobil auditoriyaga xizmat ko‘rsatish kerak bo‘lgan bizneslar, delivery va xizmat ko‘rsatish platformalari, ichki korporativ ilovalar kerak bo‘lgan kompaniyalar.",
+        "whatWeBuild": [
+          "iOS va Android ilovalar",
+          "Cross-platform ilovalar (React Native)",
+          "Push notification tizimi",
+          "Offline rejim",
+          "Mobil to‘lov integratsiyasi"
+        ],
+        "features": [
+          "Intuitiv UI/UX",
+          "Tez yuklanish",
+          "Biometrik autentifikatsiya",
+          "Real-time yangilanishlar",
+          "App Store va Google Play publish",
+          "Analytics integratsiyasi"
+        ],
+        "benefits": [
+          "Mijozlar bilan doimiy aloqa",
+          "Brend sadoqatini oshirish",
+          "Push orqali marketing",
+          "Mobil trafik va konversiya o‘sishi"
+        ],
+        "period": "6–14 hafta",
+        "technologies": [
+          "React Native",
+          "Expo",
+          "TypeScript",
+          "Firebase",
+          "Node.js"
+        ]
+      },
+      {
+        "id": "ui-ux-design",
+        "number": "05",
+        "slug": "ui-ux-design",
+        "title": "UI/UX dizayn",
+        "shortDescription": "Foydalanuvchi markazli interfeys dizayni",
+        "description": "UI/UX dizayn — mahsulotingizning foydalanuvchi bilan birinchi va eng muhim aloqasi. Biz tadqiqot, prototip va vizual dizayn orqali konversiyani oshiradigan interfeyslar yaratamiz.",
+        "whoNeedsIt": "Yangi mahsulot ishlab chiqayotgan startaplar, mavjud interfeysni yangilamoqchi bo‘lgan kompaniyalar, foydalanuvchi tajribasini yaxshilamoqchi bo‘lgan bizneslar.",
+        "whatWeBuild": [
+          "User research va persona",
+          "Wireframe va prototiplar",
+          "UI dizayn va design system",
+          "Usability testing",
+          "Dizayn hujjatlari (handoff)"
+        ],
+        "features": [
+          "Foydalanuvchi tadqiqoti",
+          "Interaktiv prototiplar",
+          "Responsive dizayn",
+          "Design system yaratish",
+          "Accessibility standartlari",
+          "Developer handoff"
+        ],
+        "benefits": [
+          "Konversiya darajasini oshirish",
+          "Foydalanuvchi qoniqishini yaxshilash",
+          "Rivojlanish vaqtini qisqartirish",
+          "Brend identifikatsiyasini mustahkamlash"
+        ],
+        "period": "2–6 hafta",
+        "technologies": [
+          "Figma",
+          "FigJam",
+          "Principle",
+          "Maze"
+        ]
+      },
+      {
+        "id": "telegram-mini-apps",
+        "number": "06",
+        "slug": "telegram-mini-apps",
+        "title": "Telegram Mini Apps",
+        "shortDescription": "Telegram ichida ishlaydigan mini ilovalar",
+        "description": "Telegram Mini Apps — O‘zbekistonda tez o‘sayotgan kanal. Buyurtma berish, to‘lov, bron qilish va mijozlar bilan aloqa — hammasi Telegram ichida.",
+        "whoNeedsIt": "Telegram auditoriyasiga xizmat ko‘rsatadigan bizneslar, restoran va xizmat ko‘rsatish sohasi, tez MVP chiqarish kerak bo‘lgan startaplar.",
+        "whatWeBuild": [
+          "Buyurtma va bron tizimlari",
+          "To‘lov integratsiyasi",
+          "Katalog va mahsulot ko‘rsatish",
+          "Mijozlar profili",
+          "Admin bot va panel"
+        ],
+        "features": [
+          "Telegram autentifikatsiya",
+          "Inline va reply keyboard",
+          "To‘lov (Telegram Payments)",
+          "Push xabarlar",
+          "Analytics",
+          "Tez ishga tushirish"
+        ],
+        "benefits": [
+          "Past rivojlanish narxi",
+          "Telegram auditoriyasidan foydalanish",
+          "Tez MVP va test",
+          "O‘rnatish shart emas"
+        ],
+        "period": "2–6 hafta",
+        "technologies": [
+          "Telegram Bot API",
+          "React",
+          "Node.js",
+          "WebApp API"
+        ]
+      },
+      {
+        "id": "automation",
+        "number": "07",
+        "slug": "automation",
+        "title": "Avtomatlashtirish",
+        "shortDescription": "Biznes jarayonlarini avtomatlashtirish",
+        "description": "Takroriy vazifalarni avtomatlashtirish orqali jamoangiz vaqtini tejang. Integratsiyalar, webhooklar va workflow yechimlari.",
+        "whoNeedsIt": "Ko‘p manual jarayonlari bor kompaniyalar, turli tizimlarni birlashtirish kerak bo‘lgan bizneslar, operatsion xarajatlarni kamaytirmoqchi bo‘lgan tashkilotlar.",
+        "whatWeBuild": [
+          "Workflow avtomatlashtirish",
+          "Tizimlar integratsiyasi",
+          "Email va SMS avtomatizatsiya",
+          "Hisobot generatsiyasi",
+          "Ma'lumotlar sinxronizatsiyasi"
+        ],
+        "features": [
+          "Zapier/n8n integratsiyasi",
+          "Custom webhook yechimlari",
+          "Scheduled tasks",
+          "Error handling va monitoring",
+          "Log va audit trail",
+          "Scalable arxitektura"
+        ],
+        "benefits": [
+          "80% gacha manual ishni kamaytirish",
+          "Xatolarni minimallashtirish",
+          "24/7 ishlash",
+          "Operatsion xarajatlarni tejash"
+        ],
+        "period": "2–8 hafta",
+        "technologies": [
+          "n8n",
+          "Node.js",
+          "Python",
+          "Webhooks",
+          "REST API"
+        ]
+      },
+      {
+        "id": "api-backend",
+        "number": "08",
+        "slug": "api-backend",
+        "title": "API / Backend",
+        "shortDescription": "Mustahkam backend va API yechimlari",
+        "description": "Scalable, xavfsiz va tez backend tizimlar. REST va GraphQL API, mikroservis arxitektura, real-time funksiyalar.",
+        "whoNeedsIt": "Mobil ilova backend kerak bo‘lgan kompaniyalar, uchinchi tomon integratsiyalari talab qiladigan bizneslar, yuqori yuklamaga tayyor tizim kerak bo‘lgan platformalar.",
+        "whatWeBuild": [
+          "RESTful va GraphQL API",
+          "Mikroservis arxitektura",
+          "Real-time WebSocket",
+          "Authentication va authorization",
+          "Database dizayn va optimizatsiya"
+        ],
+        "features": [
+          "JWT va OAuth autentifikatsiya",
+          "Rate limiting",
+          "API dokumentatsiya (Swagger)",
+          "Caching (Redis)",
+          "Queue tizimlari",
+          "Monitoring va logging"
+        ],
+        "benefits": [
+          "Scalable arxitektura",
+          "Xavfsiz ma'lumotlar boshqaruvi",
+          "Tez API javoblari",
+          "Uson integratsiya"
+        ],
+        "period": "4–12 hafta",
+        "technologies": [
+          "Node.js",
+          "NestJS",
+          "Express",
+          "PostgreSQL",
+          "MongoDB",
+          "Redis",
+          "Docker"
+        ]
+      },
+      {
+        "id": "seo",
+        "number": "09",
+        "slug": "seo",
+        "title": "SEO optimizatsiya",
+        "shortDescription": "Qidiruv tizimlarida yuqori pozitsiya",
+        "description": "Texnik SEO, kontent strategiyasi va performance optimizatsiya — Google va Yandexda yuqori pozitsiyalar uchun kompleks yondashuv.",
+        "whoNeedsIt": "Organik trafik oshirmoqchi bo‘lgan bizneslar, yangi sayt ishga tushirayotgan kompaniyalar, raqobatbardosh sohalarda faoliyat yurituvchilar.",
+        "whatWeBuild": [
+          "Texnik SEO audit",
+          "On-page optimizatsiya",
+          "Site speed optimizatsiya",
+          "Structured data (Schema.org)",
+          "SEO monitoring dashboard"
+        ],
+        "features": [
+          "Core Web Vitals optimizatsiya",
+          "Meta tag va sitemap",
+          "Mobile-first indexing",
+          "Internal linking strategiya",
+          "Analytics sozlash",
+          "Monthly SEO hisobotlar"
+        ],
+        "benefits": [
+          "Organik trafik o‘sishi",
+          "Brend ko‘rinishini oshirish",
+          "Marketing xarajatlarini kamaytirish",
+          "Uzoq muddatli natijalar"
+        ],
+        "period": "Doimiy / 1–4 hafta audit",
+        "technologies": [
+          "Google Search Console",
+          "Lighthouse",
+          "Next.js SEO",
+          "Schema.org"
+        ]
+      },
+      {
+        "id": "support",
+        "number": "10",
+        "slug": "support",
+        "title": "Texnik qo‘llab-quvvatlash",
+        "shortDescription": "24/7 texnik xizmat va monitoring",
+        "description": "Ishga tushirilgan loyihalarni doimiy qo‘llab-quvvatlash — yangilanishlar, xavfsizlik patchlari, performance monitoring va tezkor muammolarni hal qilish.",
+        "whoNeedsIt": "Faol web-sayti yoki ilovasi bor barcha bizneslar, kritik tizimlarga ega kompaniyalar, ichki IT jamoasi yo‘q bo‘lgan tashkilotlar.",
+        "whatWeBuild": [
+          "24/7 monitoring tizimi",
+          "Backup va disaster recovery",
+          "Security updates",
+          "Performance optimization",
+          "Feature updates va yangilanishlar"
+        ],
+        "features": [
+          "Uptime monitoring (99.9%)",
+          "Tezkor javob vaqti (SLA)",
+          "Oylik hisobotlar",
+          "Priority support",
+          "Security audit",
+          "Database maintenance"
+        ],
+        "benefits": [
+          "Biznes uzluksizligi",
+          "Xavfsizlik kafolati",
+          "Tezkor muammolarni hal qilish",
+          "Doimiy rivojlanish"
+        ],
+        "period": "Doimiy shartnoma",
+        "technologies": [
+          "Docker",
+          "CI/CD",
+          "Sentry",
+          "Grafana",
+          "GitHub Actions"
+        ]
+      }
+    ],
+    "process": [
+      {
+        "number": "01",
+        "title": "Tahlil",
+        "description": "Biznesingiz, maqsadlaringiz va auditoriyangizni chuqur o‘rganamiz. Raqobatchilarni tahlil qilamiz va texnik talablarni aniqlaymiz."
+      },
+      {
+        "number": "02",
+        "title": "Strategiya",
+        "description": "Mahsulot strategiyasi, funksional talablar va loyiha yo‘l xaritasini tuzamiz. Muddat va byudjet rejalashtiramiz."
+      },
+      {
+        "number": "03",
+        "title": "Dizayn",
+        "description": "Wireframe, prototip va UI dizayn yaratamiz. Foydalanuvchi tajribasini sinab ko‘ramiz va tasdiqlaymiz."
+      },
+      {
+        "number": "04",
+        "title": "Dasturlash",
+        "description": "Agile metodologiya bo‘yicha iterativ rivojlanish. Har hafta progress ko‘rsatamiz va fikr-mulohazalarni qabul qilamiz."
+      },
+      {
+        "number": "05",
+        "title": "Test",
+        "description": "Funksional, performance va xavfsizlik testlari. Turli qurilmalar va brauzerlarda sinovdan o‘tkazamiz."
+      },
+      {
+        "number": "06",
+        "title": "Ishga tushirish",
+        "description": "Production muhitga deploy, DNS sozlash, SSL sertifikat va monitoring tizimlarini yoqamiz."
+      },
+      {
+        "number": "07",
+        "title": "Qo‘llab-quvvatlash",
+        "description": "Ishga tushirgandan keyin ham yoningizdamiz — texnik yordam, yangilanishlar va doimiy yaxshilash."
+      }
+    ],
+    "trust": [
+      {
+        "number": "01",
+        "title": "Individual yondashuv",
+        "description": "Har bir loyiha noyob. Shablon yechimlar emas — biznesingizga mos maxsus arxitektura va dizayn yaratamiz."
+      },
+      {
+        "number": "02",
+        "title": "Zamonaviy texnologiyalar",
+        "description": "Next.js, React, TypeScript kabi eng so‘nggi va ishonchli texnologiyalar bilan ishlaymiz."
+      },
+      {
+        "number": "03",
+        "title": "Tezkor ishlab chiqish",
+        "description": "Agile metodologiya va tajribali jamoa — loyihangizni vaqtida va sifatli yetkazamiz."
+      },
+      {
+        "number": "04",
+        "title": "Shaffof jarayon",
+        "description": "Har bosqichda progress hisobotlari, ochiq aloqa va kutilmagan xarajatlarsiz ishlash."
+      },
+      {
+        "number": "05",
+        "title": "Yuqori sifat",
+        "description": "Kod sifati, performance va xavfsizlik — har bir loyihada eng yuqori standartlarni qo‘llaymiz."
+      },
+      {
+        "number": "06",
+        "title": "Texnik qo‘llab-quvvatlash",
+        "description": "Ishga tushirgandan keyin 24/7 texnik yordam, monitoring va doimiy yangilanishlar."
+      }
+    ]
+  },
+  "projects": {
+    "filters": [
+      {
+        "value": "all",
+        "label": "Barchasi"
+      },
+      {
+        "value": "web",
+        "label": "Web"
+      },
+      {
+        "value": "crm",
+        "label": "CRM"
+      },
+      {
+        "value": "ecommerce",
+        "label": "E-commerce"
+      },
+      {
+        "value": "mobile",
+        "label": "Mobile"
+      },
+      {
+        "value": "design",
+        "label": "Design"
+      },
+      {
+        "value": "automation",
+        "label": "Automation"
+      }
+    ],
+    "items": [
+      {
+        "slug": "payno",
+        "number": "01",
+        "title": "Payno",
+        "categoryLabel": "CRM / SaaS",
+        "shortDescription": "Biznes jarayonlarini markazlashtirish orqali boshqaruv samaradorligini oshiruvchi CRM platforma.",
+        "description": "VITA CRM — kichik va o‘rta bizneslar uchun mo‘ljallangan to‘liq funksional mijozlar boshqaruvi tizimi. Mijozlar, buyurtmalar, vazifalar va hisobotlar yagona platformada.",
+        "result": "Boshqaruv samaradorligi 45% ga oshdi",
+        "problem": "Buyurtmalar, mijozlar va xodimlar haqidagi ma'lumotlar turli tizimlarda (Excel, Telegram, qog‘oz) saqlanar edi. Ma'lumotlarni topish va tahlil qilish soatlab vaqt olardi.",
+        "solution": "Markazlashtirilgan CRM platforma ishlab chiqildi. Barcha biznes jarayonlari — mijozlar, buyurtmalar, vazifalar va hisobotlar — yagona tizimga birlashtirildi.",
+        "features": [
+          "Mijozlar bazasi va segmentatsiya",
+          "Buyurtmalar va invoicelar boshqaruvi",
+          "Vazifalar va loyihalar tracking",
+          "Real-time dashboard va hisobotlar",
+          "Rol-based access control",
+          "Mobil responsive interfeys"
+        ],
+        "process": [
+          "Biznes jarayonlarini tahlil qildik",
+          "CRM arxitekturasini loyihaladik",
+          "UI/UX dizayn va prototip yaratdik",
+          "Backend API va frontend ishlab chiqdik",
+          "Mavjud ma'lumotlarni migratsiya qildik",
+          "Xodimlar uchun trening o‘tkazdik"
+        ],
+        "results": [
+          "Ma'lumotlarni qidirish vaqti 80% qisqardi",
+          "Buyurtma jarayoni avtomatlashtirildi",
+          "Hisobotlar real vaqtda generatsiya qilinadi",
+          "Jamoa samaradorligi sezilarli oshdi"
+        ]
+      },
+      {
+        "slug": "edusmart",
+        "number": "02",
+        "title": "EduSmart",
+        "categoryLabel": "EdTech",
+        "shortDescription": "Onlayn ta'lim platformasi — kurslar, testlar va sertifikatlar bilan to‘liq o‘quv ekotizimi.",
+        "description": "VITA Academy — zamonaviy onlayn ta'lim platformasi. Video darslar, interaktiv testlar, progress tracking va sertifikat berish tizimi.",
+        "result": "5000+ faol o‘quvchi ro‘yxatdan o‘tdi",
+        "problem": "Ta'lim markazi offline darslar bilan cheklangan edi. COVID davrida onlayn o‘tish zarurati paydo bo‘ldi, lekin tayyor yechim yo‘q edi.",
+        "solution": "To‘liq funksional EdTech platforma yaratildi — video streaming, test tizimi, o‘qituvchi paneli va o‘quvchi dashboard.",
+        "features": [
+          "Video darslar va materiallar",
+          "Interaktiv testlar va quizlar",
+          "Progress tracking",
+          "Sertifikat generatsiyasi",
+          "O‘qituvchi admin paneli",
+          "To‘lov integratsiyasi"
+        ],
+        "process": [
+          "Ta'lim jarayonini tahlil qildik",
+          "Platforma arxitekturasini loyihaladik",
+          "UI/UX dizayn yaratdik",
+          "Video streaming tizimini integratsiya qildik",
+          "Beta test o‘tkazdik",
+          "Production ga chiqardik"
+        ],
+        "results": [
+          "5000+ ro‘yxatdan o‘tgan o‘quvchi",
+          "Geografik cheklov yo‘q — butun O‘zbekiston",
+          "Darslar soni 3 baravar oshdi",
+          "O‘qituvchilar vaqti 60% tejaldi"
+        ]
+      },
+      {
+        "slug": "stomatologiya-crm",
+        "number": "03",
+        "title": "Stomatologiya CRM",
+        "categoryLabel": "Healthcare",
+        "shortDescription": "Stomatologiya klinikalari uchun maxsus CRM — bemorlar, uchrashuvlar va davolash tarixi boshqaruvi.",
+        "description": "Stomatologiya sohasiga ixtisoslashtirilgan CRM tizimi. Bemorlar kartasi, uchrashuvlar jadvali, davolash rejasi va moliyaviy hisobotlar.",
+        "result": "Uchrashuvlar soni 30% ga oshdi",
+        "problem": "Klinika bemorlar ma'lumotlarini qog‘ozda saqlar, uchrashuvlar telefon orqali bron qilinardi. No-show holatlari ko‘p edi.",
+        "solution": "Maxsus stomatologiya CRM yaratildi — onlayn bron, avtomatik eslatmalar va to‘liq bemor tarixi.",
+        "features": [
+          "Bemorlar kartasi va tarixi",
+          "Onlayn uchrashuv bron qilish",
+          "Telegram eslatmalar",
+          "Davolash rejasi va reseptlar",
+          "Moliyaviy hisobotlar",
+          "Shifokorlar jadvali"
+        ],
+        "process": [
+          "Klinika jarayonlarini kuzatdik",
+          "Maxsus CRM talablarini aniqladik",
+          "Dizayn va prototip yaratdik",
+          "Tizimni ishlab chiqdik",
+          "Telegram bot integratsiya qildik",
+          "Xodimlarni o‘qitdik"
+        ],
+        "results": [
+          "No-show holatlari 50% kamaydi",
+          "Uchrashuvlar soni 30% oshdi",
+          "Qog‘oz hujjatlarsiz ishlash",
+          "Bemorlar qoniqishi yaxshilandi"
+        ]
+      },
+      {
+        "slug": "connecta-crm",
+        "number": "04",
+        "title": "Connecta CRM",
+        "categoryLabel": "Business",
+        "shortDescription": "Savdo va xizmat ko‘rsatish kompaniyalari uchun CRM — leadlar, bitimlar va jamoa boshqaruvi.",
+        "description": "Connecta CRM — B2B savdo kompaniyalari uchun mo‘ljallangan. Lead tracking, sales pipeline, jamoa KPI va integratsiyalar.",
+        "result": "Savdo konversiyasi 25% ga oshdi",
+        "problem": "Savdo jamoasi leadlarni Excel da kuzatar, bitimlar holati noaniq edi. Menejerlar real vaqtda progress ko‘ra olmasdi.",
+        "solution": "Sales-focused CRM platforma yaratildi — pipeline visualization, avtomatik lead assignment va KPI dashboard.",
+        "features": [
+          "Lead va contact boshqaruvi",
+          "Sales pipeline (Kanban)",
+          "Avtomatik lead assignment",
+          "Email integratsiyasi",
+          "KPI dashboard",
+          "Hisobot va eksport"
+        ],
+        "process": [
+          "Savdo jarayonini o‘rganish",
+          "CRM funksional talablar",
+          "UI/UX va pipeline dizayn",
+          "Backend va frontend development",
+          "Email integratsiya",
+          "Jamoa treningi"
+        ],
+        "results": [
+          "Lead response vaqti 70% qisqardi",
+          "Savdo konversiyasi 25% oshdi",
+          "Jamoa samaradorligi oshdi",
+          "Menejerlar real vaqt ko‘radi"
+        ]
+      },
+      {
+        "slug": "ecommerce-platform",
+        "number": "05",
+        "title": "E-commerce Platform",
+        "categoryLabel": "E-commerce",
+        "shortDescription": "To‘liq funksional onlayn do‘kon — mahsulot katalogi, to‘lov va yetkazib berish integratsiyasi.",
+        "description": "Zamonaviy e-commerce platforma — 1000+ mahsulot, ko‘p to‘lov usullari, admin panel va analytics dashboard.",
+        "result": "Oylik savdo 200% ga oshdi",
+        "problem": "Biznes faqat offline savdo qilar, onlayn kanali yo‘q edi. Raqobatchilar onlayn bozor egallagan edi.",
+        "solution": "To‘liq funksional onlayn do‘kon yaratildi — O‘zbekiston to‘lov tizimlari bilan integratsiya, yetkazib berish tracking.",
+        "features": [
+          "Mahsulot katalogi va filtrlash",
+          "Savat va checkout",
+          "Click, Payme, Uzcard to‘lov",
+          "Buyurtma tracking",
+          "Admin panel",
+          "SEO optimizatsiya"
+        ],
+        "process": [
+          "Biznes modelini tahlil qildik",
+          "Platforma arxitekturasi",
+          "UI/UX dizayn",
+          "Development va integratsiyalar",
+          "To‘lov tizimlari ulash",
+          "Launch va marketing"
+        ],
+        "results": [
+          "Oylik onlayn savdo 200% oshdi",
+          "Yangi mijozlar segmenti ochildi",
+          "24/7 savdo imkoniyati",
+          "Geografik qamrov kengaydi"
+        ]
+      },
+      {
+        "slug": "telegram-booking",
+        "number": "06",
+        "title": "Telegram Booking System",
+        "categoryLabel": "Automation",
+        "shortDescription": "Telegram orqali xizmat bron qilish tizimi — avtomatik eslatmalar va to‘lov integratsiyasi.",
+        "description": "Telegram Mini App va bot orqali xizmat bron qilish. Restoran, salon va xizmat ko‘rsatish bizneslari uchun.",
+        "result": "Bron jarayoni 90% avtomatlashtirildi",
+        "problem": "Mijozlar telefon orqali bron qilar, operatorlar vaqt sarflar edi. No-show va double booking muammolari bor edi.",
+        "solution": "Telegram Mini App yaratildi — onlayn bron, avtomatik tasdiqlash, eslatmalar va to‘lov imkoniyati.",
+        "features": [
+          "Telegram Mini App interfeys",
+          "Real-time bron kalendari",
+          "Avtomatik eslatmalar",
+          "To‘lov integratsiyasi",
+          "Admin panel",
+          "Statistika va hisobotlar"
+        ],
+        "process": [
+          "Bron jarayonini tahlil qildik",
+          "Telegram Mini App dizayn",
+          "Bot va web app development",
+          "To‘lov integratsiyasi",
+          "Beta test",
+          "Production launch"
+        ],
+        "results": [
+          "Operator yuklamasi 90% kamaydi",
+          "No-show 40% ga tushdi",
+          "Mijozlar qoniqishi oshdi",
+          "24/7 bron imkoniyati"
+        ]
+      },
+      {
+        "slug": "logistics-dashboard",
+        "number": "07",
+        "title": "Logistics Dashboard",
+        "categoryLabel": "Web App",
+        "shortDescription": "Logistika kompaniyasi uchun real-time tracking dashboard — yetkazib berish va transport boshqaruvi.",
+        "description": "Logistika operatsiyalarini real vaqtda kuzatish platformasi. Transport, marshrutlar, yetkazib berish holati va analytics.",
+        "result": "Yetkazib berish vaqti 20% qisqardi",
+        "problem": "Logistika operatsiyalari telefon va radio orqali boshqarilar, real vaqt ma'lumot yo‘q edi.",
+        "solution": "Real-time tracking dashboard yaratildi — GPS integratsiya, marshrut optimizatsiya va avtomatik bildirishnomalar.",
+        "features": [
+          "Real-time GPS tracking",
+          "Marshrut optimizatsiya",
+          "Yetkazib berish holati",
+          "Haydovchi mobil ilova",
+          "Analytics dashboard",
+          "Mijoz tracking sahifasi"
+        ],
+        "process": [
+          "Logistika jarayonini o‘rganish",
+          "Dashboard arxitektura",
+          "UI/UX dizayn",
+          "Backend va WebSocket",
+          "GPS integratsiya",
+          "Pilot test va launch"
+        ],
+        "results": [
+          "Yetkazib berish vaqti 20% qisqardi",
+          "Yoqilg‘i xarajati 15% kamaydi",
+          "Mijozlar real vaqt kuzatadi",
+          "Operatsion samaradorlik oshdi"
+        ]
+      },
+      {
+        "slug": "fintech-mobile",
+        "number": "08",
+        "title": "FinTech Mobile App",
+        "categoryLabel": "Mobile",
+        "shortDescription": "Moliyaviy xizmatlar mobil ilovasi — to‘lovlar, balans va tranzaksiyalar boshqaruvi.",
+        "description": "Zamonaviy FinTech mobil ilova — xavfsiz to‘lovlar, balans monitoring, tranzaksiya tarixi va push bildirishnomalar.",
+        "result": "10000+ faol foydalanuvchi",
+        "problem": "Mijozlar moliyaviy operatsiyalarni faqat ofisda yoki veb-saytda bajarar edi. Mobil qulaylik talab qilinardi.",
+        "solution": "Xavfsiz va tez mobil ilova yaratildi — biometrik autentifikatsiya, real-time balans va to‘lov imkoniyatlari.",
+        "features": [
+          "Biometrik autentifikatsiya",
+          "Real-time balans",
+          "To‘lov va o‘tkazmalar",
+          "Tranzaksiya tarixi",
+          "Push bildirishnomalar",
+          "QR to‘lov"
+        ],
+        "process": [
+          "Foydalanuvchi tadqiqoti",
+          "Mobil UX dizayn",
+          "React Native development",
+          "Xavfsizlik audit",
+          "App Store va Play Store publish",
+          "Marketing launch"
+        ],
+        "results": [
+          "10000+ faol foydalanuvchi",
+          "Mobil tranzaksiyalar 80% ga oshdi",
+          "Mijozlar qoniqishi 4.8/5",
+          "Operatsion xarajat kamaydi"
+        ]
+      }
+    ]
+  },
+  "pricing": {
+    "page": {
+      "label": "VITA SOFT / PRICING",
+      "titleLine1": "Loyihangiz uchun",
+      "titleLine2": "mos yechimni tanlang",
+      "description": "Web-sayt, CRM, e-commerce, mobil ilova yoki maxsus platforma — biznesingiz uchun kerakli raqamli yechimni professional tarzda ishlab chiqamiz.",
+      "infoCardTitle": "Boshlang'ich narxlar",
+      "infoCardText": "Yakuniy narx loyiha murakkabligi va funksiyalariga qarab belgilanadi."
+    },
+    "overview": [
+      {
+        "title": "Landing Page",
+        "price": "$150+",
+        "duration": "3–5 ish kuni"
+      },
+      {
+        "title": "Korporativ Web-sayt",
+        "price": "$400+",
+        "duration": "7–14 ish kuni"
+      },
+      {
+        "title": "E-commerce",
+        "price": "$800+",
+        "duration": "14–30 ish kuni"
+      },
+      {
+        "title": "CRM / Web Platform",
+        "price": "$1,200+",
+        "duration": "20–45 ish kuni"
+      }
+    ],
+    "websites": {
+      "number": "01 / Web-saytlar",
+      "title": "Web-saytlar",
+      "subtitle": "Biznesingizni internetda professional namoyish qilish uchun zamonaviy web-saytlar.",
+      "items": [
+        {
+          "id": "landing",
+          "title": "Landing Page",
+          "description": "Mahsulot, xizmat yoki biznesingizni bitta kuchli sahifada taqdim etish uchun.",
+          "price": "$150 – $300",
+          "duration": "3–5 ish kuni",
+          "features": [
+            "Professional UI/UX dizayn",
+            "Responsive design",
+            "Kontakt formasi",
+            "Telegram integratsiyasi",
+            "Google Maps",
+            "Basic SEO",
+            "Google Analytics / Yandex Metrika",
+            "Basic animations",
+            "Domain va hosting ulash",
+            "Deployment"
+          ],
+          "cta": "Loyiha boshlash"
+        },
+        {
+          "id": "corporate",
+          "title": "Korporativ Web-sayt",
+          "description": "Kompaniya, tashkilot yoki brend uchun to'liq professional web-sayt.",
+          "price": "$400 – $1,000",
+          "duration": "7–14 ish kuni",
+          "badge": "ENG KO'P TANLANADI",
+          "highlighted": true,
+          "features": [
+            "5–10 sahifa",
+            "Professional UI/UX",
+            "Responsive design",
+            "SEO optimizatsiya",
+            "Kontakt formalar",
+            "Google Maps",
+            "Telegram integratsiyasi",
+            "Social media integration",
+            "Analytics",
+            "Animations",
+            "Deployment",
+            "Admin panel — kerak bo'lganda"
+          ],
+          "cta": "Buyurtma berish"
+        },
+        {
+          "id": "ecommerce",
+          "title": "E-commerce",
+          "description": "Mahsulotlaringizni online sotish uchun to'liq elektron savdo platformasi.",
+          "price": "$800 – $2,000",
+          "duration": "14–30 ish kuni",
+          "features": [
+            "Mahsulot katalogi",
+            "Kategoriyalar",
+            "Search",
+            "Filter",
+            "Product detail",
+            "Shopping cart",
+            "Checkout",
+            "User account",
+            "Order history",
+            "Admin panel",
+            "Product management",
+            "Order management",
+            "Telegram notification",
+            "Payment integration",
+            "SEO",
+            "Analytics"
+          ],
+          "cta": "E-commerce yaratish"
+        }
+      ]
+    },
+    "platforms": {
+      "number": "02 / Web Platformalar",
+      "title": "Web Platformalar",
+      "subtitle": "Murakkab biznes jarayonlarini avtomatlashtirish uchun individual web tizimlar.",
+      "items": [
+        {
+          "id": "crm",
+          "title": "CRM / Admin Panel",
+          "description": "Biznesingizning mijozlar, mahsulotlar, buyurtmalar va ichki jarayonlarini yagona tizim orqali boshqarish.",
+          "price": "$1,200 – $3,500",
+          "duration": "20–45 ish kuni",
+          "features": [
+            "Authentication",
+            "Role & Permissions",
+            "Dashboard",
+            "Statistics",
+            "User management",
+            "Customer management",
+            "Product management",
+            "Order management",
+            "Search / Filter / Sort",
+            "Pagination",
+            "File upload",
+            "Notifications",
+            "Reports",
+            "Export",
+            "REST API",
+            "Database",
+            "Admin panel"
+          ],
+          "technologies": [
+            "React",
+            "Next.js",
+            "Node.js",
+            "Express",
+            "NestJS",
+            "PostgreSQL",
+            "MongoDB",
+            "Redis"
+          ],
+          "cta": "CRM buyurtma qilish"
+        },
+        {
+          "id": "custom-platform",
+          "title": "Maxsus Web Platform",
+          "description": "Startup yoki murakkab biznes modeli uchun noldan ishlab chiqiladigan individual platforma.",
+          "price": "$2,500 – $6,000+",
+          "duration": "1–3 oy+",
+          "features": [
+            "Client platform",
+            "Admin panel",
+            "Backend",
+            "Database",
+            "Authentication",
+            "Role & permissions",
+            "API",
+            "Dashboard",
+            "Real-time functionality",
+            "Notifications",
+            "Payment integration",
+            "Third-party API",
+            "Deployment",
+            "Analytics"
+          ],
+          "cta": "Platforma yaratish"
+        }
+      ]
+    },
+    "design": {
+      "number": "03 / UI/UX Design",
+      "title": "UI/UX Design",
+      "subtitle": "Foydalanuvchi uchun qulay va developer uchun tayyor professional dizayn tizimlari.",
+      "items": [
+        {
+          "id": "web-design",
+          "title": "Landing / Web Design",
+          "price": "$150 – $400",
+          "duration": "3–7 ish kuni",
+          "includes": [
+            "Figma",
+            "Desktop design",
+            "Mobile design",
+            "UI Kit",
+            "Typography",
+            "Color system",
+            "Components",
+            "Prototype",
+            "Developer-ready design"
+          ],
+          "cta": "Dizayn buyurtma qilish"
+        },
+        {
+          "id": "crm-design",
+          "title": "CRM / Mobile App Design",
+          "price": "$400 – $1,000+",
+          "duration": "7–15 ish kuni",
+          "includes": [
+            "User Flow",
+            "Wireframe",
+            "UI/UX",
+            "Mobile screens",
+            "Desktop screens",
+            "Design System",
+            "Components",
+            "Interactive prototype",
+            "Figma source"
+          ],
+          "cta": "Dizayn buyurtma qilish"
+        }
+      ]
+    },
+    "mobileSection": {
+      "number": "04 / Mobile Development",
+      "title": "Mobile Development"
+    },
+    "mobile": {
+      "id": "mobile-app",
+      "title": "Mobile Application",
+      "description": "Android va iOS uchun zamonaviy mobil ilovalarni ishlab chiqamiz.",
+      "price": "$1,500 – $5,000+",
+      "duration": "1–3 oy+",
+      "includes": [
+        "UI/UX",
+        "Android",
+        "iOS",
+        "Backend API",
+        "Authentication",
+        "Push notifications",
+        "Payment",
+        "Admin panel",
+        "Analytics",
+        "App Store / Play Market preparation"
+      ],
+      "technologies": [
+        "React Native",
+        "Flutter"
+      ],
+      "cta": "Mobil ilova yaratish"
+    },
+    "mvp": {
+      "id": "startup-mvp",
+      "badge": "STARTUP",
+      "title": "Startup MVP",
+      "description": "G'oyangizni real ishlaydigan MVP mahsulotga aylantiramiz.",
+      "price": "$2,000 – $7,000+",
+      "duration": "1–3 oy+",
+      "includes": [
+        "Product analysis",
+        "UX/UI",
+        "Frontend",
+        "Backend",
+        "Database",
+        "Authentication",
+        "Admin panel",
+        "API",
+        "MVP deployment",
+        "Basic analytics"
+      ],
+      "suitableForLabel": "Mos keladi:",
+      "suitableFor": [
+        "Marketplace",
+        "Delivery",
+        "Taxi",
+        "Booking",
+        "CRM",
+        "SaaS",
+        "Education",
+        "Fintech",
+        "AI platform"
+      ],
+      "cta": "MVP boshlash"
+    },
+    "additional": {
+      "number": "05 / Qo'shimcha xizmatlar",
+      "title": "Qo'shimcha xizmatlar",
+      "items": [
+        {
+          "id": "optimization",
+          "title": "Website Optimization",
+          "price": "$100 – $300",
+          "description": "Loading speed, Core Web Vitals, image optimization, caching va frontend performance."
+        },
+        {
+          "id": "seo",
+          "title": "SEO Advanced",
+          "price": "$150 – $500",
+          "description": "Technical SEO, metadata, sitemap, robots.txt, structured data va search optimization."
+        },
+        {
+          "id": "support",
+          "title": "Technical Support",
+          "price": "$100 / oy dan",
+          "description": "Monitoring, bug fixing, technical assistance va kichik o'zgarishlar."
+        },
+        {
+          "id": "updates",
+          "title": "Website Updates",
+          "price": "$15 – $30 / soat",
+          "description": "Yangi sahifalar, UI o'zgarishlari, API integratsiyasi va funksional yangilanishlar."
+        },
+        {
+          "id": "payment",
+          "title": "Payment Integration",
+          "price": "$300 / har bir tizim",
+          "description": "Click, Payme, Uzum Bank, Stripe, PayPal va boshqa payment gateway'lar."
+        },
+        {
+          "id": "api",
+          "title": "API / Third-Party Integration",
+          "price": "$100 – $500+",
+          "description": "Google Maps, Telegram, SMS, Email, AI API, CRM, ERP va boshqa tashqi servislar."
+        },
+        {
+          "id": "telegram",
+          "title": "Telegram Integration",
+          "price": "$100 – $400+",
+          "description": "Telegram Bot, notification, order messages, lead generation va Telegram Mini App."
+        }
+      ]
+    },
+    "paymentTerms": {
+      "number": "06 / To'lov",
+      "title": "To'lov shartlari",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Start",
+          "description": "30–50% oldindan to'lov"
+        },
+        {
+          "step": "02",
+          "title": "Development",
+          "description": "Loyiha kelishilgan bosqichlar asosida ishlab chiqiladi."
+        },
+        {
+          "step": "03",
+          "title": "Launch",
+          "description": "Qolgan to'lov loyiha yakunida."
+        }
+      ],
+      "largeProject": {
+        "label": "Katta loyihalar uchun:",
+        "steps": [
+          "40% → Start",
+          "30% → Development",
+          "30% → Launch"
+        ]
+      }
+    },
+    "warranty": {
+      "number": "07 / Kafolat",
+      "title": "Texnik kafolat",
+      "text": "Har bir loyiha uchun 7–30 kun bepul texnik kafolat taqdim etiladi.",
+      "items": [
+        "Bug fixing",
+        "Technical assistance",
+        "Deployment assistance"
+      ],
+      "note": "Yangi funksiyalar va loyiha doirasidan tashqari o'zgarishlar alohida baholanadi."
+    },
+    "cta": {
+      "title": "Standart paketlarga sig'maydigan loyihangiz bormi?",
+      "description": "Biznesingiz uchun individual texnik yechim ishlab chiqamiz.",
+      "primary": "Loyihani muhokama qilish",
+      "secondary": "Telegram orqali bog'lanish"
+    },
+    "packages": [
+      {
+        "id": "start",
+        "name": "Start",
+        "price": "$500+",
+        "description": "Tailored for landing pages and startups. Includes essential UI/UX and fully responsive layout.",
+        "features": [
+          "Custom landing page design",
+          "Fully responsive layout",
+          "Essential UI/UX polish",
+          "Basic SEO setup",
+          "1 revision round"
+        ],
+        "cta": "Get Started"
+      },
+      {
+        "id": "optimal",
+        "name": "Optimal",
+        "price": "$1500+",
+        "description": "Ideal for growing businesses. Includes custom CRM, advanced admin panel, integrations, and 3 months support.",
+        "features": [
+          "Custom CRM or admin panel",
+          "Third-party integrations",
+          "Advanced UI/UX system",
+          "3 months post-launch support",
+          "Performance optimization"
+        ],
+        "cta": "Choose Optimal",
+        "highlightedLabel": "Popular"
+      },
+      {
+        "id": "enterprise",
+        "name": "Enterprise",
+        "price": "$4000+",
+        "description": "Full-scale custom ecosystems, dedicated AI integrations, top-tier security, and premium 24/7 support.",
+        "features": [
+          "Full custom digital ecosystem",
+          "Dedicated AI integrations",
+          "Enterprise-grade security",
+          "Premium 24/7 support",
+          "Dedicated project team"
+        ],
+        "cta": "Contact Us"
+      }
+    ],
+    "note": "Yakuniy narx loyiha hajmi va murakkabligiga qarab belgilanadi.",
+    "faq": [],
+    "tiers": {
+      "title": "Choose Your Plan",
+      "subtitle": "Every tier includes premium UI/UX, responsive design, and dedicated project management."
+    }
+  },
+  "faq": [
+    {
+      "id": "1",
+      "question": "Loyiha qancha vaqtda tayyor bo‘ladi?",
+      "answer": "Loyiha muddati murakkabligiga bog‘liq. Oddiy landing page — 2–4 hafta, korporativ sayt — 4–8 hafta, CRM yoki murakkab web-ilova — 8–16 hafta. Aniq muddatni loyiha talablarini muhokama qilgandan keyin belgilaymiz."
+    },
+    {
+      "id": "2",
+      "question": "Sayt narxi qanday belgilanadi?",
+      "answer": "Narx loyiha hajmi, funksiyalar soni, dizayn murakkabligi va integratsiyalarga qarab belgilanadi. Bepul maslahat va aniq smeta beramiz. Yakuniy narx shartnoma imzolashdan oldin kelishiladi."
+    },
+    {
+      "id": "3",
+      "question": "Saytga texnik xizmat ko‘rsatasizlarmi?",
+      "answer": "Ha, barcha loyihalarimiz uchun texnik qo‘llab-quvvatlash xizmati mavjud. Hosting monitoring, yangilanishlar, xavfsizlik patchlari va tezkor muammolarni hal qilish — 24/7 rejimda."
+    },
+    {
+      "id": "4",
+      "question": "Mobil versiya ham ishlab chiqiladimi?",
+      "answer": "Albatta. Barcha web-saytlarimiz responsive dizayn bilan yaratiladi — telefon, planshet va desktop qurilmalarda mukammal ko‘rinadi. Alohida mobil ilova ham ishlab chiqishimiz mumkin."
+    },
+    {
+      "id": "5",
+      "question": "CRM tizim yaratish mumkinmi?",
+      "answer": "Ha, CRM va ERP tizimlar bizning asosiy yo‘nalishlarimizdan biri. Mijozlar, buyurtmalar, xodimlar va hisobotlarni boshqarish uchun maxsus tizimlar yaratamiz. VITA CRM — o‘zimizning tayyor yechimimiz ham mavjud."
+    },
+    {
+      "id": "6",
+      "question": "Keyinchalik yangi funksiyalar qo‘shish mumkinmi?",
+      "answer": "Ha, barcha loyihalar kengaytirish uchun mo‘ljallangan arxitektura bilan yaratiladi. Yangi funksiyalar, modullar va integratsiyalar qo‘shish oson va tez amalga oshiriladi."
+    },
+    {
+      "id": "7",
+      "question": "To‘lov qanday amalga oshiriladi?",
+      "answer": "Standart to‘lov rejasi: 30% oldindan to‘lov (shartnoma imzolashda), 40% development jarayonida (o‘rtada), 30% loyiha topshirilganda. Bank o‘tkazmasi yoki naqd pul orqali to‘lash mumkin."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Aziz Rahimov",
+      "company": "Connecta Group",
+      "position": "Bosh direktor",
+      "content": "VITA SOFT jamoasi bizning CRM tizimimizni ajoyib darajada yaratdi. Savdo jarayonlarimiz to‘liq avtomatlashtirildi va jamoa samaradorligi sezilarli oshdi. Professional yondashuv va vaqtida yetkazish — aynan shu sababli ularni tavsiya qilaman.",
+      "initials": "AR"
+    },
+    {
+      "id": "2",
+      "name": "Dilnoza Karimova",
+      "company": "Smile Dental Clinic",
+      "position": "Bosh shifokor",
+      "content": "Stomatologiya CRM tizimi klinikamiz ishini butunlay o‘zgartirdi. Bemorlar onlayn bron qiladi, eslatmalar avtomatik keladi. Qog‘oz hujjatlarsiz ishlash — bu haqiqiy zamonaviylik. VITA SOFT ga minnatdormiz.",
+      "initials": "DK"
+    },
+    {
+      "id": "3",
+      "name": "Javohir Toshmatov",
+      "company": "TechStore UZ",
+      "position": "Marketing direktori",
+      "content": "E-commerce platformamiz ishga tushgandan keyin onlayn savdomiz 200% ga oshdi. Sayt tez, chiroyli va foydalanish uchun qulay. Click va Payme integratsiyasi mukammal ishlaydi. Eng yaxshi IT hamkorimiz.",
+      "initials": "JT"
+    },
+    {
+      "id": "4",
+      "name": "Malika Yusupova",
+      "company": "VITA Academy",
+      "position": "Ta'lim direktori",
+      "content": "Onlayn ta'lim platformasi orqali 5000 dan ortiq o‘quvchi bilan ishlayapmiz. Video darslar, testlar va sertifikatlar — hammasi bir joyda. VITA SOFT jamoasi bizning vizyonimizni aynan shunday amalga oshirdi.",
+      "initials": "MY"
+    }
+  ],
+  "about": {
+    "label": "ABOUT",
+    "title": "Biz — raqamli mahsulotlar yaratadigan jamoamiz.",
+    "description": "VITA SOFT — O‘zbekistonda bizneslar uchun zamonaviy web-platformalar, CRM tizimlar, mobil ilovalar va raqamli mahsulotlar yaratadigan texnologik kompaniya.",
+    "story": {
+      "label": "BIZNING HIKOYAMIZ",
+      "title": "2020-yildan beri raqamli transformatsiya",
+      "p1": "VITA SOFT 2020-yilda kichik, lekin ambitsiyali jamoa sifatida tashkil etildi. Maqsadimiz aniq edi — O‘zbekistondagi bizneslarga dunyo standartidagi raqamli mahsulotlar yaratishda yordam berish.",
+      "p2": "Bugungi kunda 50 dan ortiq loyiha, 30 dan ortiq doimiy mijoz va tajribali mutaxassislar jamoasi bilan faoliyat yuritamiz. Biz shunchaki sayt yaratmaymiz — biznes muammolarini tahlil qilib, texnologik yechimlar ishlab chiqamiz.",
+      "p3": "Har bir loyiha biz uchun hamkorlik. Mijozlarimiz bilan birgalikda g‘oyalarni amalga oshiramiz, mahsulotlarni ishga tushiramiz va doimiy qo‘llab-quvvatlaymiz."
+    },
+    "mission": {
+      "label": "MISSIYA",
+      "title": "Biznesingiz uchun zamonaviy raqamli yechimlar yaratamiz",
+      "description": "Har bir biznes noyob. Biz shablon yechimlar emas, balki biznesingizga mos maxsus raqamli mahsulotlar yaratamiz — web-platformalardan tortib CRM tizimlargacha."
+    },
+    "vision": {
+      "label": "VIZIYA",
+      "title": "O‘zbekistonning eng ishonchli IT hamkori bo‘lish",
+      "description": "2030-yilga qadar O‘zbekistonda raqamli mahsulotlar sohasida yetakchi kompaniyalardan biri bo‘lish. Innovatsiya, sifat va mijozlar muvaffaqiyati — bizning yo‘l xaritamiz."
+    },
+    "values": {
+      "label": "QADRIYATLAR",
+      "title": "Biz nimaga ishonamiz"
+    },
+    "timeline": {
+      "label": "TARIX",
+      "title": "Rivojlanish bosqichlari"
+    },
+    "team": {
+      "label": "JAMOA",
+      "title": "Professional mutaxassislar"
+    },
+    "whyUs": {
+      "label": "NIMA UCHUN BIZ?",
+      "title": "Mijozlar VITA SOFT ni tanlashadi"
+    },
+    "tech": {
+      "label": "TEXNOLOGIYALAR",
+      "title": "Zamonaviy texnologik stack",
+      "cta": "Hamkorlikni boshlash"
+    }
+  },
+  "contact": {
+    "label": "CONTACT",
+    "title": "Loyihangizni birgalikda boshlaymiz.",
+    "description": "Loyiha haqida gapirib, eng mos yechimni topamiz. 24 soat ichida javob beramiz.",
+    "infoTitle": "Aloqa ma’lumotlari",
+    "infoDescription": "Quyidagi kanallar orqali biz bilan bog‘laning.",
+    "telegram": "Telegram",
+    "phone": "Telefon",
+    "email": "Email",
+    "address": "Manzil",
+    "responseTitle": "24 soat ichida javob beramiz.",
+    "responseDescription": "So‘rovingizni yuboring — mutaxassislarimiz tez orada siz bilan bog‘lanadi.",
+    "mapLocation": "Toshkent, O‘zbekiston",
+    "stepsLabel": "KEYINGI QADAMLAR",
+    "steps": [
+      "So‘rov yuboring",
+      "24 soat ichida bog‘lanamiz",
+      "Bepul maslahat va smeta",
+      "Shartnoma va ishni boshlash"
+    ],
+    "formTitle": "Loyiha so‘rovi",
+    "formDescription": "Formani to‘ldiring — tez orada javob beramiz."
+  },
+  "servicesPage": {
+    "label": "SERVICES",
+    "title": "Biznesingiz uchun to‘liq IT xizmatlar",
+    "description": "G‘oyadan tortib ishga tushirishgacha — web-platformalar, CRM tizimlar, mobil ilovalar va avtomatlashtirish yechimlari.",
+    "whoFor": "KIMLAR UCHUN",
+    "whatWeBuild": "NIMA YARATAMIZ",
+    "features": "XUSUSIYATLAR",
+    "benefits": "AFZALLIKLAR",
+    "estimatedPeriod": "Taxminiy muddat:",
+    "getConsultation": "Maslahat olish"
+  },
+  "portfolioPage": {
+    "label": "PORTFOLIO",
+    "title": "Portfolio",
+    "description": "Bizneslar uchun yaratgan raqamli mahsulotlarimiz.",
+    "resultsLabel": " ta loyiha ko‘rsatilmoqda"
+  },
+  "portfolioDetail": {
+    "back": "Portfolio ga qaytish",
+    "problem": "MUAMMO",
+    "solution": "YECHIM",
+    "result": "NATIJA",
+    "featuresLabel": "XUSUSIYATLAR",
+    "featuresTitle": "Loyiha imkoniyatlari",
+    "processLabel": "JARAYON",
+    "processTitle": "Rivojlanish jarayoni",
+    "resultsLabel": "NATIJALAR",
+    "resultsTitle": "Erishilgan natijalar",
+    "ctaTitle": "O‘xshash loyiha kerakmi?",
+    "ctaDescription": "Biznesingiz uchun maxsus yechim yaratishga tayyormiz.",
+    "ctaPrimary": "Loyiha haqida gaplashamiz",
+    "ctaSecondary": "Boshqa loyihalar",
+    "liveDemo": "Live demo",
+    "notFound": "Loyiha topilmadi"
+  },
+  "notFound": {
+    "label": "404",
+    "title": "Sahifa topilmadi",
+    "description": "Qidirayotgan sahifangiz mavjud emas yoki ko‘chirilgan.",
+    "backHome": "Bosh sahifaga qaytish"
+  },
+  "form": {
+    "validation": {
+      "name": "Ism kamida 2 ta harfdan iborat bo‘lishi kerak",
+      "phone": "Telefon raqamini to‘g‘ri kiriting",
+      "phoneFormat": "Telefon raqam formati noto‘g‘ri",
+      "email": "Email manzilini to‘g‘ri kiriting",
+      "service": "Xizmat turini tanlang",
+      "budget": "Byudjetni tanlang",
+      "message": "Loyiha haqida kamida 20 ta harf yozing"
+    },
+    "labels": {
+      "name": "Ism",
+      "phone": "Telefon raqam",
+      "email": "Email",
+      "company": "Kompaniya",
+      "service": "Xizmat turi",
+      "budget": "Taxminiy byudjet",
+      "message": "Loyiha haqida"
+    },
+    "placeholders": {
+      "name": "Ismingiz",
+      "phone": "+998 90 123 45 67",
+      "email": "email@kompaniya.uz",
+      "company": "Kompaniya nomi (ixtiyoriy)",
+      "message": "Loyihangiz haqida batafsil yozing..."
+    },
+    "select": {
+      "placeholder": "Tanlang",
+      "serviceOptions": [
+        "Web dasturlash",
+        "CRM / ERP tizim",
+        "E-commerce",
+        "Mobil ilova",
+        "UI/UX dizayn",
+        "Telegram Mini App",
+        "Avtomatlashtirish",
+        "Boshqa"
+      ],
+      "budgetOptions": [
+        "3–7 mln so‘m",
+        "7–15 mln so‘m",
+        "15–30 mln so‘m",
+        "30+ mln so‘m",
+        "Aniqlanmagan"
+      ]
+    },
+    "success": {
+      "title": "So‘rovingiz qabul qilindi!",
+      "description": "24 soat ichida siz bilan bog‘lanamiz. Rahmat!",
+      "newRequest": "Yangi so‘rov yuborish"
+    },
+    "submit": "So‘rov yuborish"
+  }
+}

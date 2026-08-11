@@ -1,0 +1,1773 @@
+{
+  "meta": {
+    "siteTitle": "VITA SOFT — Digital Products & IT Solutions",
+    "siteDescription": "VITA SOFT is an IT company that builds modern websites, CRM, ERP, mobile apps, and digital products for businesses.",
+    "siteTitleTemplate": "%s | VITA SOFT",
+    "pages": {
+      "about": {
+        "title": "About Us",
+        "description": "VITA SOFT — a professional IT team building digital products. Learn about our mission, values, and experience."
+      },
+      "services": {
+        "title": "Services",
+        "description": "VITA SOFT services — web development, CRM/ERP, e-commerce, mobile apps, UI/UX design, automation, and technical support."
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "VITA SOFT portfolio — CRM, web platforms, mobile apps, and automation projects built for businesses."
+      },
+      "pricing": {
+        "title": "Pricing",
+        "description": "VITA SOFT pricing — flexible packages for websites, corporate platforms, and custom IT solutions."
+      },
+      "contact": {
+        "title": "Contact",
+        "description": "Get in touch with VITA SOFT — let's discuss your project. We respond within 24 hours."
+      },
+      "notFound": {
+        "title": "Page Not Found",
+        "description": "The page you're looking for doesn't exist or has been moved."
+      }
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Service",
+    "portfolio": "Portfolio",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "connect": "Start Project",
+    "ariaMainNav": "Main navigation",
+    "ariaMobileNav": "Mobile navigation",
+    "ariaOpenMenu": "Open menu",
+    "ariaCloseMenu": "Close menu",
+    "ariaLanguage": "Choose language",
+    "ariaTheme": "Choose theme"
+  },
+  "footer": {
+    "tagline": "Premier digital agency crafting elegant, high-performing software for the modern future.",
+    "pages": "Pages",
+    "services": "Services",
+    "contact": "Contact",
+    "copyright": "© 2026 VITA SOFT. All rights reserved.",
+    "madeBy": "Made with precision by VITA SOFT.",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "dribbble": "Dribbble",
+    "newsletter": {
+      "title": "Stay in the loop",
+      "description": "Product insights, case studies, and studio updates — no spam.",
+      "placeholder": "Your email address",
+      "button": "Subscribe"
+    }
+  },
+  "serviceLinks": [
+    {
+      "slug": "web-development",
+      "label": "Web Development"
+    },
+    {
+      "slug": "crm-erp",
+      "label": "CRM / ERP"
+    },
+    {
+      "slug": "e-commerce",
+      "label": "E-commerce"
+    },
+    {
+      "slug": "mobile-apps",
+      "label": "Mobile Apps"
+    },
+    {
+      "slug": "ui-ux-design",
+      "label": "UI/UX Design"
+    },
+    {
+      "slug": "telegram-mini-apps",
+      "label": "Telegram Mini Apps"
+    }
+  ],
+  "buttons": {
+    "startProject": "Start Project",
+    "viewPortfolio": "View Portfolio",
+    "viewAll": "All Services",
+    "learnMore": "Learn More",
+    "getConsultation": "Get a Consultation",
+    "sendRequest": "Send Request",
+    "submitting": "Sending...",
+    "newRequest": "Send New Request",
+    "startPartnership": "Start Partnership",
+    "similarProject": "Need a similar project?",
+    "otherProjects": "Other Projects",
+    "backToPortfolio": "Back to Portfolio",
+    "backHome": "Back to Home",
+    "choose": "Choose",
+    "start": "Get Started",
+    "popular": "Most Popular"
+  },
+  "theme": {
+    "light": "Light mode",
+    "dark": "Dark mode",
+    "system": "System theme"
+  },
+  "cursor": {
+    "view": "VIEW",
+    "explore": "EXPLORE"
+  },
+  "heroVisual": {
+    "projects": "Projects",
+    "uptime": "Uptime",
+    "support": "Support",
+    "mobileApp": "MOBILE APP"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Premier Digital Agency · Software Solutions",
+      "title1": "We offer",
+      "title2": "",
+      "title2Gold": "digital solutions",
+      "title2Rest": "",
+      "title3": "",
+      "description": "Vita Soft is a premier digital agency that transforms complex problems into elegant, high-performing digital realities. We build professional code with breathtaking design.",
+      "ctaPrimary": "Get Started",
+      "ctaSecondary": "Learn More"
+    },
+    "trust": {
+      "label": "01 / Trust",
+      "title": "Why",
+      "titleAccent": "VITA SOFT?",
+      "description": "We don't just build websites — we develop digital products and technology solutions for your business."
+    },
+    "services": {
+      "label": "02 / Services",
+      "title": "What do we do?",
+      "action": "All Services"
+    },
+    "process": {
+      "label": "03 / Process",
+      "title": "How is a project built?",
+      "description": "Every project follows a transparent, structured process — from analysis to launch."
+    },
+    "portfolio": {
+      "label": "04 / Portfolio",
+      "title": "Our Featured Work",
+      "action": "All Projects"
+    },
+    "technologies": {
+      "label": "05 / Technologies",
+      "title": "Technologies we use",
+      "categories": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "database": "Database",
+        "devops": "DevOps"
+      }
+    },
+    "testimonials": {
+      "label": "06 / Testimonials",
+      "title": "What our clients say",
+      "starsAria": "{count} stars"
+    },
+    "faq": {
+      "label": "07 / FAQ",
+      "title": "Frequently asked questions",
+      "description": "Didn't find an answer?",
+      "contactLink": "Contact us"
+    },
+    "cta": {
+      "label": "08 / Contact",
+      "title": "You have an idea.",
+      "titleAccent": "We have the experience to bring it to life.",
+      "description": "Get in touch to discuss your project.",
+      "ctaPrimary": "Let's talk about your project",
+      "ctaSecondary": "Message us on Telegram",
+      "phoneLabel": "Phone",
+      "formLabel": "Contact form",
+      "formHint": "Send a request"
+    }
+  },
+  "company": {
+    "stats": [
+      {
+        "label": "Projects"
+      },
+      {
+        "label": "Clients"
+      },
+      {
+        "label": "Years of Experience"
+      },
+      {
+        "label": "Technologies"
+      },
+      {
+        "label": "Support"
+      }
+    ],
+    "heroStats": [
+      {
+        "label": "Successful Projects"
+      },
+      {
+        "label": "Client Satisfaction"
+      },
+      {
+        "label": "Tech Experts"
+      }
+    ],
+    "values": [
+      {
+        "title": "Uncompromising Quality",
+        "description": "Built with a cutting-edge tech stack — React, Next.js, and AI tools. Every deliverable meets the highest standards."
+      },
+      {
+        "title": "Radical Transparency",
+        "description": "Clients are involved in every step of the agile workflow. Open communication, clear timelines, and honest pricing."
+      },
+      {
+        "title": "Continuous Innovation",
+        "description": "We reject standard templates for tailor-made creative systems that push your business forward."
+      },
+      {
+        "title": "Accountability",
+        "description": "We deliver on time and to the promised standard. We take full ownership of every project."
+      },
+      {
+        "title": "Speed",
+        "description": "Agile methodology and an experienced team — fast results, fast iteration, fast improvement."
+      },
+      {
+        "title": "Partnership",
+        "description": "The client is our partner. Together we create ideas, build products, and achieve success."
+      }
+    ],
+    "timeline": [
+      {
+        "year": "2020",
+        "title": "Founded",
+        "description": "VITA SOFT started as a small team in Tashkent."
+      },
+      {
+        "year": "2021",
+        "title": "First major projects",
+        "description": "10+ projects successfully delivered in CRM and corporate websites."
+      },
+      {
+        "year": "2022",
+        "title": "Team expansion",
+        "description": "Developers, designers, and project managers joined the team."
+      },
+      {
+        "year": "2023",
+        "title": "Product direction",
+        "description": "We launched our own products, including VITA CRM and VITA Academy."
+      },
+      {
+        "year": "2024",
+        "title": "50+ projects",
+        "description": "50+ projects, 30+ recurring clients — a recognized partner in Uzbekistan's IT market."
+      },
+      {
+        "year": "2025",
+        "title": "New chapter",
+        "description": "Expanding into Telegram Mini Apps, mobile apps, and enterprise solutions."
+      }
+    ],
+    "team": [
+      {
+        "name": "Sardor Alimov",
+        "role": "CEO & Founder",
+        "description": "10+ years of IT experience. Product strategy and business development.",
+        "initials": "SA"
+      },
+      {
+        "name": "Nilufar Qodirova",
+        "role": "Lead UI/UX Designer",
+        "description": "User-centered design and design system specialist.",
+        "initials": "NQ"
+      },
+      {
+        "name": "Bobur Mirzayev",
+        "role": "Lead Developer",
+        "description": "Full-stack development, architecture, and technical leadership.",
+        "initials": "BM"
+      },
+      {
+        "name": "Kamola Ergasheva",
+        "role": "Project Manager",
+        "description": "Project management, client communication, and process oversight.",
+        "initials": "KE"
+      }
+    ],
+    "whyChooseUs": [
+      "We analyze business problems in depth",
+      "Custom solutions — not templates",
+      "We use modern, reliable technologies",
+      "Transparent process and regular reporting",
+      "Support after launch",
+      "Solutions tailored to the Uzbekistan market"
+    ],
+    "contactInfo": {
+      "address": "Tashkent, Uzbekistan"
+    }
+  },
+  "services": {
+    "home": [
+      {
+        "number": "01",
+        "slug": "web-development",
+        "title": "Web & Mobile Development",
+        "description": "Custom CRMs, scalable corporate sites, and fast iOS/Android applications built for performance.",
+        "technologies": [
+          "React",
+          "Next.js",
+          "React Native"
+        ]
+      },
+      {
+        "number": "02",
+        "slug": "ui-ux-design",
+        "title": "UI/UX Design",
+        "description": "Crafting delightful, intuitive, and modern glassmorphic interfaces that users love.",
+        "technologies": [
+          "Figma",
+          "UI/UX",
+          "Design System"
+        ]
+      },
+      {
+        "number": "03",
+        "slug": "automation",
+        "title": "AI & Automation",
+        "description": "Integrating smart AI layers and workflows to automate redundant business operations.",
+        "technologies": [
+          "AI Tools",
+          "n8n",
+          "API"
+        ]
+      },
+      {
+        "number": "04",
+        "slug": "support",
+        "title": "IT Consulting & Support",
+        "description": "Full architectural audits, advanced security setups, and 24/7 maintenance for peace of mind.",
+        "technologies": [
+          "DevOps",
+          "Security",
+          "24/7"
+        ]
+      }
+    ],
+    "all": [
+      {
+        "id": "web-development",
+        "number": "01",
+        "slug": "web-development",
+        "title": "Web Development",
+        "shortDescription": "Corporate websites, landing pages, and web platforms",
+        "description": "Web development is the foundation of your business's digital presence. VITA SOFT builds fast, secure, and SEO-optimized websites and platforms using modern technologies.",
+        "whoNeedsIt": "Companies that need a corporate identity, startups launching a new product, and businesses looking to expand their online presence.",
+        "whatWeBuild": [
+          "Corporate websites",
+          "Landing pages and marketing pages",
+          "Admin panels and management systems",
+          "Complex web applications (SaaS)",
+          "Multi-language platforms"
+        ],
+        "features": [
+          "Responsive design — perfect on every device",
+          "SEO-optimized structure",
+          "Fast loading and high performance",
+          "Security standards (HTTPS, XSS protection)",
+          "CMS integration",
+          "Analytics and tracking"
+        ],
+        "benefits": [
+          "Professional digital presence",
+          "Increased customer trust",
+          "Improved marketing efficiency",
+          "Automated business processes"
+        ],
+        "period": "2–8 weeks",
+        "technologies": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Node.js",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "id": "crm-erp",
+        "number": "02",
+        "slug": "crm-erp",
+        "title": "CRM / ERP Systems",
+        "shortDescription": "Systems that centralize business processes",
+        "description": "CRM and ERP systems unite all your business processes on a single platform. Centralized management of customers, orders, staff, and financial data.",
+        "whoNeedsIt": "Companies that need structured customer database management, sales and service businesses, and multi-branch organizations.",
+        "whatWeBuild": [
+          "Customer management (CRM)",
+          "Orders and invoicing system",
+          "Staff and task management",
+          "Reporting and analytics dashboard",
+          "ERP modules (warehouse, finance, HR)"
+        ],
+        "features": [
+          "Role-based access control",
+          "Real-time notifications",
+          "Reporting and export",
+          "API integration",
+          "Mobile version",
+          "Automatic backup"
+        ],
+        "benefits": [
+          "40–60% faster processes",
+          "Centralized data",
+          "Reduced errors",
+          "Real-time data for decision-making"
+        ],
+        "period": "6–16 weeks",
+        "technologies": [
+          "Node.js",
+          "NestJS",
+          "PostgreSQL",
+          "Redis",
+          "React",
+          "Docker"
+        ]
+      },
+      {
+        "id": "e-commerce",
+        "number": "03",
+        "slug": "e-commerce",
+        "title": "E-commerce",
+        "shortDescription": "Online stores and sales platforms",
+        "description": "Fully functional online stores with product catalog, cart, checkout, delivery, and admin panel. Adapted for Uzbekistan and international markets.",
+        "whoNeedsIt": "Brands starting online sales, businesses digitizing an existing store, and companies building a marketplace.",
+        "whatWeBuild": [
+          "B2C and B2B online stores",
+          "Marketplace platforms",
+          "Product and inventory management",
+          "Payment system integration",
+          "Order tracking system"
+        ],
+        "features": [
+          "Product filtering and search",
+          "Multiple payment methods (Click, Payme, Uzcard)",
+          "Order status tracking",
+          "Discounts and promo codes",
+          "SEO-optimized product pages",
+          "Analytics and sales reports"
+        ],
+        "benefits": [
+          "24/7 online sales",
+          "Customers without geographic limits",
+          "Automated order processing",
+          "Sales data analysis"
+        ],
+        "period": "4–12 weeks",
+        "technologies": [
+          "Next.js",
+          "Node.js",
+          "PostgreSQL",
+          "Redis",
+          "Stripe",
+          "Click API"
+        ]
+      },
+      {
+        "id": "mobile-apps",
+        "number": "04",
+        "slug": "mobile-apps",
+        "title": "Mobile Apps",
+        "shortDescription": "iOS and Android apps",
+        "description": "Modern mobile apps with user experience, speed, and security as priorities. Native and cross-platform solutions.",
+        "whoNeedsIt": "Businesses serving a mobile audience, delivery and service platforms, and companies needing internal corporate apps.",
+        "whatWeBuild": [
+          "iOS and Android apps",
+          "Cross-platform apps (React Native)",
+          "Push notification system",
+          "Offline mode",
+          "Mobile payment integration"
+        ],
+        "features": [
+          "Intuitive UI/UX",
+          "Fast loading",
+          "Biometric authentication",
+          "Real-time updates",
+          "App Store and Google Play publishing",
+          "Analytics integration"
+        ],
+        "benefits": [
+          "Constant connection with customers",
+          "Stronger brand loyalty",
+          "Marketing via push notifications",
+          "Growth in mobile traffic and conversion"
+        ],
+        "period": "6–14 weeks",
+        "technologies": [
+          "React Native",
+          "Expo",
+          "TypeScript",
+          "Firebase",
+          "Node.js"
+        ]
+      },
+      {
+        "id": "ui-ux-design",
+        "number": "05",
+        "slug": "ui-ux-design",
+        "title": "UI/UX Design",
+        "shortDescription": "User-centered interface design",
+        "description": "UI/UX design is your product's first and most important touchpoint with users. We create interfaces that drive conversion through research, prototyping, and visual design.",
+        "whoNeedsIt": "Startups building a new product, companies refreshing an existing interface, and businesses improving user experience.",
+        "whatWeBuild": [
+          "User research and personas",
+          "Wireframes and prototypes",
+          "UI design and design system",
+          "Usability testing",
+          "Design documentation (handoff)"
+        ],
+        "features": [
+          "User research",
+          "Interactive prototypes",
+          "Responsive design",
+          "Design system creation",
+          "Accessibility standards",
+          "Developer handoff"
+        ],
+        "benefits": [
+          "Higher conversion rates",
+          "Improved user satisfaction",
+          "Shorter development time",
+          "Stronger brand identity"
+        ],
+        "period": "2–6 weeks",
+        "technologies": [
+          "Figma",
+          "FigJam",
+          "Principle",
+          "Maze"
+        ]
+      },
+      {
+        "id": "telegram-mini-apps",
+        "number": "06",
+        "slug": "telegram-mini-apps",
+        "title": "Telegram Mini Apps",
+        "shortDescription": "Mini apps that run inside Telegram",
+        "description": "Telegram Mini Apps — a fast-growing channel in Uzbekistan. Ordering, payments, booking, and customer communication — all inside Telegram.",
+        "whoNeedsIt": "Businesses serving a Telegram audience, restaurants and service providers, and startups that need a fast MVP.",
+        "whatWeBuild": [
+          "Ordering and booking systems",
+          "Payment integration",
+          "Catalog and product display",
+          "Customer profiles",
+          "Admin bot and panel"
+        ],
+        "features": [
+          "Telegram authentication",
+          "Inline and reply keyboard",
+          "Payments (Telegram Payments)",
+          "Push messages",
+          "Analytics",
+          "Fast launch"
+        ],
+        "benefits": [
+          "Lower development cost",
+          "Access to Telegram's audience",
+          "Fast MVP and testing",
+          "No installation required"
+        ],
+        "period": "2–6 weeks",
+        "technologies": [
+          "Telegram Bot API",
+          "React",
+          "Node.js",
+          "WebApp API"
+        ]
+      },
+      {
+        "id": "automation",
+        "number": "07",
+        "slug": "automation",
+        "title": "Automation",
+        "shortDescription": "Business process automation",
+        "description": "Save your team's time by automating repetitive tasks. Integrations, webhooks, and workflow solutions.",
+        "whoNeedsIt": "Companies with many manual processes, businesses that need to connect different systems, and organizations looking to cut operational costs.",
+        "whatWeBuild": [
+          "Workflow automation",
+          "System integration",
+          "Email and SMS automation",
+          "Report generation",
+          "Data synchronization"
+        ],
+        "features": [
+          "Zapier/n8n integration",
+          "Custom webhook solutions",
+          "Scheduled tasks",
+          "Error handling and monitoring",
+          "Log and audit trail",
+          "Scalable architecture"
+        ],
+        "benefits": [
+          "Up to 80% less manual work",
+          "Minimized errors",
+          "24/7 operation",
+          "Lower operational costs"
+        ],
+        "period": "2–8 weeks",
+        "technologies": [
+          "n8n",
+          "Node.js",
+          "Python",
+          "Webhooks",
+          "REST API"
+        ]
+      },
+      {
+        "id": "api-backend",
+        "number": "08",
+        "slug": "api-backend",
+        "title": "API / Backend",
+        "shortDescription": "Robust backend and API solutions",
+        "description": "Scalable, secure, and fast backend systems. REST and GraphQL APIs, microservice architecture, real-time features.",
+        "whoNeedsIt": "Companies needing a mobile app backend, businesses requiring third-party integrations, and platforms that need high-load readiness.",
+        "whatWeBuild": [
+          "RESTful and GraphQL APIs",
+          "Microservice architecture",
+          "Real-time WebSocket",
+          "Authentication and authorization",
+          "Database design and optimization"
+        ],
+        "features": [
+          "JWT and OAuth authentication",
+          "Rate limiting",
+          "API documentation (Swagger)",
+          "Caching (Redis)",
+          "Queue systems",
+          "Monitoring and logging"
+        ],
+        "benefits": [
+          "Scalable architecture",
+          "Secure data management",
+          "Fast API responses",
+          "Easy integration"
+        ],
+        "period": "4–12 weeks",
+        "technologies": [
+          "Node.js",
+          "NestJS",
+          "Express",
+          "PostgreSQL",
+          "MongoDB",
+          "Redis",
+          "Docker"
+        ]
+      },
+      {
+        "id": "seo",
+        "number": "09",
+        "slug": "seo",
+        "title": "SEO Optimization",
+        "shortDescription": "Higher rankings in search engines",
+        "description": "Technical SEO, content strategy, and performance optimization — a comprehensive approach to ranking higher on Google and Yandex.",
+        "whoNeedsIt": "Businesses looking to grow organic traffic, companies launching a new site, and players in competitive industries.",
+        "whatWeBuild": [
+          "Technical SEO audit",
+          "On-page optimization",
+          "Site speed optimization",
+          "Structured data (Schema.org)",
+          "SEO monitoring dashboard"
+        ],
+        "features": [
+          "Core Web Vitals optimization",
+          "Meta tags and sitemap",
+          "Mobile-first indexing",
+          "Internal linking strategy",
+          "Analytics setup",
+          "Monthly SEO reports"
+        ],
+        "benefits": [
+          "Organic traffic growth",
+          "Increased brand visibility",
+          "Lower marketing spend",
+          "Long-term results"
+        ],
+        "period": "Ongoing / 1–4 week audit",
+        "technologies": [
+          "Google Search Console",
+          "Lighthouse",
+          "Next.js SEO",
+          "Schema.org"
+        ]
+      },
+      {
+        "id": "support",
+        "number": "10",
+        "slug": "support",
+        "title": "Technical Support",
+        "shortDescription": "24/7 technical service and monitoring",
+        "description": "Ongoing support for launched projects — updates, security patches, performance monitoring, and rapid issue resolution.",
+        "whoNeedsIt": "All businesses with an active website or app, companies with critical systems, and organizations without an in-house IT team.",
+        "whatWeBuild": [
+          "24/7 monitoring system",
+          "Backup and disaster recovery",
+          "Security updates",
+          "Performance optimization",
+          "Feature updates and improvements"
+        ],
+        "features": [
+          "Uptime monitoring (99.9%)",
+          "Fast response time (SLA)",
+          "Monthly reports",
+          "Priority support",
+          "Security audit",
+          "Database maintenance"
+        ],
+        "benefits": [
+          "Business continuity",
+          "Security assurance",
+          "Rapid issue resolution",
+          "Continuous improvement"
+        ],
+        "period": "Ongoing contract",
+        "technologies": [
+          "Docker",
+          "CI/CD",
+          "Sentry",
+          "Grafana",
+          "GitHub Actions"
+        ]
+      }
+    ],
+    "process": [
+      {
+        "number": "01",
+        "title": "Analysis",
+        "description": "We study your business, goals, and audience in depth. We analyze competitors and define technical requirements."
+      },
+      {
+        "number": "02",
+        "title": "Strategy",
+        "description": "We define product strategy, functional requirements, and a project roadmap. We plan timeline and budget."
+      },
+      {
+        "number": "03",
+        "title": "Design",
+        "description": "We create wireframes, prototypes, and UI design. We test and validate the user experience."
+      },
+      {
+        "number": "04",
+        "title": "Development",
+        "description": "Iterative development using Agile methodology. We share progress weekly and incorporate feedback."
+      },
+      {
+        "number": "05",
+        "title": "Testing",
+        "description": "Functional, performance, and security testing. We test across devices and browsers."
+      },
+      {
+        "number": "06",
+        "title": "Launch",
+        "description": "Deploy to production, configure DNS, SSL certificates, and enable monitoring systems."
+      },
+      {
+        "number": "07",
+        "title": "Support",
+        "description": "We're with you after launch — technical assistance, updates, and continuous improvement."
+      }
+    ],
+    "trust": [
+      {
+        "number": "01",
+        "title": "Custom Approach",
+        "description": "Every project is unique. No template solutions — we create custom architecture and design tailored to your business."
+      },
+      {
+        "number": "02",
+        "title": "Modern Technologies",
+        "description": "We work with the latest and most reliable technologies such as Next.js, React, and TypeScript."
+      },
+      {
+        "number": "03",
+        "title": "Fast Development",
+        "description": "Agile methodology and an experienced team — we deliver your project on time and with quality."
+      },
+      {
+        "number": "04",
+        "title": "Transparent Process",
+        "description": "Progress reports at every stage, open communication, and no surprise costs."
+      },
+      {
+        "number": "05",
+        "title": "High Quality",
+        "description": "Code quality, performance, and security — we apply the highest standards on every project."
+      },
+      {
+        "number": "06",
+        "title": "Technical Support",
+        "description": "24/7 technical assistance, monitoring, and ongoing updates after launch."
+      }
+    ]
+  },
+  "projects": {
+    "filters": [
+      {
+        "value": "all",
+        "label": "All"
+      },
+      {
+        "value": "web",
+        "label": "Web"
+      },
+      {
+        "value": "crm",
+        "label": "CRM"
+      },
+      {
+        "value": "ecommerce",
+        "label": "E-commerce"
+      },
+      {
+        "value": "mobile",
+        "label": "Mobile"
+      },
+      {
+        "value": "design",
+        "label": "Design"
+      },
+      {
+        "value": "automation",
+        "label": "Automation"
+      }
+    ],
+    "items": [
+      {
+        "slug": "payno",
+        "number": "01",
+        "title": "Payno",
+        "categoryLabel": "FinTech / Dashboard",
+        "shortDescription": "Premium personal finance dashboard with sleek charts, financial cards, and glass panels.",
+        "description": "Payno is a premium personal finance dashboard that helps users track spending, savings, and investments through an elegant glassmorphic interface.",
+        "result": "User engagement increased by 60%",
+        "problem": "Users struggled to visualize finances across fragmented banking apps with outdated, cluttered interfaces.",
+        "solution": "We designed and built a unified finance dashboard with real-time charts, smart categorization, and glass UI components.",
+        "features": [
+          "Interactive spending charts",
+          "Glassmorphic financial cards",
+          "Budget tracking & alerts",
+          "Multi-account aggregation",
+          "Dark & light themes",
+          "Mobile-responsive dashboard"
+        ],
+        "process": [
+          "User research & finance workflows",
+          "Glass UI design system",
+          "Dashboard architecture",
+          "Chart & data visualization",
+          "Beta testing with real users",
+          "Production launch"
+        ],
+        "results": [
+          "60% increase in daily active users",
+          "Average session time doubled",
+          "4.9★ app store rating",
+          "Featured in design community showcases"
+        ]
+      },
+      {
+        "slug": "edusmart",
+        "number": "02",
+        "title": "EduSmart",
+        "categoryLabel": "EdTech / Platform",
+        "shortDescription": "Automated education ecosystem with dynamic quiz results, data views, and student progress tracking.",
+        "description": "EduSmart is an automated education platform connecting teachers, students, and administrators through quizzes, analytics, and progress dashboards.",
+        "result": "5000+ students onboarded",
+        "problem": "Educational institutions lacked a unified platform for quizzes, grading, and progress analytics across online and offline learning.",
+        "solution": "We built an end-to-end EdTech ecosystem with automated quiz grading, student dashboards, and real-time performance tracking.",
+        "features": [
+          "Dynamic quiz engine",
+          "Student progress dashboards",
+          "Automated grading system",
+          "Teacher admin panel",
+          "Analytics & reporting",
+          "Certificate generation"
+        ],
+        "process": [
+          "Learning workflow analysis",
+          "Platform architecture design",
+          "UI/UX for students & teachers",
+          "Quiz engine development",
+          "Pilot with 3 institutions",
+          "Full-scale rollout"
+        ],
+        "results": [
+          "5000+ active students",
+          "Grading time reduced by 70%",
+          "Teacher satisfaction score: 96%",
+          "Tripled course completion rates"
+        ]
+      },
+      {
+        "slug": "stomatologiya-crm",
+        "number": "03",
+        "title": "Dental CRM",
+        "categoryLabel": "Healthcare",
+        "shortDescription": "A specialized CRM for dental clinics — patient, appointment, and treatment history management.",
+        "description": "A CRM system specialized for dentistry. Patient records, appointment scheduling, treatment plans, and financial reports.",
+        "result": "Number of appointments increased by 30%",
+        "problem": "The clinic kept patient records on paper and booked appointments by phone. No-show rates were high.",
+        "solution": "A specialized dental CRM was built — online booking, automatic reminders, and complete patient history.",
+        "features": [
+          "Patient records and history",
+          "Online appointment booking",
+          "Telegram reminders",
+          "Treatment plans and prescriptions",
+          "Financial reports",
+          "Doctor schedules"
+        ],
+        "process": [
+          "We observed clinic workflows",
+          "We defined specialized CRM requirements",
+          "We created design and prototypes",
+          "We developed the system",
+          "We integrated the Telegram bot",
+          "We trained staff"
+        ],
+        "results": [
+          "No-show rates dropped by 50%",
+          "Number of appointments increased by 30%",
+          "Paperless operations",
+          "Patient satisfaction improved"
+        ]
+      },
+      {
+        "slug": "connecta-crm",
+        "number": "04",
+        "title": "Connecta CRM",
+        "categoryLabel": "Business",
+        "shortDescription": "CRM for sales and service companies — lead, deal, and team management.",
+        "description": "Connecta CRM is built for B2B sales companies. Lead tracking, sales pipeline, team KPIs, and integrations.",
+        "result": "Sales conversion increased by 25%",
+        "problem": "The sales team tracked leads in Excel and deal status was unclear. Managers couldn't see progress in real time.",
+        "solution": "A sales-focused CRM platform was created — pipeline visualization, automatic lead assignment, and KPI dashboard.",
+        "features": [
+          "Lead and contact management",
+          "Sales pipeline (Kanban)",
+          "Automatic lead assignment",
+          "Email integration",
+          "KPI dashboard",
+          "Reports and export"
+        ],
+        "process": [
+          "Sales process discovery",
+          "CRM functional requirements",
+          "UI/UX and pipeline design",
+          "Backend and frontend development",
+          "Email integration",
+          "Team training"
+        ],
+        "results": [
+          "Lead response time reduced by 70%",
+          "Sales conversion increased by 25%",
+          "Team productivity improved",
+          "Managers see progress in real time"
+        ]
+      },
+      {
+        "slug": "ecommerce-platform",
+        "number": "05",
+        "title": "E-commerce Platform",
+        "categoryLabel": "E-commerce",
+        "shortDescription": "A fully functional online store — product catalog, payment, and delivery integration.",
+        "description": "A modern e-commerce platform — 1000+ products, multiple payment methods, admin panel, and analytics dashboard.",
+        "result": "Monthly sales increased by 200%",
+        "problem": "The business sold only offline with no online channel. Competitors had already captured the online market.",
+        "solution": "A fully functional online store was built — integrated with Uzbekistan payment systems and delivery tracking.",
+        "features": [
+          "Product catalog and filtering",
+          "Cart and checkout",
+          "Click, Payme, Uzcard payments",
+          "Order tracking",
+          "Admin panel",
+          "SEO optimization"
+        ],
+        "process": [
+          "We analyzed the business model",
+          "Platform architecture",
+          "UI/UX design",
+          "Development and integrations",
+          "Payment system setup",
+          "Launch and marketing"
+        ],
+        "results": [
+          "Monthly online sales increased by 200%",
+          "New customer segment opened",
+          "24/7 sales capability",
+          "Geographic reach expanded"
+        ]
+      },
+      {
+        "slug": "telegram-booking",
+        "number": "06",
+        "title": "Telegram Booking System",
+        "categoryLabel": "Automation",
+        "shortDescription": "Service booking via Telegram — automatic reminders and payment integration.",
+        "description": "Service booking through a Telegram Mini App and bot. For restaurants, salons, and service businesses.",
+        "result": "Booking process 90% automated",
+        "problem": "Customers booked by phone and operators spent significant time. No-show and double booking were common.",
+        "solution": "A Telegram Mini App was created — online booking, automatic confirmation, reminders, and payment options.",
+        "features": [
+          "Telegram Mini App interface",
+          "Real-time booking calendar",
+          "Automatic reminders",
+          "Payment integration",
+          "Admin panel",
+          "Statistics and reports"
+        ],
+        "process": [
+          "We analyzed the booking process",
+          "Telegram Mini App design",
+          "Bot and web app development",
+          "Payment integration",
+          "Beta testing",
+          "Production launch"
+        ],
+        "results": [
+          "Operator workload reduced by 90%",
+          "No-shows dropped by 40%",
+          "Customer satisfaction improved",
+          "24/7 booking available"
+        ]
+      },
+      {
+        "slug": "logistics-dashboard",
+        "number": "07",
+        "title": "Logistics Dashboard",
+        "categoryLabel": "Web App",
+        "shortDescription": "Real-time tracking dashboard for a logistics company — delivery and fleet management.",
+        "description": "A platform for monitoring logistics operations in real time. Fleet, routes, delivery status, and analytics.",
+        "result": "Delivery time reduced by 20%",
+        "problem": "Logistics operations were managed by phone and radio with no real-time data.",
+        "solution": "A real-time tracking dashboard was built — GPS integration, route optimization, and automatic notifications.",
+        "features": [
+          "Real-time GPS tracking",
+          "Route optimization",
+          "Delivery status",
+          "Driver mobile app",
+          "Analytics dashboard",
+          "Customer tracking page"
+        ],
+        "process": [
+          "Logistics process discovery",
+          "Dashboard architecture",
+          "UI/UX design",
+          "Backend and WebSocket",
+          "GPS integration",
+          "Pilot test and launch"
+        ],
+        "results": [
+          "Delivery time reduced by 20%",
+          "Fuel costs reduced by 15%",
+          "Customers track in real time",
+          "Operational efficiency improved"
+        ]
+      },
+      {
+        "slug": "fintech-mobile",
+        "number": "08",
+        "title": "FinTech Mobile App",
+        "categoryLabel": "Mobile",
+        "shortDescription": "Mobile app for financial services — payments, balance, and transaction management.",
+        "description": "A modern FinTech mobile app — secure payments, balance monitoring, transaction history, and push notifications.",
+        "result": "10000+ active users",
+        "problem": "Customers could only perform financial operations at the office or on the website. Mobile convenience was required.",
+        "solution": "A secure, fast mobile app was built — biometric authentication, real-time balance, and payment capabilities.",
+        "features": [
+          "Biometric authentication",
+          "Real-time balance",
+          "Payments and transfers",
+          "Transaction history",
+          "Push notifications",
+          "QR payments"
+        ],
+        "process": [
+          "User research",
+          "Mobile UX design",
+          "React Native development",
+          "Security audit",
+          "App Store and Play Store publishing",
+          "Marketing launch"
+        ],
+        "results": [
+          "10000+ active users",
+          "Mobile transactions increased by 80%",
+          "Customer satisfaction 4.8/5",
+          "Operational costs reduced"
+        ]
+      }
+    ]
+  },
+  "pricing": {
+    "page": {
+      "label": "VITA SOFT / PRICING",
+      "titleLine1": "Transparent",
+      "titleLine2": "Pricing",
+      "description": "Flexible packages designed to scale with your ambitions — from startup landing pages to enterprise ecosystems.",
+      "infoCardTitle": "Starting prices",
+      "infoCardText": "Final pricing depends on project complexity and required features."
+    },
+    "overview": [
+      {
+        "title": "Landing Page",
+        "price": "$150+",
+        "duration": "3–5 ish kuni"
+      },
+      {
+        "title": "Corporate Website",
+        "price": "$400+",
+        "duration": "7–14 ish kuni"
+      },
+      {
+        "title": "E-commerce",
+        "price": "$800+",
+        "duration": "14–30 ish kuni"
+      },
+      {
+        "title": "CRM / Web Platform",
+        "price": "$1,200+",
+        "duration": "20–45 ish kuni"
+      }
+    ],
+    "websites": {
+      "number": "01 / Web-saytlar",
+      "title": "Websites",
+      "subtitle": "Modern websites to professionally showcase your business online.",
+      "items": [
+        {
+          "id": "landing",
+          "title": "Landing Page",
+          "description": "Mahsulot, xizmat yoki biznesingizni bitta kuchli sahifada taqdim etish uchun.",
+          "price": "$150 – $300",
+          "duration": "3–5 ish kuni",
+          "features": [
+            "Professional UI/UX dizayn",
+            "Responsive design",
+            "Kontakt formasi",
+            "Telegram integratsiyasi",
+            "Google Maps",
+            "Basic SEO",
+            "Google Analytics / Yandex Metrika",
+            "Basic animations",
+            "Domain va hosting ulash",
+            "Deployment"
+          ],
+          "cta": "Start project"
+        },
+        {
+          "id": "corporate",
+          "title": "Korporativ Web-sayt",
+          "description": "Kompaniya, tashkilot yoki brend uchun to'liq professional web-sayt.",
+          "price": "$400 – $1,000",
+          "duration": "7–14 ish kuni",
+          "badge": "MOST POPULAR",
+          "highlighted": true,
+          "features": [
+            "5–10 sahifa",
+            "Professional UI/UX",
+            "Responsive design",
+            "SEO optimizatsiya",
+            "Kontakt formalar",
+            "Google Maps",
+            "Telegram integratsiyasi",
+            "Social media integration",
+            "Analytics",
+            "Animations",
+            "Deployment",
+            "Admin panel — kerak bo'lganda"
+          ],
+          "cta": "Order now"
+        },
+        {
+          "id": "ecommerce",
+          "title": "E-commerce",
+          "description": "Mahsulotlaringizni online sotish uchun to'liq elektron savdo platformasi.",
+          "price": "$800 – $2,000",
+          "duration": "14–30 ish kuni",
+          "features": [
+            "Mahsulot katalogi",
+            "Kategoriyalar",
+            "Search",
+            "Filter",
+            "Product detail",
+            "Shopping cart",
+            "Checkout",
+            "User account",
+            "Order history",
+            "Admin panel",
+            "Product management",
+            "Order management",
+            "Telegram notification",
+            "Payment integration",
+            "SEO",
+            "Analytics"
+          ],
+          "cta": "Build e-commerce"
+        }
+      ]
+    },
+    "platforms": {
+      "number": "02 / Web Platformalar",
+      "title": "Web Platforms",
+      "subtitle": "Custom web systems to automate complex business processes.",
+      "items": [
+        {
+          "id": "crm",
+          "title": "CRM / Admin Panel",
+          "description": "Biznesingizning mijozlar, mahsulotlar, buyurtmalar va ichki jarayonlarini yagona tizim orqali boshqarish.",
+          "price": "$1,200 – $3,500",
+          "duration": "20–45 ish kuni",
+          "features": [
+            "Authentication",
+            "Role & Permissions",
+            "Dashboard",
+            "Statistics",
+            "User management",
+            "Customer management",
+            "Product management",
+            "Order management",
+            "Search / Filter / Sort",
+            "Pagination",
+            "File upload",
+            "Notifications",
+            "Reports",
+            "Export",
+            "REST API",
+            "Database",
+            "Admin panel"
+          ],
+          "technologies": [
+            "React",
+            "Next.js",
+            "Node.js",
+            "Express",
+            "NestJS",
+            "PostgreSQL",
+            "MongoDB",
+            "Redis"
+          ],
+          "cta": "Order CRM"
+        },
+        {
+          "id": "custom-platform",
+          "title": "Maxsus Web Platform",
+          "description": "Startup yoki murakkab biznes modeli uchun noldan ishlab chiqiladigan individual platforma.",
+          "price": "$2,500 – $6,000+",
+          "duration": "1–3 oy+",
+          "features": [
+            "Client platform",
+            "Admin panel",
+            "Backend",
+            "Database",
+            "Authentication",
+            "Role & permissions",
+            "API",
+            "Dashboard",
+            "Real-time functionality",
+            "Notifications",
+            "Payment integration",
+            "Third-party API",
+            "Deployment",
+            "Analytics"
+          ],
+          "cta": "Build platform"
+        }
+      ]
+    },
+    "design": {
+      "number": "03 / UI/UX Design",
+      "title": "UI/UX Design",
+      "subtitle": "Professional design systems that are user-friendly and developer-ready.",
+      "items": [
+        {
+          "id": "web-design",
+          "title": "Landing / Web Design",
+          "price": "$150 – $400",
+          "duration": "3–7 ish kuni",
+          "includes": [
+            "Figma",
+            "Desktop design",
+            "Mobile design",
+            "UI Kit",
+            "Typography",
+            "Color system",
+            "Components",
+            "Prototype",
+            "Developer-ready design"
+          ],
+          "cta": "Order design"
+        },
+        {
+          "id": "crm-design",
+          "title": "CRM / Mobile App Design",
+          "price": "$400 – $1,000+",
+          "duration": "7–15 ish kuni",
+          "includes": [
+            "User Flow",
+            "Wireframe",
+            "UI/UX",
+            "Mobile screens",
+            "Desktop screens",
+            "Design System",
+            "Components",
+            "Interactive prototype",
+            "Figma source"
+          ],
+          "cta": "Order design"
+        }
+      ]
+    },
+    "mobileSection": {
+      "number": "04 / Mobile Development",
+      "title": "Mobile Development"
+    },
+    "mobile": {
+      "id": "mobile-app",
+      "title": "Mobile Application",
+      "description": "Android va iOS uchun zamonaviy mobil ilovalarni ishlab chiqamiz.",
+      "price": "$1,500 – $5,000+",
+      "duration": "1–3 oy+",
+      "includes": [
+        "UI/UX",
+        "Android",
+        "iOS",
+        "Backend API",
+        "Authentication",
+        "Push notifications",
+        "Payment",
+        "Admin panel",
+        "Analytics",
+        "App Store / Play Market preparation"
+      ],
+      "technologies": [
+        "React Native",
+        "Flutter"
+      ],
+      "cta": "Build mobile app"
+    },
+    "mvp": {
+      "id": "startup-mvp",
+      "badge": "STARTUP",
+      "title": "Startup MVP",
+      "description": "G'oyangizni real ishlaydigan MVP mahsulotga aylantiramiz.",
+      "price": "$2,000 – $7,000+",
+      "duration": "1–3 oy+",
+      "includes": [
+        "Product analysis",
+        "UX/UI",
+        "Frontend",
+        "Backend",
+        "Database",
+        "Authentication",
+        "Admin panel",
+        "API",
+        "MVP deployment",
+        "Basic analytics"
+      ],
+      "suitableForLabel": "Suitable for:",
+      "suitableFor": [
+        "Marketplace",
+        "Delivery",
+        "Taxi",
+        "Booking",
+        "CRM",
+        "SaaS",
+        "Education",
+        "Fintech",
+        "AI platform"
+      ],
+      "cta": "Launch MVP"
+    },
+    "additional": {
+      "number": "05 / Qo'shimcha xizmatlar",
+      "title": "Additional Services",
+      "items": [
+        {
+          "id": "optimization",
+          "title": "Website Optimization",
+          "price": "$100 – $300",
+          "description": "Loading speed, Core Web Vitals, image optimization, caching va frontend performance."
+        },
+        {
+          "id": "seo",
+          "title": "SEO Advanced",
+          "price": "$150 – $500",
+          "description": "Technical SEO, metadata, sitemap, robots.txt, structured data va search optimization."
+        },
+        {
+          "id": "support",
+          "title": "Technical Support",
+          "price": "$100 / oy dan",
+          "description": "Monitoring, bug fixing, technical assistance va kichik o'zgarishlar."
+        },
+        {
+          "id": "updates",
+          "title": "Website Updates",
+          "price": "$15 – $30 / soat",
+          "description": "Yangi sahifalar, UI o'zgarishlari, API integratsiyasi va funksional yangilanishlar."
+        },
+        {
+          "id": "payment",
+          "title": "Payment Integration",
+          "price": "$300 / har bir tizim",
+          "description": "Click, Payme, Uzum Bank, Stripe, PayPal va boshqa payment gateway'lar."
+        },
+        {
+          "id": "api",
+          "title": "API / Third-Party Integration",
+          "price": "$100 – $500+",
+          "description": "Google Maps, Telegram, SMS, Email, AI API, CRM, ERP va boshqa tashqi servislar."
+        },
+        {
+          "id": "telegram",
+          "title": "Telegram Integration",
+          "price": "$100 – $400+",
+          "description": "Telegram Bot, notification, order messages, lead generation va Telegram Mini App."
+        }
+      ]
+    },
+    "paymentTerms": {
+      "number": "06 / To'lov",
+      "title": "Payment Terms",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Start",
+          "description": "30–50% oldindan to'lov"
+        },
+        {
+          "step": "02",
+          "title": "Development",
+          "description": "Loyiha kelishilgan bosqichlar asosida ishlab chiqiladi."
+        },
+        {
+          "step": "03",
+          "title": "Launch",
+          "description": "Qolgan to'lov loyiha yakunida."
+        }
+      ],
+      "largeProject": {
+        "label": "For large projects:",
+        "steps": [
+          "40% → Start",
+          "30% → Development",
+          "30% → Launch"
+        ]
+      }
+    },
+    "warranty": {
+      "number": "07 / Kafolat",
+      "title": "Technical Warranty",
+      "text": "Every project includes a free 7–30 day technical warranty.",
+      "items": [
+        "Bug fixing",
+        "Technical assistance",
+        "Deployment assistance"
+      ],
+      "note": "New features and out-of-scope changes are quoted separately."
+    },
+    "cta": {
+      "title": "Have a project that does not fit standard packages?",
+      "description": "We will build a custom technical solution for your business.",
+      "primary": "Discuss your project",
+      "secondary": "Contact via Telegram"
+    },
+    "packages": [
+      {
+        "id": "start",
+        "name": "Start",
+        "price": "$500+",
+        "description": "Tailored for landing pages and startups. Includes essential UI/UX and fully responsive layout.",
+        "features": [
+          "Custom landing page design",
+          "Fully responsive layout",
+          "Essential UI/UX polish",
+          "Basic SEO setup",
+          "1 revision round"
+        ],
+        "cta": "Get Started"
+      },
+      {
+        "id": "optimal",
+        "name": "Optimal",
+        "price": "$1500+",
+        "description": "Ideal for growing businesses. Includes custom CRM, advanced admin panel, integrations, and 3 months support.",
+        "features": [
+          "Custom CRM or admin panel",
+          "Third-party integrations",
+          "Advanced UI/UX system",
+          "3 months post-launch support",
+          "Performance optimization"
+        ],
+        "cta": "Choose Optimal",
+        "highlightedLabel": "Popular"
+      },
+      {
+        "id": "enterprise",
+        "name": "Enterprise",
+        "price": "$4000+",
+        "description": "Full-scale custom ecosystems, dedicated AI integrations, top-tier security, and premium 24/7 support.",
+        "features": [
+          "Full custom digital ecosystem",
+          "Dedicated AI integrations",
+          "Enterprise-grade security",
+          "Premium 24/7 support",
+          "Dedicated project team"
+        ],
+        "cta": "Contact Us"
+      }
+    ],
+    "note": "Final pricing depends on project scope, complexity, and required integrations.",
+    "faq": [],
+    "tiers": {
+      "title": "Choose Your Plan",
+      "subtitle": "Every tier includes premium UI/UX, responsive design, and dedicated project management."
+    }
+  },
+  "faq": [
+    {
+      "id": "1",
+      "question": "How long does a project take to complete?",
+      "answer": "Timeline depends on complexity. A simple landing page — 2–4 weeks, corporate website — 4–8 weeks, CRM or complex web app — 8–16 weeks. We set an exact timeline after discussing project requirements."
+    },
+    {
+      "id": "2",
+      "question": "How is website pricing determined?",
+      "answer": "Pricing depends on project scope, number of features, design complexity, and integrations. We provide a free consultation and detailed estimate. Final price is agreed before signing the contract."
+    },
+    {
+      "id": "3",
+      "question": "Do you provide website maintenance?",
+      "answer": "Yes, we offer technical support for all our projects. Hosting monitoring, updates, security patches, and rapid issue resolution — available 24/7."
+    },
+    {
+      "id": "4",
+      "question": "Is a mobile version also developed?",
+      "answer": "Absolutely. All our websites are built with responsive design — they look great on phones, tablets, and desktops. We can also develop a dedicated mobile app."
+    },
+    {
+      "id": "5",
+      "question": "Can you build a CRM system?",
+      "answer": "Yes, CRM and ERP systems are one of our core specialties. We build custom systems for managing customers, orders, staff, and reports. VITA CRM — our ready-made solution — is also available."
+    },
+    {
+      "id": "6",
+      "question": "Can new features be added later?",
+      "answer": "Yes, all projects are built with an architecture designed for expansion. Adding new features, modules, and integrations is easy and fast."
+    },
+    {
+      "id": "7",
+      "question": "How is payment handled?",
+      "answer": "Standard payment plan: 30% upfront (on contract signing), 40% during development (midpoint), 30% on project delivery. Payment by bank transfer or cash is accepted."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Aziz Rahimov",
+      "company": "Connecta Group",
+      "position": "CEO",
+      "content": "The VITA SOFT team built our CRM system exceptionally well. Our sales processes are fully automated and team productivity has improved significantly. Professional approach and on-time delivery — that's why I recommend them.",
+      "initials": "AR"
+    },
+    {
+      "id": "2",
+      "name": "Dilnoza Karimova",
+      "company": "Smile Dental Clinic",
+      "position": "Chief Physician",
+      "content": "The dental CRM system completely transformed how our clinic operates. Patients book online and reminders arrive automatically. Working without paper — that's true modernization. We're grateful to VITA SOFT.",
+      "initials": "DK"
+    },
+    {
+      "id": "3",
+      "name": "Javohir Toshmatov",
+      "company": "TechStore UZ",
+      "position": "Marketing Director",
+      "content": "After launching our e-commerce platform, online sales increased by 200%. The site is fast, beautiful, and easy to use. Click and Payme integration works perfectly. Our best IT partner.",
+      "initials": "JT"
+    },
+    {
+      "id": "4",
+      "name": "Malika Yusupova",
+      "company": "VITA Academy",
+      "position": "Education Director",
+      "content": "We work with over 5000 students through our online learning platform. Video lessons, tests, and certificates — all in one place. The VITA SOFT team brought our vision to life exactly as we imagined.",
+      "initials": "MY"
+    }
+  ],
+  "about": {
+    "label": "ABOUT",
+    "title": "Who We Are",
+    "description": "We don't just write code; we architect the digital landscape of tomorrow. Our team consists of passionate developers, intuitive UI/UX designers, and sharp strategists.",
+    "story": {
+      "label": "OUR STORY",
+      "title": "Digital transformation since 2020",
+      "p1": "VITA SOFT was founded in 2020 as a small but ambitious team. Our goal was clear — to help businesses in Uzbekistan build world-class digital products.",
+      "p2": "Today we operate with 50+ projects, 30+ recurring clients, and a team of experienced specialists. We don't just build websites — we analyze business problems and develop technology solutions.",
+      "p3": "Every project is a partnership for us. Together with our clients, we bring ideas to life, launch products, and provide ongoing support."
+    },
+    "mission": {
+      "label": "MISSION",
+      "title": "We build modern digital solutions for your business",
+      "description": "Every business is unique. We create custom digital products tailored to your business — from web platforms to CRM systems — not template solutions."
+    },
+    "vision": {
+      "label": "VISION",
+      "title": "To become Uzbekistan's most trusted IT partner",
+      "description": "By 2030, to be one of the leading companies in digital products in Uzbekistan. Innovation, quality, and client success — that's our roadmap."
+    },
+    "values": {
+      "label": "VALUES",
+      "title": "What we believe in"
+    },
+    "timeline": {
+      "label": "HISTORY",
+      "title": "Growth milestones"
+    },
+    "team": {
+      "label": "TEAM",
+      "title": "Professional specialists"
+    },
+    "whyUs": {
+      "label": "WHY US?",
+      "title": "Why clients choose VITA SOFT"
+    },
+    "tech": {
+      "label": "TECHNOLOGIES",
+      "title": "Modern technology stack",
+      "cta": "Start Partnership"
+    }
+  },
+  "contact": {
+    "label": "CONTACT",
+    "title": "Let's Build Together",
+    "description": "Tell us about your vision — we'll craft the technology to match. We respond within 24 hours.",
+    "infoTitle": "Contact information",
+    "infoDescription": "Reach us through the channels below.",
+    "telegram": "Telegram",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "responseTitle": "We respond within 24 hours.",
+    "responseDescription": "Submit your request — our specialists will contact you shortly.",
+    "mapLocation": "Tashkent, Uzbekistan",
+    "stepsLabel": "NEXT STEPS",
+    "steps": [
+      "Submit your request",
+      "We'll contact you within 24 hours",
+      "Free consultation and estimate",
+      "Contract and project kickoff"
+    ],
+    "formTitle": "Project inquiry",
+    "formDescription": "Fill out the form — we'll respond shortly."
+  },
+  "servicesPage": {
+    "label": "SERVICES",
+    "title": "Our Services",
+    "description": "From web and mobile development to AI automation and IT consulting — premium digital solutions built for growth.",
+    "whoFor": "WHO IT'S FOR",
+    "whatWeBuild": "WHAT WE BUILD",
+    "features": "FEATURES",
+    "benefits": "BENEFITS",
+    "estimatedPeriod": "Estimated timeline:",
+    "getConsultation": "Get a Consultation"
+  },
+  "portfolioPage": {
+    "label": "PORTFOLIO",
+    "title": "Our Featured Work",
+    "description": "Premium projects showcasing glassmorphic interfaces, dashboards, and scalable digital ecosystems.",
+    "resultsLabel": " projects shown"
+  },
+  "portfolioDetail": {
+    "back": "Back to Portfolio",
+    "problem": "PROBLEM",
+    "solution": "SOLUTION",
+    "result": "RESULT",
+    "featuresLabel": "FEATURES",
+    "featuresTitle": "Project capabilities",
+    "processLabel": "PROCESS",
+    "processTitle": "Development process",
+    "resultsLabel": "RESULTS",
+    "resultsTitle": "Achieved results",
+    "ctaTitle": "Need a similar project?",
+    "ctaDescription": "We're ready to build a custom solution for your business.",
+    "ctaPrimary": "Let's talk about your project",
+    "ctaSecondary": "Other projects",
+    "liveDemo": "Live demo",
+    "notFound": "Project not found"
+  },
+  "notFound": {
+    "label": "404",
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to Home"
+  },
+  "form": {
+    "validation": {
+      "name": "Name must be at least 2 characters",
+      "phone": "Please enter a valid phone number",
+      "phoneFormat": "Invalid phone number format",
+      "email": "Please enter a valid email address",
+      "service": "Please select a service type",
+      "budget": "Please select a budget",
+      "message": "Please write at least 20 characters about your project"
+    },
+    "labels": {
+      "name": "Name",
+      "phone": "Phone number",
+      "email": "Email",
+      "company": "Company",
+      "service": "Service type",
+      "budget": "Estimated budget",
+      "message": "About your project"
+    },
+    "placeholders": {
+      "name": "Your name",
+      "phone": "+998 90 123 45 67",
+      "email": "email@kompaniya.uz",
+      "company": "Company name (optional)",
+      "message": "Tell us about your project in detail..."
+    },
+    "select": {
+      "placeholder": "Select",
+      "serviceOptions": [
+        "Web Development",
+        "CRM / ERP System",
+        "E-commerce",
+        "Mobile App",
+        "UI/UX Design",
+        "Telegram Mini App",
+        "Automation",
+        "Other"
+      ],
+      "budgetOptions": [
+        "3–7 million UZS",
+        "7–15 million UZS",
+        "15–30 million UZS",
+        "30+ million UZS",
+        "Undecided"
+      ]
+    },
+    "success": {
+      "title": "Your request has been received!",
+      "description": "We'll contact you within 24 hours. Thank you!",
+      "newRequest": "Send new request"
+    },
+    "submit": "Send Request"
+  }
+}

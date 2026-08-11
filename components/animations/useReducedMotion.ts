@@ -1,0 +1,33 @@
+"use client";
+
+import { useSyncExternalStore } from "react";
+
+function subscribe(callback: () => void) {
+  const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+  mq.addEventListener("change", callback);
+  return () => mq.removeEventListener("change", callback);
+}
+
+function getSnapshot() {
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
+function getServerSnapshot() {
+  return false;
+}
+
+export function useReducedMotion() {
+  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+}
+
+export function useIsDesktop() {
+  return useSyncExternalStore(
+    (cb) => {
+      const mq = window.matchMedia("(min-width: 1024px)");
+      mq.addEventListener("change", cb);
+      return () => mq.removeEventListener("change", cb);
+    },
+    () => window.matchMedia("(min-width: 1024px)").matches,
+    () => false
+  );
+}
