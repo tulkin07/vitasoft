@@ -26,7 +26,7 @@ export function TechnologiesSection() {
   const { technologies, techCategoryLabels } = useSiteData();
 
   return (
-    <Section variant="bordered">
+    <Section id="technologies" variant="bordered">
       <SectionHeader label={t("label")} title={t("title")} align="center" />
 
       <StaggerContainer className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">

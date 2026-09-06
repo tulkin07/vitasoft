@@ -1,11 +1,10 @@
-import { PricingPageContent } from "@/components/pricing/PricingPageContent";
-import { generatePageMetadata } from "@/lib/i18n/server-data";
-import "./pricing-page.css";
+import { redirect } from "next/navigation";
 
-export async function generateMetadata() {
-  return generatePageMetadata("pricing");
-}
-
-export default function PricingPage() {
-  return <PricingPageContent />;
+export default async function RedirectPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  redirect(`/${locale}`);
 }

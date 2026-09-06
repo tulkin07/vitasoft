@@ -35,9 +35,10 @@
     "about": "Biz haqimizda",
     "services": "Xizmatlar",
     "portfolio": "Portfolio",
+    "technologies": "Texnologiyalar",
     "pricing": "Narxlar",
-    "contact": "Bog‘lanish",
-    "connect": "Bog‘lanish",
+    "contact": "Aloqa",
+    "connect": "Loyiha boshlash",
     "ariaMainNav": "Asosiy navigatsiya",
     "ariaMobileNav": "Mobil navigatsiya",
     "ariaOpenMenu": "Menyuni ochish",
@@ -46,7 +47,7 @@
     "ariaTheme": "Mavzuni tanlash"
   },
   "footer": {
-    "tagline": "Bizneslar uchun zamonaviy raqamli mahsulotlar yaratamiz.",
+    "tagline": "Bizneslar uchun zamonaviy va samarali raqamli yechimlar.",
     "pages": "Sahifalar",
     "services": "Xizmatlar",
     "contact": "Aloqa",
@@ -125,26 +126,64 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Raqamli mahsulotlar · IT yechimlar · Texnologiya",
-      "title1": "Raqamli yechimlarni",
+      "eyebrow": "Digital Solutions  •  Web  •  Mobile  •  Automation",
+      "title": "Biznesingiz uchun zamonaviy raqamli yechimlar yaratamiz",
+      "title1": "Biznesingiz uchun",
       "title2": "",
-      "title2Gold": "taklif qilamiz",
-      "title2Rest": "",
+      "title2Gold": "zamonaviy raqamli yechimlar",
+      "title2Rest": " yaratamiz",
       "title3": "",
-      "description": "VITA SOFT — bizneslar uchun zamonaviy web-platformalar, avtomatlashtirilgan tizimlar va raqamli mahsulotlar yaratadigan texnologik kompaniya.",
-      "ctaPrimary": "Loyihani boshlash",
-      "ctaSecondary": "Portfolio ko‘rish"
+      "description": "VITASoft — biznesingizni rivojlantiruvchi web, mobile va custom software yechimlarni yaratadigan texnologik hamkor.",
+      "ctaPrimary": "Loyiha boshlash",
+      "ctaSecondary": "Portfolio ko‘rish",
+      "stack": ["React", "Next.js", "Node.js", "NestJS", "PostgreSQL", "AI APIs"],
+      "floatWebTitle": "Web platforms",
+      "floatWebDesc": "Next.js · TypeScript · SaaS",
+      "floatAiTitle": "AI layer",
+      "floatAiDesc": "Assistants · Chat · Automation",
+      "floatMobileTitle": "Mobile apps",
+      "floatMobileDesc": "React Native · iOS / Android",
+      "floatAutoTitle": "Automation",
+      "floatAutoDesc": "CRM · ERP · Bots"
     },
     "trust": {
       "label": "01 / Trust",
       "title": "Nega",
-      "titleAccent": "VITA SOFT?",
+      "titleAccent": "VITASoft?",
       "description": "Biz shunchaki sayt yaratmaymiz — biznesingiz uchun raqamli mahsulotlar va texnologik yechimlar ishlab chiqamiz."
     },
     "services": {
-      "label": "02 / Services",
-      "title": "Biz nimalar qilamiz?",
+      "label": "Xizmatlarimiz",
+      "title": "Biznesingiz uchun to‘liq raqamli yechimlar",
       "action": "Barcha xizmatlar"
+    },
+    "about": {
+      "label": "Biz haqimizda",
+      "title": "Texnologiya — biznesingiz uchun natija berishi kerak",
+      "description": "Biz faqat kod yozmaymiz. Biz biznes muammolarini tahlil qilib, real natija beradigan raqamli mahsulotlar yaratamiz.",
+      "cta": "Loyiha boshlash",
+      "items": [
+        {
+          "number": "01",
+          "title": "Tajriba",
+          "description": "Murakkab loyihalarni zamonaviy texnologiyalar yordamida ishlab chiqamiz."
+        },
+        {
+          "number": "02",
+          "title": "Individual yondashuv",
+          "description": "Har bir biznes uchun alohida yechim."
+        },
+        {
+          "number": "03",
+          "title": "Zamonaviy texnologiyalar",
+          "description": "Eng so‘nggi va ishonchli texnologiyalardan foydalanamiz."
+        },
+        {
+          "number": "04",
+          "title": "Uzoq muddatli hamkorlik",
+          "description": "Loyiha topshirilgandan keyin ham texnik qo‘llab-quvvatlash."
+        }
+      ]
     },
     "process": {
       "label": "03 / Process",
@@ -157,8 +196,8 @@
       "action": "Barcha loyihalar"
     },
     "technologies": {
-      "label": "05 / Technologies",
-      "title": "Biz foydalanadigan texnologiyalar",
+      "label": "Texnologiyalar",
+      "title": "Zamonaviy texnologiyalar bilan quramiz",
       "categories": {
         "frontend": "Frontend",
         "backend": "Backend",
@@ -179,14 +218,23 @@
     },
     "cta": {
       "label": "08 / Contact",
-      "title": "Sizda g‘oya bor.",
-      "titleAccent": "Bizda esa uni amalga oshirish tajribasi bor.",
+      "title": "G‘oyangizni raqamli mahsulotga aylantiramiz",
+      "titleAccent": "",
       "description": "Loyihangiz haqida gaplashish uchun biz bilan bog‘laning.",
-      "ctaPrimary": "Loyiha haqida gaplashamiz",
-      "ctaSecondary": "Telegram orqali yozish",
+      "ctaPrimary": "Loyiha boshlash",
+      "ctaSecondary": "Biz bilan bog‘lanish",
       "phoneLabel": "Telefon",
       "formLabel": "Aloqa formasi",
       "formHint": "So‘rov yuborish"
+    },
+    "contact": {
+      "label": "Aloqa",
+      "title": "Loyihangizni birgalikda boshlaymiz",
+      "infoTitle": "To‘g‘ridan-to‘g‘ri bog‘laning",
+      "phone": "Telefon",
+      "email": "Email",
+      "telegram": "Telegram",
+      "address": "Manzil"
     }
   },
   "company": {
@@ -209,13 +257,16 @@
     ],
     "heroStats": [
       {
-        "label": "loyiha"
+        "label": "Loyihalar"
       },
       {
-        "label": "mijoz"
+        "label": "Mamnun mijozlar"
       },
       {
-        "label": "qo‘llab-quvvatlash"
+        "label": "Yillik tajriba"
+      },
+      {
+        "label": "Texnologiyalar"
       }
     ],
     "values": [
@@ -1782,8 +1833,8 @@
     },
     "placeholders": {
       "name": "Ismingiz",
-      "phone": "+998 90 123 45 67",
-      "email": "email@kompaniya.uz",
+      "phone": "+998 93 190 80 97",
+      "email": "akhmadov0770@gmail.com",
       "company": "Kompaniya nomi (ixtiyoriy)",
       "message": "Loyihangiz haqida batafsil yozing..."
     },

@@ -35,9 +35,10 @@
     "about": "О нас",
     "services": "Услуги",
     "portfolio": "Портфолио",
+    "technologies": "Технологии",
     "pricing": "Цены",
     "contact": "Контакты",
-    "connect": "Связаться",
+    "connect": "Начать проект",
     "ariaMainNav": "Основная навигация",
     "ariaMobileNav": "Мобильная навигация",
     "ariaOpenMenu": "Открыть меню",
@@ -125,15 +126,25 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Цифровые продукты · IT-решения · Технологии",
-      "title1": "Предлагаем",
+      "eyebrow": "Digital Solutions  •  Web  •  Mobile  •  Automation",
+      "title": "Создаём современные цифровые решения для вашего бизнеса",
+      "title1": "Создаём современные",
       "title2": "",
       "title2Gold": "цифровые решения",
-      "title2Rest": "",
+      "title2Rest": " для вашего бизнеса",
       "title3": "",
-      "description": "VITA SOFT — технологическая компания, создающая современные веб-платформы, автоматизированные системы и цифровые продукты для бизнеса.",
+      "description": "VITASoft — технологический партнёр, который разрабатывает web, mobile и custom software для роста вашего бизнеса.",
       "ctaPrimary": "Начать проект",
-      "ctaSecondary": "Смотреть портфолио"
+      "ctaSecondary": "Смотреть портфолио",
+      "stack": ["React", "Next.js", "Node.js", "NestJS", "PostgreSQL", "AI APIs"],
+      "floatWebTitle": "Web platforms",
+      "floatWebDesc": "Next.js · TypeScript · SaaS",
+      "floatAiTitle": "AI layer",
+      "floatAiDesc": "Assistants · Chat · Automation",
+      "floatMobileTitle": "Mobile apps",
+      "floatMobileDesc": "React Native · iOS / Android",
+      "floatAutoTitle": "Automation",
+      "floatAutoDesc": "CRM · ERP · Bots"
     },
     "trust": {
       "label": "01 / Trust",
@@ -142,9 +153,37 @@
       "description": "Мы не просто создаём сайты — мы разрабатываем цифровые продукты и технологические решения для вашего бизнеса."
     },
     "services": {
-      "label": "02 / Services",
-      "title": "Чем мы занимаемся?",
+      "label": "Услуги",
+      "title": "Полный набор цифровых решений для бизнеса",
       "action": "Все услуги"
+    },
+    "about": {
+      "label": "О нас",
+      "title": "Технологии должны давать результат для бизнеса",
+      "description": "Мы не просто пишем код. Мы анализируем бизнес-задачи и создаём цифровые продукты с реальной отдачей.",
+      "cta": "Начать проект",
+      "items": [
+        {
+          "number": "01",
+          "title": "Опыт",
+          "description": "Сложные проекты на современном технологическом стеке."
+        },
+        {
+          "number": "02",
+          "title": "Индивидуальный подход",
+          "description": "Отдельное решение для каждого бизнеса."
+        },
+        {
+          "number": "03",
+          "title": "Современные технологии",
+          "description": "Используем актуальный и надёжный стек."
+        },
+        {
+          "number": "04",
+          "title": "Долгосрочное партнёрство",
+          "description": "Техническая поддержка после запуска."
+        }
+      ]
     },
     "process": {
       "label": "03 / Process",
@@ -187,6 +226,15 @@
       "phoneLabel": "Телефон",
       "formLabel": "Форма связи",
       "formHint": "Отправить запрос"
+    },
+    "contact": {
+      "label": "Контакты",
+      "title": "Начнём ваш проект вместе",
+      "infoTitle": "Свяжитесь напрямую",
+      "phone": "Телефон",
+      "email": "Email",
+      "telegram": "Telegram",
+      "address": "Адрес"
     }
   },
   "company": {
@@ -209,13 +257,16 @@
     ],
     "heroStats": [
       {
-        "label": "проект"
+        "label": "Проекты"
       },
       {
-        "label": "клиент"
+        "label": "Довольные клиенты"
       },
       {
-        "label": "поддержка"
+        "label": "Года опыта"
+      },
+      {
+        "label": "Технологии"
       }
     ],
     "values": [
@@ -1782,8 +1833,8 @@
     },
     "placeholders": {
       "name": "Ваше имя",
-      "phone": "+998 90 123 45 67",
-      "email": "email@kompaniya.uz",
+      "phone": "+998 93 190 80 97",
+      "email": "akhmadov0770@gmail.com",
       "company": "Название компании (необязательно)",
       "message": "Подробно опишите ваш проект..."
     },

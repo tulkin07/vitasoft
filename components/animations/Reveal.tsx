@@ -200,7 +200,7 @@ export function LineReveal({
   as: Tag = "h1",
   lineClassName,
 }: {
-  lines: React.ReactNode[];
+  lines: readonly React.ReactNode[];
   className?: string;
   as?: "h1" | "h2";
   lineClassName?: string;

@@ -33,11 +33,12 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "services": "Service",
+    "services": "Services",
     "portfolio": "Portfolio",
+    "technologies": "Technologies",
     "pricing": "Pricing",
     "contact": "Contact",
-    "connect": "Start Project",
+    "connect": "Start a project",
     "ariaMainNav": "Main navigation",
     "ariaMobileNav": "Mobile navigation",
     "ariaOpenMenu": "Open menu",
@@ -125,15 +126,25 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Premier Digital Agency · Software Solutions",
-      "title1": "We offer",
+      "eyebrow": "Digital Solutions  •  Web  •  Mobile  •  Automation",
+      "title": "We build modern digital solutions for your business",
+      "title1": "We build modern",
       "title2": "",
       "title2Gold": "digital solutions",
-      "title2Rest": "",
+      "title2Rest": " for your business",
       "title3": "",
-      "description": "Vita Soft is a premier digital agency that transforms complex problems into elegant, high-performing digital realities. We build professional code with breathtaking design.",
-      "ctaPrimary": "Get Started",
-      "ctaSecondary": "Learn More"
+      "description": "VITASoft is the technology partner behind the web, mobile and custom software that grows your company.",
+      "ctaPrimary": "Start a project",
+      "ctaSecondary": "View portfolio",
+      "stack": ["React", "Next.js", "Node.js", "NestJS", "PostgreSQL", "AI APIs"],
+      "floatWebTitle": "Web platforms",
+      "floatWebDesc": "Next.js · TypeScript · SaaS",
+      "floatAiTitle": "AI layer",
+      "floatAiDesc": "Assistants · Chat · Automation",
+      "floatMobileTitle": "Mobile apps",
+      "floatMobileDesc": "React Native · iOS / Android",
+      "floatAutoTitle": "Automation",
+      "floatAutoDesc": "CRM · ERP · Bots"
     },
     "trust": {
       "label": "01 / Trust",
@@ -142,9 +153,37 @@
       "description": "We don't just build websites — we develop digital products and technology solutions for your business."
     },
     "services": {
-      "label": "02 / Services",
-      "title": "What do we do?",
-      "action": "All Services"
+      "label": "Services",
+      "title": "Complete digital solutions for your business",
+      "action": "All services"
+    },
+    "about": {
+      "label": "About us",
+      "title": "Technology should produce results for your business",
+      "description": "We do not just write code. We analyze business problems and build digital products that deliver real outcomes.",
+      "cta": "Start a project",
+      "items": [
+        {
+          "number": "01",
+          "title": "Experience",
+          "description": "We ship complex products with modern, reliable technology."
+        },
+        {
+          "number": "02",
+          "title": "Tailored approach",
+          "description": "A dedicated solution for every business."
+        },
+        {
+          "number": "03",
+          "title": "Modern stack",
+          "description": "We use current, proven technologies."
+        },
+        {
+          "number": "04",
+          "title": "Long-term partnership",
+          "description": "Technical support continues after launch."
+        }
+      ]
     },
     "process": {
       "label": "03 / Process",
@@ -187,6 +226,15 @@
       "phoneLabel": "Phone",
       "formLabel": "Contact form",
       "formHint": "Send a request"
+    },
+    "contact": {
+      "label": "Contact",
+      "title": "Let’s start your project together",
+      "infoTitle": "Reach us directly",
+      "phone": "Phone",
+      "email": "Email",
+      "telegram": "Telegram",
+      "address": "Address"
     }
   },
   "company": {
@@ -209,13 +257,16 @@
     ],
     "heroStats": [
       {
-        "label": "Successful Projects"
+        "label": "Projects"
       },
       {
-        "label": "Client Satisfaction"
+        "label": "Happy clients"
       },
       {
-        "label": "Tech Experts"
+        "label": "Years of experience"
+      },
+      {
+        "label": "Technologies"
       }
     ],
     "values": [
@@ -1738,8 +1789,8 @@
     },
     "placeholders": {
       "name": "Your name",
-      "phone": "+998 90 123 45 67",
-      "email": "email@kompaniya.uz",
+      "phone": "+998 93 190 80 97",
+      "email": "akhmadov0770@gmail.com",
       "company": "Company name (optional)",
       "message": "Tell us about your project in detail..."
     },

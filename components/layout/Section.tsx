@@ -21,7 +21,7 @@ export function Section({
     <section
       id={id}
       className={cn(
-        "section-y relative",
+        "section-y relative scroll-mt-24",
         variant === "secondary" && "bg-bg-secondary",
         variant === "bordered" && "border-y border-border bg-bg-secondary",
         className

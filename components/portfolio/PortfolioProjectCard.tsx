@@ -34,6 +34,7 @@ export function PortfolioProjectCard({
   return (
     <Link
       href={`/portfolio/${project.slug}`}
+      data-cursor="view"
       className={cn("portfolio-card group block h-full", className)}
     >
       <div className="portfolio-card-glow" aria-hidden />

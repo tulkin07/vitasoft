@@ -1,28 +1,21 @@
+import { Geist, Geist_Mono, Inter, Manrope, Syne } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
-import type { Metadata } from "next";
-import { cookies } from "next/headers";
 import { notFound } from "next/navigation";
-import { Onest, Roboto } from "next/font/google";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
-import { ThemeProvider } from "@/components/providers/ThemeProvider";
-import { ScrollProgress } from "@/components/animations/ScrollProgress";
-import { AtmosphericBackground } from "@/components/layout/AtmosphericBackground";
+import type { Metadata } from "next";
 import { routing, type Locale } from "@/i18n/routing";
-import { isTheme, resolveServerTheme } from "@/lib/theme";
+import { Navbar } from "@/components/site/Navbar";
+import { ThemeProvider } from "@/components/site/ThemeProvider";
+import { CustomCursor } from "@/components/site/CustomCursor";
 import "../globals.css";
 
-const roboto = Roboto({
-  variable: "--font-roboto",
-  subsets: ["latin", "cyrillic"],
-  weight: ["300", "400", "500", "700"],
-});
-
-const onest = Onest({
-  variable: "--font-logo",
-  subsets: ["latin", "cyrillic"],
-  weight: ["700", "800"],
+const inter = Inter({ variable: "--font-inter", subsets: ["latin", "cyrillic"] });
+const geist = Geist({ variable: "--font-geist", subsets: ["latin"] });
+const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
+const syne = Syne({ variable: "--font-logo", subsets: ["latin"], weight: ["600", "700"] });
+const manrope = Manrope({
+  variable: "--font-display",
+  subsets: ["latin", "latin-ext", "cyrillic"],
 });
 
 export function generateStaticParams() {
@@ -36,13 +29,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-
   return {
-    title: {
-      default: t("siteTitle"),
-      template: t("siteTitleTemplate"),
-    },
+    title: t("siteTitle"),
     description: t("siteDescription"),
+    icons: {
+      icon: [
+        { url: "/icon.svg", type: "image/svg+xml" },
+        { url: "/favicon.ico", sizes: "48x48" },
+      ],
+      apple: "/apple-icon.png",
+    },
   };
 }
 
@@ -54,33 +50,22 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-
-  if (!routing.locales.includes(locale as Locale)) {
-    notFound();
-  }
-
+  if (!routing.locales.includes(locale as Locale)) notFound();
   setRequestLocale(locale);
   const messages = await getMessages();
-  const cookieStore = await cookies();
-  const themeCookie = cookieStore.get("theme")?.value;
-  const initialTheme = isTheme(themeCookie) ? themeCookie : "light";
-  const resolvedTheme = resolveServerTheme(initialTheme);
 
   return (
     <html
       lang={locale}
-      className={`${roboto.variable} ${onest.variable} h-full ${resolvedTheme}`}
-      style={{ colorScheme: resolvedTheme }}
+      className={`${inter.variable} ${geist.variable} ${geistMono.variable} ${syne.variable} ${manrope.variable} dark h-full`}
       suppressHydrationWarning
     >
-      <body className="relative flex min-h-full flex-col bg-bg-primary font-body text-text-primary antialiased transition-colors duration-300">
-        <AtmosphericBackground />
+      <body className="min-h-full bg-bg font-sans text-text antialiased">
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider initialTheme={initialTheme}>
-            <ScrollProgress />
+          <ThemeProvider>
+            <CustomCursor />
             <Navbar />
-            <main className="relative z-[1] flex-1">{children}</main>
-            <Footer />
+            {children}
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

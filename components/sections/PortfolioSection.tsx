@@ -14,7 +14,7 @@ export function PortfolioSection() {
   const featured = projects.slice(0, 2);
 
   return (
-    <Section grid>
+    <Section id="portfolio" grid>
       <SectionHeader
         label={t("label")}
         title={t("title")}

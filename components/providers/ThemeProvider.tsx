@@ -63,7 +63,7 @@ interface ThemeProviderProps {
 
 export function ThemeProvider({
   children,
-  initialTheme = "light",
+  initialTheme = "dark",
   enableSystem = true,
   disableTransitionOnChange = false,
 }: ThemeProviderProps) {
@@ -137,7 +137,7 @@ export function ThemeProvider({
       setTheme,
       resolvedTheme: mounted
         ? resolvedTheme
-        : resolveTheme(initialTheme, "light"),
+        : resolveTheme(initialTheme, "dark"),
       systemTheme,
       themes: enableSystem ? ["light", "dark", "system"] : ["light", "dark"],
     }),
@@ -161,10 +161,10 @@ export function useTheme(): ThemeContextValue {
   const context = useContext(ThemeContext);
   if (!context) {
     return {
-      theme: "light",
+      theme: "dark",
       setTheme: () => {},
-      resolvedTheme: "light",
-      systemTheme: "light",
+      resolvedTheme: "dark",
+      systemTheme: "dark",
       themes: ["light", "dark"],
     };
   }

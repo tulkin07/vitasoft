@@ -9,8 +9,8 @@ export function isTheme(value: string | undefined): value is Theme {
 
 /** Resolve stored theme to a paint class on the server (system → light fallback). */
 export function resolveServerTheme(theme: Theme | undefined): ResolvedTheme {
-  if (theme === "dark") return "dark";
-  return "light";
+  if (theme === "light") return "light";
+  return "dark";
 }
 
 export function resolveTheme(

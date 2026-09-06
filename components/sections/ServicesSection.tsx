@@ -15,7 +15,7 @@ export function ServicesSection() {
   const { homeServices } = useSiteData();
 
   return (
-    <Section>
+    <Section id="services">
       <SectionHeader
         label={t("label")}
         title={t("title")}

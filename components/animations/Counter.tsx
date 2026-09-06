@@ -12,20 +12,16 @@ interface CounterProps {
 
 export function Counter({ value, suffix = "", className }: CounterProps) {
   const ref = useRef<HTMLSpanElement>(null);
+  const started = useRef(false);
   const reduced = useReducedMotion();
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const motionValue = useMotionValue(0);
+  const isInView = useInView(ref, { once: true, amount: 0.35 });
+  const motionValue = useMotionValue(value);
   const springValue = useSpring(motionValue, {
-    stiffness: 45,
-    damping: 18,
-    mass: 0.8,
+    stiffness: 80,
+    damping: 20,
+    mass: 0.6,
   });
-  const [display, setDisplay] = useState("0");
-
-  useEffect(() => {
-    if (reduced || !isInView) return;
-    motionValue.set(value);
-  }, [isInView, motionValue, value, reduced]);
+  const [display, setDisplay] = useState(String(value));
 
   useEffect(() => {
     if (reduced) return;
@@ -35,14 +31,12 @@ export function Counter({ value, suffix = "", className }: CounterProps) {
     return unsubscribe;
   }, [springValue, reduced]);
 
-  if (reduced) {
-    return (
-      <span ref={ref} className={className}>
-        {value}
-        {suffix}
-      </span>
-    );
-  }
+  useEffect(() => {
+    if (reduced || !isInView || started.current) return;
+    started.current = true;
+    motionValue.set(0);
+    motionValue.set(value);
+  }, [isInView, motionValue, value, reduced]);
 
   return (
     <span ref={ref} className={className}>
