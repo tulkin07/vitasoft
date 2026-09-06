@@ -175,12 +175,20 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const top = el.getBoundingClientRect().top + window.scrollY - 76;
+    window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+  };
+
   return (
+    <>
     <motion.header
-      initial={{ opacity: 0, y: -16 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-      className="sticky top-0 z-50 box-border h-[76px] overflow-visible border-b border-line bg-glass backdrop-blur-[9px]"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+      className="sticky top-0 z-50 box-border h-[76px] border-b border-line bg-glass backdrop-blur-[9px]"
     >
       <div className="grid h-full grid-cols-[1fr_auto] items-center px-4 sm:px-8 lg:grid-cols-[1fr_auto_1fr] lg:px-16">
         <a href="#home" className="flex items-center gap-2.5 justify-self-start" aria-label="VITASoft">
@@ -196,9 +204,13 @@ export function Navbar() {
               <a
                 key={label}
                 href={item.href}
-                onClick={() => setActive(item.id)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setActive(item.id);
+                  scrollToSection(item.id);
+                }}
                 className={`font-mono text-[12px] leading-none tracking-[0.4px] transition ${
-                  isActive ? "font-semibold text-accent" : "text-muted hover:text-text"
+                  isActive ? "font-semibold text-text" : "text-muted hover:text-text"
                 }`}
               >
                 {label}
@@ -249,15 +261,16 @@ export function Navbar() {
           </div>
         </div>
       </div>
+    </motion.header>
 
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden border-t border-line bg-bg lg:hidden"
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+            className="fixed inset-x-0 top-[76px] z-40 max-h-[calc(100dvh-76px)] overflow-y-auto border-t border-line bg-bg lg:hidden"
           >
             <div className="px-4 py-4">
               {t.nav.map((label, i) => {
@@ -266,12 +279,14 @@ export function Navbar() {
                   <a
                     key={label}
                     href={item.href}
-                    onClick={() => {
+                    onClick={(e) => {
+                      e.preventDefault();
                       setActive(item.id);
                       setOpen(false);
+                      window.setTimeout(() => scrollToSection(item.id), 80);
                     }}
                     className={`block border-b border-line py-3 font-mono text-sm ${
-                      active === item.id ? "font-semibold text-accent" : "text-muted"
+                      active === item.id ? "font-semibold text-text" : "text-muted"
                     }`}
                   >
                     {label}
@@ -280,7 +295,11 @@ export function Navbar() {
               })}
               <a
                 href="#contact"
-                onClick={() => setOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOpen(false);
+                  window.setTimeout(() => scrollToSection("contact"), 80);
+                }}
                 className="vs-btn vs-btn-primary mt-3 h-[41px] w-full"
               >
                 {t.cta}
@@ -290,6 +309,6 @@ export function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.header>
+    </>
   );
 }

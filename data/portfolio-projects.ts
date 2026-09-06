@@ -758,99 +758,11 @@ export const portfolioProjects: PortfolioProjectDefinition[] = [
     },
   },
   {
-    slug: "vita-soft",
-    number: "09",
-    category: "web",
-    year: "2025",
-    color: "#2563EB",
-    image: "/images/portfolio/vita-soft.jpg",
-    liveUrl: "https://vita-soft.uz",
-    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    i18n: {
-      uz: {
-        title: "VITA Soft",
-        categoryLabel: "Corporate Website",
-        shortDescription:
-          "VITA Soft kompaniyasining rasmiy IT veb-sayti — xizmatlar, portfolio va buyurtma formasi.",
-        description:
-          "VITA Soft — kompaniyaning rasmiy IT veb-sayti bo'lib, xizmatlarni namoyish qilish, mijozlar bilan muloqot va loyiha buyurtmalarini onlayn qabul qilish jarayonini soddalashtiradi.",
-        result: "Xizmatlar keng auditoriyaga taqdim etildi, buyurtmalar osonlashtirildi, imij mustahkamlangan.",
-        problem:
-          "Kompaniya xizmatlarini namoyish qilish va loyiha buyurtma berish jarayonini soddalashtirish.",
-        solution:
-          "Service showcase, portfolio bo'limi, onlayn buyurtma formasi va professional responsive UI/UX yaratildi.",
-        features: [
-          "Service showcase",
-          "Portfolio section",
-          "Online order / request form",
-          "Responsive professional UI/UX",
-        ],
-        process: processSteps.uz,
-        results: [
-          "Xizmatlar keng auditoriyaga taqdim etildi",
-          "Loyiha buyurtmalari osonlashtirildi",
-          "Professional imij mustahkamlangan",
-          "Mijozlar bilan aloqa yaxshilandi",
-        ],
-      },
-      en: {
-        title: "VITA Soft",
-        categoryLabel: "Corporate Website",
-        shortDescription:
-          "Official IT website for VITA Soft with services, portfolio, and request forms.",
-        description:
-          "VITA Soft is the company's official IT website for showcasing services, communicating with clients, and simplifying online project requests.",
-        result: "Services reached a wider audience, requests became easier, and brand image strengthened.",
-        problem: "Showcase company services and simplify the project request process.",
-        solution:
-          "We built service showcase, portfolio section, online request form, and a professional responsive UI/UX.",
-        features: [
-          "Service showcase",
-          "Portfolio section",
-          "Online order / request form",
-          "Responsive professional UI/UX",
-        ],
-        process: processSteps.en,
-        results: [
-          "Services reached a wider audience",
-          "Project requests became easier",
-          "Professional brand image strengthened",
-          "Client communication improved",
-        ],
-      },
-      ru: {
-        title: "VITA Soft",
-        categoryLabel: "Corporate Website",
-        shortDescription:
-          "Официальный IT-сайт VITA Soft с услугами, портфолио и формой заявки.",
-        description:
-          "VITA Soft — официальный IT-сайт компании для демонстрации услуг, коммуникации с клиентами и упрощения онлайн-заявок на проекты.",
-        result: "Услуги представлены широкой аудитории, заявки упрощены, имидж усилен.",
-        problem: "Показать услуги компании и упростить процесс заказа проекта.",
-        solution:
-          "Созданы service showcase, portfolio section, online request form и professional responsive UI/UX.",
-        features: [
-          "Service showcase",
-          "Portfolio section",
-          "Online order / request form",
-          "Responsive professional UI/UX",
-        ],
-        process: processSteps.ru,
-        results: [
-          "Услуги представлены широкой аудитории",
-          "Заявки на проекты упрощены",
-          "Professional имидж усилен",
-          "Коммуникация с клиентами улучшена",
-        ],
-      },
-    },
-  },
-  {
     slug: "connectacrm",
-    number: "10",
+    number: "09",
     category: "crm",
     year: "2024",
-    color: "#C9A45C",
+    color: "#0284C7",
     image: "/images/portfolio/connectacrm.jpg",
     liveUrl: "https://oceanblue.connectacrm.com/",
     technologies: ["Next.js", "React", "PostgreSQL", "CRM", "Fleet Management"],

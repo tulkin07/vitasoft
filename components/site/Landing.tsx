@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowUpRight,
@@ -15,6 +14,7 @@ import {
 } from "lucide-react";
 import { useLocale } from "next-intl";
 import { copy, type Locale } from "@/lib/copy";
+import { getAllPortfolioProjects } from "@/data/portfolio-projects";
 import { LogoMark, Wordmark } from "@/components/site/LogoMark";
 import { ProcessTimeline } from "@/components/site/ProcessTimeline";
 import { ContactBlock } from "@/components/site/ContactBlock";
@@ -38,53 +38,7 @@ const advantages = [
   ["04", "Uzoq muddatli hamkorlik", "Loyiha topshirilgandan keyin ham texnik qo‘llab-quvvatlash."],
 ];
 
-const projects = [
-  {
-    name: "Clyver",
-    cat: "Web",
-    d: "Online education va kommunikatsiya platformasi.",
-    tech: ["React", "TypeScript", "WebRTC", "100ms"],
-    img: "/images/portfolio/clyver.png",
-    featured: true,
-  },
-  {
-    name: "Education CRM",
-    cat: "CRM",
-    d: "Ta’lim markazlarini boshqarish tizimi.",
-    tech: ["React", "Node.js", "PostgreSQL"],
-    img: "/images/portfolio/education-crm.png",
-  },
-  {
-    name: "Payno",
-    cat: "Fintech",
-    d: "Moliyaviy to‘lovlar va hisob-kitob platformasi.",
-    tech: ["Next.js", "Node.js", "Redis"],
-    img: "/images/portfolio/payno.png",
-  },
-  {
-    name: "E-commerce Platform",
-    cat: "E-commerce",
-    d: "Zamonaviy onlayn do‘kon va katalog.",
-    tech: ["Next.js", "TypeScript", "Node.js"],
-    img: "/images/portfolio/ecommerce.png",
-  },
-  {
-    name: "Connecta CRM",
-    cat: "CRM",
-    d: "Sotuv va mijozlar bilan ishlash tizimi.",
-    tech: ["React", "NestJS", "PostgreSQL"],
-    img: "/images/portfolio/connecta-crm.png",
-  },
-  {
-    name: "LX1 Dashboard",
-    cat: "Automation",
-    d: "Logistika monitoring va analitika paneli.",
-    tech: ["React", "WebSocket", "Redis"],
-    img: "/images/portfolio/lx1-dashboard.png",
-  },
-];
-
-const filters = ["All", "Web", "Mobile", "CRM", "E-commerce", "Automation"];
+const filters = ["All", "Web", "CRM"] as const;
 
 const techs = [
   { name: "Next.js", src: "/images/tech/nextjs.svg", onDark: true },
@@ -132,46 +86,102 @@ const faqs = [
   ["Loyiha boshlash uchun nima kerak?", "Qisqa brief, maqsadlar va kontakt. Qolganini birgalikda tuzamiz."],
 ];
 
-function ProjectMedia({ src, tall, mid }: { src: string; tall?: boolean; mid?: boolean }) {
-  const h = tall ? "h-[280px] lg:h-[420px]" : mid ? "h-[200px]" : "h-[168px]";
-  return (
-    <div className={`relative overflow-hidden bg-surface ${h}`}>
-      <Image
-        src={src}
-        alt=""
-        fill
-        className="object-cover transition duration-700 ease-out group-hover:scale-[1.045]"
-        sizes="(min-width:1024px) 820px, 100vw"
-      />
-    </div>
-  );
+type LandingProject = {
+  name: string;
+  cat: string;
+  category: string;
+  d: string;
+  tech: string[];
+  img: string;
+  href: string;
+  number: string;
+  year: string;
+  color: string;
+};
+
+/** 4×4 bento: two 2×2 features, six 1×1, one tall 1×2 — matches the reference grid, not the card chrome. */
+const bentoCells = [
+  "md:col-span-2 lg:col-start-1 lg:col-span-2 lg:row-start-1 lg:row-span-2",
+  "lg:col-start-3 lg:row-start-1",
+  "lg:col-start-4 lg:row-start-1",
+  "lg:col-start-3 lg:row-start-2",
+  "lg:col-start-4 lg:row-start-2",
+  "lg:col-start-1 lg:row-start-3",
+  "lg:col-start-1 lg:row-start-4",
+  "md:col-span-2 lg:col-start-2 lg:col-span-2 lg:row-start-3 lg:row-span-2",
+  "lg:col-start-4 lg:row-start-3 lg:row-span-2",
+] as const;
+
+function projectSize(index: number, bento: boolean): "featured" | "compact" | "tall" {
+  if (!bento) return "compact";
+  if (index === 0 || index === 7) return "featured";
+  if (index === 8) return "tall";
+  return "compact";
 }
 
-function ProjectMeta({
+function ProjectCard({
   p,
   view,
-  large,
+  size,
 }: {
-  p: (typeof projects)[number];
+  p: LandingProject;
   view: string;
-  large?: boolean;
+  size: "featured" | "compact" | "tall";
 }) {
+  const fill = size !== "featured";
+
   return (
-    <div className="space-y-2 p-5">
-      <p className="font-mono text-[11px] text-accent-soft">{p.cat}</p>
-      <h3 className={`font-[family-name:var(--font-geist)] font-semibold ${large ? "text-2xl" : "text-lg"}`}>{p.name}</h3>
-      <p className="text-[13px] text-muted">{p.d}</p>
-      <div className="flex flex-wrap gap-1.5 pt-1">
-        {p.tech.map((tech) => (
-          <span key={tech} className="rounded-md border border-line px-2 py-0.5 font-mono text-[10px] text-muted">
-            {tech}
+    <article
+      data-cursor="view"
+      className={`vs-project group ${size === "featured" ? "vs-project-featured" : "vs-project-fill"}`}
+      style={{ ["--card" as string]: p.color }}
+    >
+      <a href={p.href} target="_blank" rel="noopener noreferrer" className="relative flex h-full min-h-0 flex-col no-underline text-inherit">
+        <div
+          className="vs-project-media"
+          style={fill ? { backgroundImage: `url(${p.img})` } : undefined}
+        >
+          <img src={p.img} alt={p.name} />
+          <span className="vs-project-shine" aria-hidden />
+          <span className="vs-project-scrim" aria-hidden />
+          <span className="vs-project-index">{p.number}</span>
+          <span className="vs-project-live">
+            <i />
+            Live
           </span>
-        ))}
-      </div>
-      <span className="inline-flex items-center gap-1 pt-1 text-[13px] text-accent-soft">
-        {view} <ArrowUpRight className="h-3.5 w-3.5 transition duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-      </span>
-    </div>
+          <div className="vs-project-overlay">
+            <p className="vs-project-kicker vs-project-kicker-on-media">
+              {p.cat}
+              <span>·</span>
+              {p.year}
+            </p>
+            <div className="vs-project-overlay-row">
+              <h3>{p.name}</h3>
+              {size === "featured" ? (
+                <span className="vs-project-go" aria-hidden>
+                  <ArrowUpRight className="h-5 w-5" />
+                </span>
+              ) : (
+                <span className="vs-project-link vs-project-link-on-media">
+                  {view}
+                  <ArrowUpRight className="h-3.5 w-3.5" />
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
+        {size === "featured" && (
+          <div className="vs-project-body vs-project-body-featured">
+            <p className="vs-project-desc line-clamp-2">{p.d}</p>
+            <div className="vs-project-tags">
+              {p.tech.slice(0, 5).map((tech) => (
+                <span key={tech}>{tech}</span>
+              ))}
+            </div>
+          </div>
+        )}
+      </a>
+    </article>
   );
 }
 
@@ -179,26 +189,34 @@ export function Landing() {
   const locale = useLocale() as Locale;
   const t = copy[locale];
   const [openFaq, setOpenFaq] = useState(0);
-  const [filter, setFilter] = useState("All");
+  const [filter, setFilter] = useState<(typeof filters)[number]>("All");
+  const projects: LandingProject[] = getAllPortfolioProjects(locale).map((p) => ({
+    name: p.title,
+    cat: p.categoryLabel,
+    category: p.category,
+    d: p.shortDescription,
+    tech: p.technologies,
+    img: p.image,
+    href: p.liveUrl,
+    number: p.number,
+    year: p.year,
+    color: p.color,
+  }));
 
-  const visible = projects.filter((p) => filter === "All" || p.cat === filter);
-  const featured = filter === "All" ? projects[0] : null;
-  const stacked = filter === "All" ? projects.slice(1, 3) : [];
-  const rest = filter === "All" ? projects.slice(3) : visible;
+  const visible = projects.filter((p) => filter === "All" || p.category === filter.toLowerCase());
+  const bento = filter === "All" && visible.length >= 9;
 
   return (
-    <div className="relative overflow-x-hidden bg-bg text-text">
+    <div className="relative min-w-0 overflow-x-clip bg-bg text-text">
       <div className="vs-atmosphere" />
-      <div className="pointer-events-none absolute left-[-180px] top-[120px] h-[520px] w-[520px] rounded-full bg-[#4DE0D014] blur-[45px]" />
-      <div className="vs-streak-1 hidden lg:block" />
       <div className="vs-streak-2 hidden lg:block" />
 
-      <div id="home" className="scroll-mt-24">
+      <div id="home" className="scroll-mt-[76px]">
       <section className="vs-hero relative flex flex-col items-center justify-center overflow-hidden px-5 lg:px-16">
         <div className="vs-grid pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_70%_65%_at_50%_50%,black,transparent_78%)]" />
-        <div className="vs-hero-floor hidden lg:block" />
-        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[720px] -translate-x-1/2 -translate-y-[42%] rounded-full bg-[#6D7CFF38] blur-[90px] light:bg-[#2F6CFF40]" />
-        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[300px] w-[420px] -translate-x-1/2 -translate-y-[18%] rounded-full bg-[#4DE0D028] blur-[70px] light:bg-[#3B82F624]" />
+        <div className="vs-hero-glow vs-hero-glow-a" aria-hidden />
+        <div className="vs-hero-glow vs-hero-glow-b" aria-hidden />
+        <div className="vs-hero-glow vs-hero-glow-c" aria-hidden />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_70%_at_50%_50%,transparent_40%,var(--bg)_92%)]" />
 
         <div className="relative z-[3] flex w-full max-w-[920px] flex-col items-center justify-center text-center">
@@ -226,7 +244,7 @@ export function Landing() {
       </section>
       </div>
 
-      <section className="relative border-y border-line">
+      <section className="relative">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_80%_at_50%_50%,#6d7cff18,transparent_70%)] light:bg-[radial-gradient(ellipse_60%_80%_at_50%_50%,#2f6cff24,transparent_70%)]" />
         <StaggerContainer className="vs-wrap relative grid grid-cols-2 lg:grid-cols-4" stagger={0.08}>
           {t.metrics.map(([n, l], i) => (
@@ -237,9 +255,6 @@ export function Landing() {
               {i > 0 && (
                 <span className="pointer-events-none absolute inset-y-8 left-0 hidden w-px bg-gradient-to-b from-transparent via-line-strong to-transparent lg:block" />
               )}
-              <span className="mb-4 font-mono text-[11px] tracking-[0.22em] text-faint">
-                {String(i + 1).padStart(2, "0")}
-              </span>
               <Counter
                 value={parseInt(n, 10)}
                 suffix={n.replace(/^\d+/, "")}
@@ -253,7 +268,7 @@ export function Landing() {
         </StaggerContainer>
       </section>
 
-      <div id="services" className="scroll-mt-24">
+      <div id="services" className="scroll-mt-[76px]">
       <section className="vs-wrap py-24">
         <SectionHeaderReveal className="mx-auto flex max-w-2xl flex-col items-center text-center">
           <SectionHeaderItem>
@@ -320,18 +335,13 @@ export function Landing() {
       </section>
       </div>
 
-      <section id="portfolio" className="vs-wrap scroll-mt-24 py-24">
+      <section id="portfolio" className="vs-wrap scroll-mt-[76px] py-24">
         <SectionHeaderReveal className="mx-auto flex max-w-2xl flex-col items-center text-center">
           <SectionHeaderItem>
             <p className="vs-label">{t.portfolioLabel}</p>
           </SectionHeaderItem>
           <SectionHeaderItem>
             <h2 className="vs-h2 mt-3.5">{t.portfolioTitle}</h2>
-          </SectionHeaderItem>
-          <SectionHeaderItem>
-            <a href="#contact" className="vs-btn vs-btn-ghost mt-6">
-              {t.viewAll}
-            </a>
           </SectionHeaderItem>
         </SectionHeaderReveal>
         <Reveal y={16}>
@@ -341,48 +351,27 @@ export function Landing() {
               key={f}
               type="button"
               onClick={() => setFilter(f)}
-              className={`rounded-full px-3.5 py-2 font-mono text-xs transition duration-300 ${
-                filter === f ? "bg-accent text-white" : "bg-white/5 text-muted outline outline-line hover:text-text"
-              }`}
+              className={`vs-filter ${filter === f ? "is-on" : ""}`}
             >
               {f}
             </button>
           ))}
         </div>
         </Reveal>
-        <StaggerContainer key={filter} className="mt-8 grid gap-4 lg:grid-cols-12" stagger={0.07}>
-          {featured && (
-            <StaggerItem className="lg:col-span-8">
-            <article data-cursor="view" className="vs-card group overflow-hidden">
-              <ProjectMedia src={featured.img} tall />
-              <ProjectMeta p={featured} view={t.viewProject} large />
-            </article>
-            </StaggerItem>
-          )}
-          {stacked.length > 0 && (
-            <StaggerItem className="lg:col-span-4">
-            <div className="grid gap-4">
-              {stacked.map((p) => (
-                <article key={p.name} data-cursor="view" className="vs-card group overflow-hidden">
-                  <ProjectMedia src={p.img} />
-                  <ProjectMeta p={p} view={t.viewProject} />
-                </article>
-              ))}
-            </div>
-            </StaggerItem>
-          )}
-          {rest.map((p) => (
-            <StaggerItem key={p.name} className="lg:col-span-4">
-            <article data-cursor="view" className="vs-card group overflow-hidden">
-              <ProjectMedia src={p.img} mid />
-              <ProjectMeta p={p} view={t.viewProject} />
-            </article>
+        <StaggerContainer
+          key={filter}
+          className={bento ? "vs-bento mt-8" : "mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"}
+          stagger={0.07}
+        >
+          {visible.map((p, i) => (
+            <StaggerItem key={p.name} className={`h-full min-h-0 ${bento ? (bentoCells[i] ?? "") : ""}`}>
+              <ProjectCard p={p} view={t.viewProject} size={projectSize(i, bento)} />
             </StaggerItem>
           ))}
         </StaggerContainer>
       </section>
 
-      <section id="technologies" className="vs-wrap scroll-mt-24 py-24">
+      <section id="technologies" className="vs-wrap scroll-mt-[76px] py-24">
         <SectionHeaderReveal className="mx-auto flex max-w-2xl flex-col items-center text-center">
           <SectionHeaderItem>
             <p className="vs-label">{t.techLabel}</p>
@@ -411,7 +400,7 @@ export function Landing() {
         </StaggerContainer>
       </section>
 
-      <div id="about" className="scroll-mt-24">
+      <div id="about" className="scroll-mt-[76px]">
       <section className="vs-wrap py-24">
         <SectionHeaderReveal className="mx-auto flex max-w-2xl flex-col items-center text-center">
           <SectionHeaderItem>
@@ -553,7 +542,7 @@ export function Landing() {
       </section>
       </div>
 
-      <div id="contact" className="scroll-mt-24">
+      <div id="contact" className="min-w-0 scroll-mt-[76px]">
       <section className="relative overflow-hidden px-5 py-24 text-center">
         <div className="pointer-events-none absolute left-1/2 top-1/2 h-[280px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/25 blur-[80px]" />
         <Reveal>
@@ -582,7 +571,7 @@ export function Landing() {
           <Reveal>
           <div className="max-w-[280px]">
             <div className="flex items-center gap-2.5">
-              <LogoMark size={28} />
+              <LogoMark size={24} />
               <Wordmark />
             </div>
             <p className="mt-3.5 text-sm leading-relaxed text-muted">{t.footerTag}</p>
@@ -609,7 +598,7 @@ export function Landing() {
               <p className="text-sm font-semibold">Aloqa</p>
               <ul className="mt-3 space-y-2 text-[13px] text-muted">
                 <li>+998 93 190 80 97</li>
-                <li>akhmadov0770@gmail.com</li>
+                <li className="break-all">akhmadov0770@gmail.com</li>
                 <li>@vitasoft</li>
               </ul>
             </div>

@@ -212,7 +212,7 @@ export function LineReveal({
     return (
       <Component className={className}>
         {lines.map((line, i) => (
-          <span key={i} className={cn("block", lineClassName)}>
+          <span key={i} className={cn("block whitespace-nowrap", lineClassName)}>
             {line}
           </span>
         ))}
@@ -233,8 +233,8 @@ export function LineReveal({
       }}
     >
       {lines.map((line, i) => (
-        <span key={i} className="block overflow-hidden">
-          <motion.span className={cn("block", lineClassName)} variants={lineChildVariants}>
+        <span key={i} className="block overflow-hidden pb-[0.22em] -mb-[0.08em]">
+          <motion.span className={cn("block whitespace-nowrap", lineClassName)} variants={lineChildVariants}>
             {line}
           </motion.span>
         </span>

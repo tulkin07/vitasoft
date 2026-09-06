@@ -19,14 +19,6 @@ function formatLocalPhone(input: string) {
   return [a, b, c, d].filter(Boolean).join(" ");
 }
 
-function LinkedInIcon({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden>
-      <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.46c.98 0 1.77-.78 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z" />
-    </svg>
-  );
-}
-
 export function ContactBlock({ locale }: { locale: Locale }) {
   const t = copy[locale];
   const [service, setService] = useState("");
@@ -50,12 +42,12 @@ export function ContactBlock({ locale }: { locale: Locale }) {
   ];
 
   return (
-    <section className="vs-wrap py-24">
-      <div className="grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:gap-16">
-        <Reveal>
-        <div>
+    <section className="vs-wrap max-w-full overflow-x-clip py-16 sm:py-24">
+      <div className="grid min-w-0 items-start gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:gap-16">
+        <Reveal className="min-w-0">
+        <div className="min-w-0">
           <p className="vs-label">{t.contactLabel}</p>
-          <h2 className="vs-h2 mt-4 max-w-xl text-left">{t.contactTitle}</h2>
+          <h2 className="vs-h2 mt-4 max-w-xl text-left break-words">{t.contactTitle}</h2>
           <p className="mt-4 max-w-md text-[16px] leading-relaxed text-muted">{t.contactText}</p>
 
           <StaggerContainer className="mt-10 space-y-5" stagger={0.08}>
@@ -64,49 +56,31 @@ export function ContactBlock({ locale }: { locale: Locale }) {
               [Phone, t.contactPhone, "+998 93 190 80 97", "tel:+998931908097"],
               [MapPin, locale === "ru" ? "Адрес" : locale === "en" ? "Address" : "Manzil", t.contactAddr, ""],
             ].map(([Icon, k, v, href]) => (
-              <StaggerItem key={k as string}>
-                <div className="flex items-center gap-3.5">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-white/5 transition duration-300 hover:border-accent/50">
+              <StaggerItem key={k as string} className="min-w-0">
+                <div className="flex min-w-0 items-center gap-3.5">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-line bg-white/5 transition duration-300 hover:border-accent/50">
                     <Icon className="h-4 w-4 text-accent-soft" />
                   </span>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-[12px] text-faint">{k as string}</p>
                     {href ? (
-                      <a href={href as string} className="text-[15px] text-text no-underline">
+                      <a href={href as string} className="break-all text-[15px] text-text no-underline">
                         {v as string}
                       </a>
                     ) : (
-                      <p className="text-[15px]">{v as string}</p>
+                      <p className="break-words text-[15px]">{v as string}</p>
                     )}
                   </div>
                 </div>
               </StaggerItem>
             ))}
           </StaggerContainer>
-
-          <p className="mt-10 text-[13px] text-muted">{t.contactFollow}</p>
-          <div className="mt-3 flex gap-2">
-            <a
-              href="https://t.me/vitasoft"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-white/5 text-text transition duration-300 hover:-translate-y-0.5 hover:border-accent/50"
-              aria-label="Telegram"
-            >
-              <Send className="h-4 w-4" />
-            </a>
-            <a
-              href="https://linkedin.com"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-white/5 text-text transition duration-300 hover:-translate-y-0.5 hover:border-accent/50"
-              aria-label="LinkedIn"
-            >
-              <LinkedInIcon className="h-4 w-4" />
-            </a>
-          </div>
         </div>
         </Reveal>
 
-        <Reveal delay={0.12}>
+        <Reveal delay={0.12} className="min-w-0 w-full">
         <form
-          className="vs-card space-y-5 p-6 sm:p-8"
+          className="vs-card w-full min-w-0 max-w-full space-y-5 p-4 sm:p-8"
           onSubmit={(e) => {
             e.preventDefault();
           }}
@@ -177,20 +151,20 @@ export function ContactBlock({ locale }: { locale: Locale }) {
 
           <div>
             <p className="mb-2.5 text-[13px] font-medium">{t.contactReach}</p>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-3 gap-1.5 sm:gap-2">
               {channels.map(({ id, label, icon: Icon }) => (
                 <button
                   key={id}
                   type="button"
                   onClick={() => setChannel(id)}
-                  className={`flex items-center justify-center gap-2 rounded-xl px-3 py-2.5 text-[13px] font-medium transition ${
+                  className={`flex min-w-0 flex-col items-center justify-center gap-1 rounded-xl px-1 py-2.5 text-[11px] font-medium transition sm:flex-row sm:gap-2 sm:px-3 sm:text-[13px] ${
                     channel === id
                       ? "bg-accent text-on-accent"
                       : "border border-line bg-transparent text-muted"
                   }`}
                 >
-                  <Icon className="h-3.5 w-3.5" />
-                  {label}
+                  <Icon className="h-3.5 w-3.5 shrink-0" />
+                  <span className="truncate">{label}</span>
                 </button>
               ))}
             </div>

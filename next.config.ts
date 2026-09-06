@@ -8,6 +8,9 @@ const root = path.dirname(fileURLToPath(import.meta.url));
 
 const nextConfig: NextConfig = {
   turbopack: { root },
+  images: {
+    contentDispositionType: "inline",
+  },
 };
 
 export default withNextIntl(nextConfig);

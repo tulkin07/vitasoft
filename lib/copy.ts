@@ -11,7 +11,7 @@ export const copy = {
     submit: "So‘rov yuborish",
     heroBadge: "Digital Solutions  •  Web  •  Mobile  •  Automation",
     heroLive: "Engineering studio  ·  Toshkent",
-    heroTitle: ["Biznesingiz uchun", "zamonaviy raqamli", "yechimlar yaratamiz"],
+    heroTitle: ["Biznesingizni raqamli", "kelajakka olib chiqamiz"],
     heroText:
       "VITASoft — biznesingizni rivojlantiruvchi web, mobile va custom software yechimlarni yaratadigan texnologik hamkor.",
     stack: ["React", "Next.js", "Node.js", "NestJS", "PostgreSQL", "AI APIs"],
@@ -140,7 +140,7 @@ export const copy = {
     submit: "Отправить заявку",
     heroBadge: "Digital Solutions  •  Web  •  Mobile  •  Automation",
     heroLive: "Engineering studio  ·  Ташкент",
-    heroTitle: ["Создаём современные", "цифровые решения", "для вашего бизнеса"],
+    heroTitle: ["Выводим ваш бизнес", "в цифровое будущее"],
     heroText:
       "VITASoft — технологический партнёр, который разрабатывает web, mobile и custom software для роста бизнеса.",
     stack: ["React", "Next.js", "Node.js", "NestJS", "PostgreSQL", "AI APIs"],
@@ -267,7 +267,7 @@ export const copy = {
     submit: "Send request",
     heroBadge: "Digital Solutions  •  Web  •  Mobile  •  Automation",
     heroLive: "Engineering studio  ·  Tashkent",
-    heroTitle: ["We build modern", "digital solutions", "for your business"],
+    heroTitle: ["We take your business", "into a digital future"],
     heroText:
       "VITASoft is the technology partner behind the web, mobile and custom software that grows your company.",
     stack: ["React", "Next.js", "Node.js", "NestJS", "PostgreSQL", "AI APIs"],

@@ -1,4 +1,4 @@
-export function LogoMark({ size = 32 }: { size?: number }) {
+export function LogoMark({ size = 26 }: { size?: number }) {
   const width = Math.round((size * 412) / 357);
 
   return (
