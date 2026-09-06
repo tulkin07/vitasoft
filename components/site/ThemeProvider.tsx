@@ -9,24 +9,35 @@ const ThemeContext = createContext<{ mode: Mode; toggle: () => void }>({
   toggle: () => {},
 });
 
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [mode, setMode] = useState<Mode>("dark");
+function applyMode(mode: Mode) {
+  document.documentElement.classList.remove("light", "dark");
+  document.documentElement.classList.add(mode);
+  document.documentElement.style.colorScheme = mode;
+  document.cookie = `vs-theme=${mode};path=/;max-age=31536000;SameSite=Lax`;
+}
+
+export function ThemeProvider({
+  children,
+  initialMode = "dark",
+}: {
+  children: React.ReactNode;
+  initialMode?: Mode;
+}) {
+  const [mode, setMode] = useState<Mode>(initialMode);
 
   useEffect(() => {
     const stored = localStorage.getItem("vs-theme") as Mode | null;
-    const next = stored === "light" || stored === "dark" ? stored : "dark";
+    const next = stored === "light" || stored === "dark" ? stored : initialMode;
+    if (!stored) localStorage.setItem("vs-theme", next);
     setMode(next);
-    document.documentElement.classList.remove("light", "dark");
-    document.documentElement.classList.add(next);
-  }, []);
+    applyMode(next);
+  }, [initialMode]);
 
   const toggle = useCallback(() => {
     setMode((prev) => {
       const next = prev === "dark" ? "light" : "dark";
       localStorage.setItem("vs-theme", next);
-      document.documentElement.classList.remove("light", "dark");
-      document.documentElement.classList.add(next);
-      document.documentElement.style.colorScheme = next;
+      applyMode(next);
       return next;
     });
   }, []);

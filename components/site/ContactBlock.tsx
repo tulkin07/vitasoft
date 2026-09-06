@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Check, ChevronDown, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Check, CheckCircle2, ChevronDown, CircleAlert, Mail, MapPin, Phone, Send, X } from "lucide-react";
 import { copy, type Locale } from "@/lib/copy";
 import { Reveal, StaggerContainer, StaggerItem } from "@/components/animations/Reveal";
 
 type Channel = "phone" | "telegram" | "email";
+type ModalState = { kind: "ok" } | { kind: "err"; text: string } | null;
 
 function formatLocalPhone(input: string) {
   let digits = input.replace(/\D/g, "");
@@ -25,6 +26,8 @@ export function ContactBlock({ locale }: { locale: Locale }) {
   const [open, setOpen] = useState(false);
   const [channel, setChannel] = useState<Channel>("phone");
   const [phone, setPhone] = useState("");
+  const [sending, setSending] = useState(false);
+  const [modal, setModal] = useState<ModalState>(null);
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -35,11 +38,67 @@ export function ContactBlock({ locale }: { locale: Locale }) {
     return () => document.removeEventListener("mousedown", onDoc);
   }, []);
 
+  useEffect(() => {
+    if (!modal) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setModal(null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [modal]);
+
   const channels: { id: Channel; label: string; icon: typeof Phone }[] = [
     { id: "phone", label: t.contactPhone, icon: Phone },
     { id: "telegram", label: t.contactTelegram, icon: Send },
     { id: "email", label: t.contactEmail, icon: Mail },
   ];
+
+  function validate(fd: FormData) {
+    const name = String(fd.get("fullName") ?? "").trim();
+    if (name.length < 2) return t.contactErrName;
+    if (!service) return t.contactErrService;
+    if (channel === "phone") {
+      if (phone.replace(/\D/g, "").length !== 9) return t.contactErrPhone;
+    } else if (channel === "telegram") {
+      const tg = String(fd.get("telegram") ?? "").trim();
+      if (!/^@?[a-zA-Z0-9_]{5,32}$/.test(tg)) return t.contactErrTelegram;
+    } else {
+      const email = String(fd.get("email") ?? "").trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return t.contactErrEmail;
+    }
+    const message = String(fd.get("message") ?? "").trim();
+    const words = message.split(/\s+/).filter(Boolean);
+    if (words.length < 8) return t.contactErrMessage;
+    return null;
+  }
+
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const err = validate(new FormData(form));
+    if (err) {
+      setModal({ kind: "err", text: err });
+      return;
+    }
+    setSending(true);
+    try {
+      await new Promise((r) => setTimeout(r, 450));
+      form.reset();
+      setService("");
+      setPhone("");
+      setChannel("phone");
+      setModal({ kind: "ok" });
+    } catch {
+      setModal({ kind: "err", text: t.contactErrGeneric });
+    } finally {
+      setSending(false);
+    }
+  }
 
   return (
     <section className="vs-wrap max-w-full overflow-x-clip py-16 sm:py-24">
@@ -81,16 +140,15 @@ export function ContactBlock({ locale }: { locale: Locale }) {
         <Reveal delay={0.12} className="min-w-0 w-full">
         <form
           className="vs-card w-full min-w-0 max-w-full space-y-5 p-4 sm:p-8"
-          onSubmit={(e) => {
-            e.preventDefault();
-          }}
+          onSubmit={onSubmit}
+          noValidate
         >
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="block">
               <span className="mb-1.5 block text-[13px] font-medium">
                 {t.contactName} <span className="text-[#ff6b6b]">*</span>
               </span>
-              <input className="vs-input rounded-xl" placeholder={t.contactNamePh} required />
+              <input name="fullName" className="vs-input rounded-xl" placeholder={t.contactNamePh} autoComplete="name" />
             </label>
 
             <div className="relative" ref={menuRef}>
@@ -192,7 +250,6 @@ export function ContactBlock({ locale }: { locale: Locale }) {
                     placeholder={t.contactPhonePh}
                     value={phone}
                     onChange={(e) => setPhone(formatLocalPhone(e.target.value))}
-                    required
                   />
                 </div>
               </motion.label>
@@ -209,7 +266,7 @@ export function ContactBlock({ locale }: { locale: Locale }) {
                 <span className="mb-1.5 block text-[13px] font-medium">
                   {t.contactTgLabel} <span className="text-[#ff6b6b]">*</span>
                 </span>
-                <input className="vs-input rounded-xl" placeholder={t.contactTgPh} required />
+                <input name="telegram" className="vs-input rounded-xl" placeholder={t.contactTgPh} autoComplete="username" />
               </motion.label>
             )}
             {channel === "email" && (
@@ -224,7 +281,7 @@ export function ContactBlock({ locale }: { locale: Locale }) {
                 <span className="mb-1.5 block text-[13px] font-medium">
                   {t.contactEmailLabel} <span className="text-[#ff6b6b]">*</span>
                 </span>
-                <input className="vs-input rounded-xl" type="email" placeholder={t.contactEmailPh} required />
+                <input name="email" className="vs-input rounded-xl" type="email" placeholder={t.contactEmailPh} autoComplete="email" />
               </motion.label>
             )}
           </AnimatePresence>
@@ -232,17 +289,92 @@ export function ContactBlock({ locale }: { locale: Locale }) {
           <label className="block">
             <span className="mb-1.5 block text-[13px] font-medium">
               {t.contactMessage} <span className="text-[#ff6b6b]">*</span>
+              <span className="ml-2 font-normal text-faint">({t.contactMessageMin})</span>
             </span>
-            <textarea className="vs-input min-h-32 resize-y rounded-xl" placeholder={t.contactMessagePh} required />
+            <textarea name="message" className="vs-input min-h-32 resize-y rounded-xl" placeholder={t.contactMessagePh} />
           </label>
 
-          <button type="submit" className="vs-btn vs-btn-primary h-12 w-full rounded-full">
-            {t.contactSend} <Send className="h-4 w-4" />
+          <button type="submit" disabled={sending} className="vs-btn vs-btn-primary h-12 w-full rounded-full disabled:opacity-60">
+            {sending
+              ? locale === "ru"
+                ? "Отправка..."
+                : locale === "en"
+                  ? "Sending..."
+                  : "Yuborilmoqda..."
+              : t.contactSend}{" "}
+            <Send className="h-4 w-4" />
           </button>
           <p className="text-center text-[12px] leading-relaxed text-faint">{t.contactPrivacy}</p>
         </form>
         </Reveal>
       </div>
+
+      <AnimatePresence>
+        {modal && (
+          <motion.div
+            className="fixed inset-0 z-[100] flex items-center justify-center p-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.22 }}
+          >
+            <button
+              type="button"
+              className="absolute inset-0 bg-[#07080ccc] backdrop-blur-md"
+              aria-label={t.contactModalClose}
+              onClick={() => setModal(null)}
+            />
+            <motion.div
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="contact-modal-title"
+              initial={{ opacity: 0, y: 18, scale: 0.96 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 12, scale: 0.97 }}
+              transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
+              className="vs-card relative w-full max-w-[440px] overflow-hidden px-7 py-8 text-center"
+            >
+              <span
+                className="absolute inset-x-0 top-0 h-[2px]"
+                style={{
+                  background:
+                    modal.kind === "ok"
+                      ? "linear-gradient(90deg, #4de0d0, transparent)"
+                      : "linear-gradient(90deg, #ff6b6b, transparent)",
+                }}
+              />
+              <button
+                type="button"
+                onClick={() => setModal(null)}
+                className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full text-muted transition hover:bg-white/5 hover:text-text"
+                aria-label={t.contactModalClose}
+              >
+                <X className="h-4 w-4" />
+              </button>
+              <span
+                className={`mx-auto flex h-16 w-16 items-center justify-center rounded-full ${
+                  modal.kind === "ok" ? "bg-[#4de0d018] text-cyan" : "bg-[#ff6b6b18] text-[#ff6b6b]"
+                }`}
+              >
+                {modal.kind === "ok" ? (
+                  <CheckCircle2 className="h-8 w-8" />
+                ) : (
+                  <CircleAlert className="h-8 w-8" />
+                )}
+              </span>
+              <h3 id="contact-modal-title" className="mt-5 font-[family-name:var(--font-geist)] text-[22px] font-semibold tracking-[-0.4px]">
+                {modal.kind === "ok" ? t.contactSuccessTitle : t.contactErrorTitle}
+              </h3>
+              <p className="mt-3 text-[15px] leading-relaxed text-muted">
+                {modal.kind === "ok" ? t.contactSuccessText : modal.text}
+              </p>
+              <button type="button" onClick={() => setModal(null)} className="vs-btn vs-btn-primary mt-7 h-11 w-full rounded-full">
+                {t.contactModalClose}
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

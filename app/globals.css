@@ -117,7 +117,7 @@ body {
   width: 720px;
   height: 520px;
   margin: -260px 0 0 -360px;
-  background: #6d7cff38;
+  background: #6d7cff18;
   animation: vs-hero-glow-a 18s ease-in-out infinite alternate;
 }
 
@@ -125,7 +125,7 @@ body {
   width: 420px;
   height: 300px;
   margin: -90px 0 0 -210px;
-  background: #4de0d028;
+  background: #4de0d012;
   filter: blur(70px);
   animation: vs-hero-glow-b 22s ease-in-out infinite alternate;
 }
@@ -134,21 +134,21 @@ body {
   width: 480px;
   height: 480px;
   margin: -280px 0 0 -240px;
-  background: #c4b5fd2e;
+  background: #c4b5fd14;
   filter: blur(80px);
   animation: vs-hero-glow-c 26s ease-in-out infinite alternate;
 }
 
 .light .vs-hero-glow-a {
-  background: #2f6cff36;
+  background: #2f6cff18;
 }
 
 .light .vs-hero-glow-b {
-  background: #3b82f620;
+  background: #3b82f612;
 }
 
 .light .vs-hero-glow-c {
-  background: #8b5cf624;
+  background: #8b5cf612;
 }
 
 @keyframes vs-hero-glow-a {
@@ -422,10 +422,10 @@ body {
   background:
     linear-gradient(
       180deg,
-      color-mix(in srgb, var(--card, #6d7cff) 28%, transparent) 0%,
-      color-mix(in srgb, var(--card, #6d7cff) 8%, transparent) 36%,
-      color-mix(in srgb, var(--card, #6d7cff) 32%, #07080c66) 68%,
-      color-mix(in srgb, var(--card, #6d7cff) 48%, #07080caa) 100%
+      color-mix(in srgb, var(--card, #2563EB) 28%, transparent) 0%,
+      color-mix(in srgb, var(--card, #2563EB) 8%, transparent) 36%,
+      color-mix(in srgb, var(--card, #2563EB) 32%, #07080c66) 68%,
+      color-mix(in srgb, var(--card, #2563EB) 48%, #07080caa) 100%
     );
 }
 
@@ -433,10 +433,10 @@ body {
   background:
     linear-gradient(
       180deg,
-      color-mix(in srgb, var(--card, #6d7cff) 18%, transparent) 0%,
-      color-mix(in srgb, var(--card, #6d7cff) 6%, transparent) 40%,
-      color-mix(in srgb, var(--card, #6d7cff) 28%, #07080c55) 70%,
-      color-mix(in srgb, var(--card, #6d7cff) 42%, #07080aaa) 100%
+      color-mix(in srgb, var(--card, #2563EB) 18%, transparent) 0%,
+      color-mix(in srgb, var(--card, #2563EB) 6%, transparent) 40%,
+      color-mix(in srgb, var(--card, #2563EB) 28%, #07080c55) 70%,
+      color-mix(in srgb, var(--card, #2563EB) 42%, #07080aaa) 100%
     );
 }
 
@@ -727,11 +727,11 @@ body {
   position: absolute;
   inset: 0 0 auto;
   height: 980px;
-  background-image: radial-gradient(ellipse 55% 45% at 72% 28%, #6d7cff28 0%, #4de0d000 100%);
+  background-image: radial-gradient(ellipse 55% 45% at 72% 28%, #6d7cff14 0%, #4de0d000 100%);
 }
 
 .light .vs-atmosphere {
-  background-image: radial-gradient(ellipse 60% 50% at 50% 22%, #2f6cff3d 0%, #2f6cff00 72%);
+  background-image: radial-gradient(ellipse 60% 50% at 50% 22%, #2f6cff1c 0%, #2f6cff00 72%);
 }
 
 .vs-streak-1 {
@@ -760,7 +760,7 @@ body {
   width: 540px;
   height: 4px;
   border-radius: 8px;
-  background: #4de0d040;
+  background: #4de0d01c;
   filter: blur(14px);
   transform: rotate(-12deg);
   transform-origin: top left;

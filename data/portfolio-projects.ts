@@ -57,7 +57,7 @@ export const portfolioProjects: PortfolioProjectDefinition[] = [
     category: "crm",
     year: "2025",
     color: "#2563EB",
-    image: "/images/portfolio/lx1-dashboard.png",
+    image: "/images/portfolio/lx1-dashboard.jpg",
     liveUrl: "https://eva.logistix.one",
     technologies: ["Next.js", "React", "TypeScript", "PostgreSQL", "CRM"],
     i18n: {
@@ -147,7 +147,7 @@ export const portfolioProjects: PortfolioProjectDefinition[] = [
     category: "crm",
     year: "2024",
     color: "#E2C98B",
-    image: "/images/portfolio/stomatologiya-uz.png",
+    image: "/images/portfolio/stomatologiya-uz.jpg",
     liveUrl: "http://admin.stomatologiya.uz/",
     technologies: ["React", "Node.js", "PostgreSQL", "Admin Panel"],
     i18n: {

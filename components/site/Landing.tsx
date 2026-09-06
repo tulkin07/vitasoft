@@ -1,13 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowUpRight,
   ChevronDown,
   Globe,
   LayoutDashboard,
+  Mail,
   Palette,
+  Phone,
   Send,
   ShoppingBag,
   Smartphone,
@@ -16,8 +19,6 @@ import { useLocale } from "next-intl";
 import { copy, type Locale } from "@/lib/copy";
 import { getAllPortfolioProjects } from "@/data/portfolio-projects";
 import { LogoMark, Wordmark } from "@/components/site/LogoMark";
-import { ProcessTimeline } from "@/components/site/ProcessTimeline";
-import { ContactBlock } from "@/components/site/ContactBlock";
 import { Counter } from "@/components/animations/Counter";
 import {
   LineReveal,
@@ -27,6 +28,15 @@ import {
   StaggerContainer,
   StaggerItem,
 } from "@/components/animations/Reveal";
+
+const ProcessTimeline = dynamic(
+  () => import("@/components/site/ProcessTimeline").then((m) => m.ProcessTimeline),
+  { ssr: true }
+);
+const ContactBlock = dynamic(
+  () => import("@/components/site/ContactBlock").then((m) => m.ContactBlock),
+  { ssr: true }
+);
 
 const serviceIcons = [Globe, ShoppingBag, LayoutDashboard, Smartphone, Send, Palette];
 const serviceColors = ["#6D7CFF", "#4DE0D0", "#9AA4FF", "#7C8CFF", "#26A5E4", "#C4B5FD"];
@@ -96,7 +106,6 @@ type LandingProject = {
   href: string;
   number: string;
   year: string;
-  color: string;
 };
 
 /** 4×4 bento: two 2×2 features, six 1×1, one tall 1×2 — matches the reference grid, not the card chrome. */
@@ -128,20 +137,22 @@ function ProjectCard({
   view: string;
   size: "featured" | "compact" | "tall";
 }) {
-  const fill = size !== "featured";
-
   return (
     <article
       data-cursor="view"
       className={`vs-project group ${size === "featured" ? "vs-project-featured" : "vs-project-fill"}`}
-      style={{ ["--card" as string]: p.color }}
     >
       <a href={p.href} target="_blank" rel="noopener noreferrer" className="relative flex h-full min-h-0 flex-col no-underline text-inherit">
-        <div
-          className="vs-project-media"
-          style={fill ? { backgroundImage: `url(${p.img})` } : undefined}
-        >
-          <img src={p.img} alt={p.name} />
+        <div className="vs-project-media">
+          <img
+            src={p.img}
+            alt={p.name}
+            width={960}
+            height={522}
+            loading={size === "featured" ? "eager" : "lazy"}
+            fetchPriority={size === "featured" ? "high" : "low"}
+            decoding="async"
+          />
           <span className="vs-project-shine" aria-hidden />
           <span className="vs-project-scrim" aria-hidden />
           <span className="vs-project-index">{p.number}</span>
@@ -200,7 +211,6 @@ export function Landing() {
     href: p.liveUrl,
     number: p.number,
     year: p.year,
-    color: p.color,
   }));
 
   const visible = projects.filter((p) => filter === "All" || p.category === filter.toLowerCase());
@@ -391,6 +401,9 @@ export function Landing() {
                 alt=""
                 width={40}
                 height={40}
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
                 className={`h-10 w-10 object-contain ${tech.onDark ? "light:invert" : ""}`}
               />
               <p className="text-center text-[13px] font-medium text-muted">{tech.name}</p>
@@ -467,9 +480,9 @@ export function Landing() {
             <h2 className="vs-h2 mt-3.5">{t.testiTitle}</h2>
           </SectionHeaderItem>
         </SectionHeaderReveal>
-        <StaggerContainer className="mt-10 flex gap-4 overflow-x-auto pb-2" stagger={0.08}>
+        <StaggerContainer className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4" stagger={0.08}>
           {quotes.map(([ini, name, role, q]) => (
-            <StaggerItem key={name} className="min-w-[280px] flex-1">
+            <StaggerItem key={name} className="min-w-0">
             <article className="vs-card h-full space-y-5 p-6 transition duration-300 hover:-translate-y-0.5">
               <svg className="h-5 w-5 text-accent-soft" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M7 7h4v10H5V11c0-2.2.8-3.5 2-4zm10 0h4v10h-6V11c0-2.2.8-3.5 2-4z" />
@@ -596,10 +609,25 @@ export function Landing() {
             </div>
             <div>
               <p className="text-sm font-semibold">Aloqa</p>
-              <ul className="mt-3 space-y-2 text-[13px] text-muted">
-                <li>+998 93 190 80 97</li>
-                <li className="break-all">akhmadov0770@gmail.com</li>
-                <li>@vitasoft</li>
+              <ul className="mt-3 space-y-2.5 text-[13px] text-muted">
+                <li>
+                  <a href="tel:+998931908097" className="inline-flex items-center gap-2 text-muted no-underline transition hover:text-text">
+                    <Phone className="h-3.5 w-3.5 shrink-0 text-accent-soft" />
+                    +998 93 190 80 97
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:akhmadov0770@gmail.com" className="inline-flex items-center gap-2 text-muted no-underline transition hover:text-text">
+                    <Mail className="h-3.5 w-3.5 shrink-0 text-accent-soft" />
+                    <span className="break-all">akhmadov0770@gmail.com</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://t.me/vitasoft" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-muted no-underline transition hover:text-text">
+                    <Send className="h-3.5 w-3.5 shrink-0 text-accent-soft" />
+                    @vitasoft
+                  </a>
+                </li>
               </ul>
             </div>
           </Reveal>
