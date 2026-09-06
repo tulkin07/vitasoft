@@ -6,7 +6,6 @@ import { Check, CheckCircle2, ChevronDown, CircleAlert, Mail, MapPin, Phone, Sen
 import { copy, type Locale } from "@/lib/copy";
 import { Reveal, StaggerContainer, StaggerItem } from "@/components/animations/Reveal";
 
-type Channel = "phone" | "telegram" | "email";
 type ModalState = { kind: "ok" } | { kind: "err"; text: string } | null;
 
 function formatLocalPhone(input: string) {
@@ -24,7 +23,6 @@ export function ContactBlock({ locale }: { locale: Locale }) {
   const t = copy[locale];
   const [service, setService] = useState("");
   const [open, setOpen] = useState(false);
-  const [channel, setChannel] = useState<Channel>("phone");
   const [phone, setPhone] = useState("");
   const [sending, setSending] = useState(false);
   const [modal, setModal] = useState<ModalState>(null);
@@ -52,25 +50,11 @@ export function ContactBlock({ locale }: { locale: Locale }) {
     };
   }, [modal]);
 
-  const channels: { id: Channel; label: string; icon: typeof Phone }[] = [
-    { id: "phone", label: t.contactPhone, icon: Phone },
-    { id: "telegram", label: t.contactTelegram, icon: Send },
-    { id: "email", label: t.contactEmail, icon: Mail },
-  ];
-
   function validate(fd: FormData) {
     const name = String(fd.get("fullName") ?? "").trim();
     if (name.length < 2) return t.contactErrName;
     if (!service) return t.contactErrService;
-    if (channel === "phone") {
-      if (phone.replace(/\D/g, "").length !== 9) return t.contactErrPhone;
-    } else if (channel === "telegram") {
-      const tg = String(fd.get("telegram") ?? "").trim();
-      if (!/^@?[a-zA-Z0-9_]{5,32}$/.test(tg)) return t.contactErrTelegram;
-    } else {
-      const email = String(fd.get("email") ?? "").trim();
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return t.contactErrEmail;
-    }
+    if (phone.replace(/\D/g, "").length !== 9) return t.contactErrPhone;
     const message = String(fd.get("message") ?? "").trim();
     const words = message.split(/\s+/).filter(Boolean);
     if (words.length < 8) return t.contactErrMessage;
@@ -87,11 +71,27 @@ export function ContactBlock({ locale }: { locale: Locale }) {
     }
     setSending(true);
     try {
-      await new Promise((r) => setTimeout(r, 450));
+      const fd = new FormData(form);
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: String(fd.get("fullName") ?? "").trim(),
+          service,
+          channel: "phone",
+          contact: `+998 ${phone}`,
+          message: String(fd.get("message") ?? "").trim(),
+        }),
+      });
+
+      if (!res.ok) {
+        setModal({ kind: "err", text: t.contactErrGeneric });
+        return;
+      }
+
       form.reset();
       setService("");
       setPhone("");
-      setChannel("phone");
       setModal({ kind: "ok" });
     } catch {
       setModal({ kind: "err", text: t.contactErrGeneric });
@@ -207,84 +207,23 @@ export function ContactBlock({ locale }: { locale: Locale }) {
             </div>
           </div>
 
-          <div>
-            <p className="mb-2.5 text-[13px] font-medium">{t.contactReach}</p>
-            <div className="grid grid-cols-3 gap-1.5 sm:gap-2">
-              {channels.map(({ id, label, icon: Icon }) => (
-                <button
-                  key={id}
-                  type="button"
-                  onClick={() => setChannel(id)}
-                  className={`flex min-w-0 flex-col items-center justify-center gap-1 rounded-xl px-1 py-2.5 text-[11px] font-medium transition sm:flex-row sm:gap-2 sm:px-3 sm:text-[13px] ${
-                    channel === id
-                      ? "bg-accent text-on-accent"
-                      : "border border-line bg-transparent text-muted"
-                  }`}
-                >
-                  <Icon className="h-3.5 w-3.5 shrink-0" />
-                  <span className="truncate">{label}</span>
-                </button>
-              ))}
+          <label className="block" htmlFor="contact-phone">
+            <span className="mb-1.5 block text-[13px] font-medium">
+              {t.contactPhoneLabel} <span className="text-[#ff6b6b]">*</span>
+            </span>
+            <div className="vs-input flex items-center gap-2 rounded-xl">
+              <span className="shrink-0 select-none text-text">+998</span>
+              <input
+                id="contact-phone"
+                className="min-w-0 flex-1 bg-transparent p-0 outline-none"
+                inputMode="tel"
+                autoComplete="tel"
+                placeholder={t.contactPhonePh}
+                value={phone}
+                onChange={(e) => setPhone(formatLocalPhone(e.target.value))}
+              />
             </div>
-          </div>
-
-          <AnimatePresence mode="wait" initial={false}>
-            {channel === "phone" && (
-              <motion.label
-                key="phone"
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.22 }}
-                className="block"
-              >
-                <span className="mb-1.5 block text-[13px] font-medium">
-                  {t.contactPhoneLabel} <span className="text-[#ff6b6b]">*</span>
-                </span>
-                <div className="vs-input flex items-center gap-2 rounded-xl">
-                  <span className="shrink-0 select-none text-text">+998</span>
-                  <input
-                    className="min-w-0 flex-1 bg-transparent p-0 outline-none"
-                    inputMode="tel"
-                    autoComplete="tel"
-                    placeholder={t.contactPhonePh}
-                    value={phone}
-                    onChange={(e) => setPhone(formatLocalPhone(e.target.value))}
-                  />
-                </div>
-              </motion.label>
-            )}
-            {channel === "telegram" && (
-              <motion.label
-                key="telegram"
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.22 }}
-                className="block"
-              >
-                <span className="mb-1.5 block text-[13px] font-medium">
-                  {t.contactTgLabel} <span className="text-[#ff6b6b]">*</span>
-                </span>
-                <input name="telegram" className="vs-input rounded-xl" placeholder={t.contactTgPh} autoComplete="username" />
-              </motion.label>
-            )}
-            {channel === "email" && (
-              <motion.label
-                key="email"
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.22 }}
-                className="block"
-              >
-                <span className="mb-1.5 block text-[13px] font-medium">
-                  {t.contactEmailLabel} <span className="text-[#ff6b6b]">*</span>
-                </span>
-                <input name="email" className="vs-input rounded-xl" type="email" placeholder={t.contactEmailPh} autoComplete="email" />
-              </motion.label>
-            )}
-          </AnimatePresence>
+          </label>
 
           <label className="block">
             <span className="mb-1.5 block text-[13px] font-medium">
