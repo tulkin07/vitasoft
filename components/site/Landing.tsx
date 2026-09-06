@@ -108,17 +108,17 @@ type LandingProject = {
   year: string;
 };
 
-/** 4×4 bento: two 2×2 features, six 1×1, one tall 1×2 — matches the reference grid, not the card chrome. */
+/** 4×4 bento: former bottom block on top, former top block below. */
 const bentoCells = [
-  "md:col-span-2 lg:col-start-1 lg:col-span-2 lg:row-start-1 lg:row-span-2",
-  "lg:col-start-3 lg:row-start-1",
-  "lg:col-start-4 lg:row-start-1",
-  "lg:col-start-3 lg:row-start-2",
-  "lg:col-start-4 lg:row-start-2",
-  "lg:col-start-1 lg:row-start-3",
-  "lg:col-start-1 lg:row-start-4",
-  "md:col-span-2 lg:col-start-2 lg:col-span-2 lg:row-start-3 lg:row-span-2",
-  "lg:col-start-4 lg:row-start-3 lg:row-span-2",
+  "md:col-span-2 lg:col-start-1 lg:col-span-2 lg:row-start-3 lg:row-span-2",
+  "lg:col-start-3 lg:row-start-3",
+  "lg:col-start-4 lg:row-start-3",
+  "lg:col-start-3 lg:row-start-4",
+  "lg:col-start-4 lg:row-start-4",
+  "lg:col-start-1 lg:row-start-1",
+  "lg:col-start-1 lg:row-start-2",
+  "md:col-span-2 lg:col-start-2 lg:col-span-2 lg:row-start-1 lg:row-span-2",
+  "lg:col-start-4 lg:row-start-1 lg:row-span-2",
 ] as const;
 
 function projectSize(index: number, bento: boolean): "featured" | "compact" | "tall" {
