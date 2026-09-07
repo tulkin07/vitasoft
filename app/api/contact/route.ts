@@ -2,6 +2,29 @@ import { NextResponse } from "next/server";
 
 export const runtime = "nodejs";
 
+type TelegramSendResult = {
+  ok?: boolean;
+  description?: string;
+  parameters?: { migrate_to_chat_id?: number };
+};
+
+async function sendTelegramMessage(token: string, chatId: string, text: string) {
+  const telegramRes = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      chat_id: chatId,
+      text,
+      parse_mode: "HTML",
+      disable_web_page_preview: true,
+    }),
+  });
+  const telegramJson = (await telegramRes.json().catch(() => null)) as TelegramSendResult | null;
+  return { telegramRes, telegramJson };
+}
+
+let migratedChatId: string | undefined;
+
 type Channel = "phone" | "telegram" | "email";
 
 function escapeHtml(value: string) {
@@ -87,20 +110,15 @@ export async function POST(request: Request) {
     `🕐  ${escapeHtml(when)}  ·  Toshkent`,
   ].join("\n");
 
-  const telegramRes = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      chat_id: chatId,
-      text: payload,
-      parse_mode: "HTML",
-      disable_web_page_preview: true,
-    }),
-  });
+  let targetChatId = migratedChatId || chatId;
+  let { telegramRes, telegramJson } = await sendTelegramMessage(token, targetChatId, payload);
 
-  const telegramJson = (await telegramRes.json().catch(() => null)) as
-    | { ok?: boolean; description?: string }
-    | null;
+  const newChatId = telegramJson?.parameters?.migrate_to_chat_id;
+  if (newChatId) {
+    migratedChatId = String(newChatId);
+    targetChatId = migratedChatId;
+    ({ telegramRes, telegramJson } = await sendTelegramMessage(token, targetChatId, payload));
+  }
 
   if (!telegramRes.ok || !telegramJson?.ok) {
     const description = telegramJson?.description ?? "telegram_failed";
