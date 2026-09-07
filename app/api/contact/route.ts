@@ -60,7 +60,9 @@ export async function POST(request: Request) {
   const { name, service, channel, contact, message } = body as Record<string, unknown>;
   const fullName = typeof name === "string" ? name.trim() : "";
   const serviceName = typeof service === "string" ? service.trim() : "";
-  const contactValue = typeof contact === "string" ? contact.trim() : "";
+  const rawContact = typeof contact === "string" ? contact.trim() : "";
+  const contactValue =
+    channel === "phone" ? rawContact.replace(/\s+/g, "") : rawContact;
   const text = typeof message === "string" ? message.trim() : "";
 
   if (fullName.length < 2 || !serviceName || !isChannel(channel) || !contactValue || text.split(/\s+/).filter(Boolean).length < 8) {

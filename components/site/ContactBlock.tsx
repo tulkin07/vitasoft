@@ -79,7 +79,7 @@ export function ContactBlock({ locale }: { locale: Locale }) {
           name: String(fd.get("fullName") ?? "").trim(),
           service,
           channel: "phone",
-          contact: `+998 ${phone}`,
+          contact: `+998${phone.replace(/\D/g, "")}`,
           message: String(fd.get("message") ?? "").trim(),
         }),
       });
