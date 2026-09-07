@@ -45,16 +45,15 @@ export async function POST(request: Request) {
   }
 
   const channelLabel = channel === "phone" ? "Telefon" : channel === "telegram" ? "Telegram" : "Email";
-  const contactLink = (() => {
-    if (channel === "phone") {
-      const tel = contactValue.replace(/\s/g, "");
-      return `<a href="tel:${escapeHtml(tel)}">${escapeHtml(contactValue)}</a>`;
-    }
+  const contactHtml = (() => {
     if (channel === "telegram") {
       const user = contactValue.replace(/^@/, "");
       return `<a href="https://t.me/${encodeURIComponent(user)}">@${escapeHtml(user)}</a>`;
     }
-    return `<a href="mailto:${escapeHtml(contactValue)}">${escapeHtml(contactValue)}</a>`;
+    if (channel === "email") {
+      return `<code>${escapeHtml(contactValue)}</code>`;
+    }
+    return `<code>${escapeHtml(contactValue)}</code>`;
   })();
 
   const when = new Intl.DateTimeFormat("uz-UZ", {
@@ -79,7 +78,7 @@ export async function POST(request: Request) {
     escapeHtml(serviceName),
     "",
     `📞  <b>${channelLabel}</b>`,
-    contactLink,
+    contactHtml,
     "",
     "💬  <b>Xabar</b>",
     `<blockquote>${escapeHtml(text)}</blockquote>`,
@@ -99,8 +98,13 @@ export async function POST(request: Request) {
     }),
   });
 
-  if (!telegramRes.ok) {
-    return NextResponse.json({ ok: false, error: "telegram_failed" }, { status: 502 });
+  const telegramJson = (await telegramRes.json().catch(() => null)) as
+    | { ok?: boolean; description?: string }
+    | null;
+
+  if (!telegramRes.ok || !telegramJson?.ok) {
+    const description = telegramJson?.description ?? "telegram_failed";
+    return NextResponse.json({ ok: false, error: description }, { status: 502 });
   }
 
   return NextResponse.json({ ok: true });
